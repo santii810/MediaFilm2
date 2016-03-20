@@ -89,7 +89,23 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 36 "..\..\MainWindow.xaml"
+        #line 39 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label labelTiempoRecoger;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 45 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label labelTiempoOrden;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 51 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.StackPanel consolaPanelOrdenarVideos;
         
@@ -161,6 +177,12 @@ namespace MediaFilm2 {
             #line hidden
             return;
             case 9:
+            this.labelTiempoRecoger = ((System.Windows.Controls.Label)(target));
+            return;
+            case 10:
+            this.labelTiempoOrden = ((System.Windows.Controls.Label)(target));
+            return;
+            case 11:
             this.consolaPanelOrdenarVideos = ((System.Windows.Controls.StackPanel)(target));
             return;
             }
