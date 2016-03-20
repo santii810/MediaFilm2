@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace MediaFilm2.Modelo
 {
@@ -53,15 +55,34 @@ namespace MediaFilm2.Modelo
                         break;
                     //mover
                     case ".avi":
-                        if (moverFichero(item, mainWindow)) videosMovidos++;
-                        else errorMoviendo++;
+                        if (moverFichero(item, mainWindow))
+                        {
+                            Label tmpLabel = new Label();
+                            tmpLabel.Content =   (item.Name);
+                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
+                        }
+                        else
+                            errorMoviendo++;
                         break;
                     case ".mkv":
-                        if (moverFichero(item, mainWindow)) videosMovidos++;
+                        if (moverFichero(item, mainWindow))
+                        {
+                            Label tmpLabel = new Label();
+                            tmpLabel.Content = (item.Name);
+                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
+                        }
                         else errorMoviendo++;
                         break;
                     case ".mp4":
-                        if (moverFichero(item, mainWindow)) videosMovidos++;
+                        if (moverFichero(item, mainWindow))
+                        {
+                            Label tmpLabel = new Label();
+                            tmpLabel.Content = (item.Name);
+                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
+                        }
                         else errorMoviendo++;
                         break;
                     default:
@@ -71,8 +92,10 @@ namespace MediaFilm2.Modelo
             }
             directoriosBorrados = borrarDirectoriosVacios(mainWindow.config.dirTorrent);
             Directory.CreateDirectory(mainWindow.config.dirTorrent);
-            
-            
+
+
+
+            mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
             //return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported, Convert.ToInt32(tiempo.ElapsedMilliseconds), directoriosBorrados };
         }
 

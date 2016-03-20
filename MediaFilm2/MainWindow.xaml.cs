@@ -55,7 +55,9 @@ namespace MediaFilm2
 
         private void RecogerVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER);
             GestorVideos.recogerTorrent(this);
+            UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RECOGER);
 
         }
     }

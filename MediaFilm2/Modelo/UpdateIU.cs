@@ -9,7 +9,7 @@ namespace MediaFilm2.Iconos
 {
     static class UpdateIU
     {
-       
+
 
         internal static void Update(MainWindow mainWindow)
         {
@@ -22,8 +22,26 @@ namespace MediaFilm2.Iconos
 
             switch (cod)
             {
+                case Codigos.ESTADO_INICIAL:
+
+                    break;
                 case Codigos.PANEL_ORDENAR_VIDEOS:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
+                    mainWindow.labelTiempoOrden.Content = "";
+                    mainWindow.labelTiempoRecoger.Content = "";
+                    mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
+                    mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
+                    break;
+                case Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER:
+                    mainWindow.panelResultadoVideosMovidos.Children.Clear();
+
+                    break;
+                case Codigos.MOSTRAR_RESULTADOS_RECOGER:
+                    mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
+
+                    mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
+                    mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Visible;
+                 
                     break;
                 default:
                     throw new UpdateIUException(cod);
@@ -32,7 +50,18 @@ namespace MediaFilm2.Iconos
 
         private static void collapseAll(MainWindow mainWindow)
         {
+            //siempre visibles
+            mainWindow.panelMenu.Visibility = Visibility.Visible;
+
+            //siempre ocultos
             mainWindow.panelOrdenarVideos.Visibility = Visibility.Collapsed;
+            mainWindow.consolaPanelVideos.Visibility = Visibility.Collapsed;
+
+        }
+
+        internal static void Update(MainWindow mainWindow, object mOSTRAR_RESULTADOS_RECOGER)
+        {
+            throw new NotImplementedException();
         }
     }
 }
