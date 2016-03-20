@@ -1,0 +1,50 @@
+﻿<Window x:Class="MediaFilm2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaFilm2"
+        mc:Ignorable="d"
+     Title="MediaFilm 2" Height="600" Width="800">
+    <Grid>
+        <DockPanel Name="panelPrincipal" Visibility="Visible">
+            <!--#region menu-->
+            <Border BorderThickness="3" BorderBrush="Black" Background="Bisque">
+                <StackPanel Name="panelMenu" Width="100" Orientation="Vertical" DockPanel.Dock="Left">
+                    <StackPanel Name="stackMenuOrdenar" Orientation="Vertical" Width="100">
+                        <Image Source="Iconos/organize.png" MouseLeftButtonUp="OrdenarVideos_MouseLeftButtonUp"/>
+                        <Label Content="Ordenar&#xD;&#xA;videos" Style="{StaticResource labelMenu}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <!--#endregion menu-->
+
+            <!--#region paneles principales -->
+            <Grid Name="panelSecundario" Visibility="Visible">
+                
+                <StackPanel Name="panelOrdenarVideos" Orientation="Vertical">
+                    <StackPanel Name="botonesPanelOrdenarVideos" Orientation="Horizontal" Height="150">
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Iconos/recorrerTorrent.png" Height="120" MouseLeftButtonUp="RecogerVideos_MouseLeftButtonUp"/>
+                            <Label Content="Recoger videos" Style="{StaticResource Label1}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Image Source="Iconos/ordenarVideos.jpg" Height="120"/>
+                            <Label Content="Ordenar Videos" Style="{StaticResource Label1}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Name="consolaPanelOrdenarVideos">
+                        
+                    </StackPanel>
+                    
+                </StackPanel>
+            </Grid>
+
+
+            <!--#endregion paneles principales-->
+
+        </DockPanel>
+
+        </Grid>
+
+</Window>
