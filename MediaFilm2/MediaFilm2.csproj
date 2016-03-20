@@ -68,9 +68,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Datos\ConfigXML.cs" />
+    <Compile Include="Datos\LoggerXML.cs" />
+    <Compile Include="Modelo\Patron.cs" />
+    <Compile Include="Datos\PatronesXML.cs" />
     <Compile Include="Modelo\Codigos.cs" />
     <Compile Include="Modelo\Config.cs" />
     <Compile Include="Modelo\GestorVideos.cs" />
+    <Compile Include="Excepciones\TipoArchivoNoSoportadoException.cs" />
+    <Compile Include="Modelo\Log.cs" />
     <Compile Include="Modelo\UpdateIU.cs" />
     <Compile Include="Excepciones\UpdateIUException.cs" />
     <Compile Include="MainWindow.xaml.cs">

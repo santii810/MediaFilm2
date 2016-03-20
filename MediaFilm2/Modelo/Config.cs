@@ -23,4 +23,4 @@ namespace MediaFilm2.Modelo
         public string ficheroPatrones { get; set; }
     }
 }
-}
+

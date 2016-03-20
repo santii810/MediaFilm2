@@ -27,11 +27,17 @@ namespace MediaFilm2
 
         //Gestores XML
         private ConfigXML configXML = new ConfigXML();
+        public LoggerXML LogErrorXML;
+        public LoggerXML LogMediaXML;
+        public LoggerXML LogDatosXML;
 
         public MainWindow()
         {
             InitializeComponent();
             config = configXML.leerConfig();
+            LogErrorXML = new LoggerXML(config.errorLog);
+            LogMediaXML = new LoggerXML(config.mediaLog);
+            LogMediaXML = new LoggerXML(config.datosLog);
         }
 
 
@@ -49,7 +55,7 @@ namespace MediaFilm2
 
         private void RecogerVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            GestorVideos.recogerTorrent(this);
 
         }
     }

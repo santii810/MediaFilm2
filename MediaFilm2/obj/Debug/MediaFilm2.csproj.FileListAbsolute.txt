@@ -1,1 +1,16 @@
 C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\bin\Debug\MediaFilm2.exe.config
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.csprojResolveAssemblyReference.cache
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MainWindow.g.cs
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\App.g.cs
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2_MarkupCompile.cache
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2_MarkupCompile.lref
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\bin\Debug\MediaFilm2.exe
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\bin\Debug\MediaFilm2.pdb
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\App.baml
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\Dictionary.baml
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MainWindow.baml
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.g.resources
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.Properties.Resources.resources
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.csproj.GenerateResource.Cache
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.exe
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.pdb

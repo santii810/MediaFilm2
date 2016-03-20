@@ -13,7 +13,7 @@
                 <StackPanel Name="panelMenu" Width="100" Orientation="Vertical" DockPanel.Dock="Left">
                     <StackPanel Name="stackMenuOrdenar" Orientation="Vertical" Width="100">
                         <Image Source="Iconos/organize.png" MouseLeftButtonUp="OrdenarVideos_MouseLeftButtonUp"/>
-                        <Label Content="Ordenar&#xD;&#xA;videos" Style="{StaticResource labelMenu}" />
+                        <Label Content="Ordenar&#xD;&#xA;videos" Style="{StaticResource Label1}" />
                     </StackPanel>
                 </StackPanel>
             </Border>
