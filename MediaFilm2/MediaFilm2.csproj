@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Vista\CrearVistar.cs" />
     <Compile Include="Datos\ConfigXML.cs" />
     <Compile Include="Datos\LoggerXML.cs" />
     <Compile Include="Modelo\Patron.cs" />

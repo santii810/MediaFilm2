@@ -16,13 +16,7 @@ namespace MediaFilm2.Modelo
 
         public static void recogerTorrent(MainWindow mainWindow)
         {
-            int videosMovidos = 0;
-            int ficherosBorrados = 0;
-            int errorBorrando = 0;
-            int errorMoviendo = 0;
-            int unsuported = 0;
             int directoriosBorrados = 0;
-
 
             Stopwatch tiempo = Stopwatch.StartNew();
 
@@ -42,51 +36,49 @@ namespace MediaFilm2.Modelo
                 {
                     //borrar
                     case ".txt":
-                        if (borrarFichero(item, mainWindow)) ficherosBorrados++;
-                        else errorBorrando++;
+                        if (borrarFichero(item, mainWindow))
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
                         break;
                     case ".!ut":
-                        if (borrarFichero(item, mainWindow)) ficherosBorrados++;
-                        else errorBorrando++;
+                        if (borrarFichero(item, mainWindow))
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
                         break;
                     case ".url":
-                        if (borrarFichero(item, mainWindow)) ficherosBorrados++;
-                        else errorBorrando++;
+                        if (borrarFichero(item, mainWindow))
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
+                        break;
+                    case ".jpg":
+                        if (borrarFichero(item, mainWindow))
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
                         break;
                     //mover
                     case ".avi":
                         if (moverFichero(item, mainWindow))
-                        {
-                            Label tmpLabel = new Label();
-                            tmpLabel.Content =   (item.Name);
-                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
-                        }
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
                         else
-                            errorMoviendo++;
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
                         break;
                     case ".mkv":
                         if (moverFichero(item, mainWindow))
-                        {
-                            Label tmpLabel = new Label();
-                            tmpLabel.Content = (item.Name);
-                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
-                        }
-                        else errorMoviendo++;
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
                         break;
                     case ".mp4":
                         if (moverFichero(item, mainWindow))
-                        {
-                            Label tmpLabel = new Label();
-                            tmpLabel.Content = (item.Name);
-                            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(tmpLabel);
-                        }
-                        else errorMoviendo++;
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
+                        else
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
                         break;
                     default:
-                        unsuported++;
                         throw new TipoArchivoNoSoportadoException(item);
                 }
             }
@@ -94,10 +86,10 @@ namespace MediaFilm2.Modelo
             Directory.CreateDirectory(mainWindow.config.dirTorrent);
 
 
-
+            //mostrar tiempo
             mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
-            //return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported, Convert.ToInt32(tiempo.ElapsedMilliseconds), directoriosBorrados };
         }
+
 
 
 
@@ -108,7 +100,7 @@ namespace MediaFilm2.Modelo
         /// </summary>
         /// <param name="filesInfo">The files information.</param>
         /// <returns></returns>
-        static public List<FileInfo> listarFicheros(FileSystemInfo[] filesInfo)
+        static private List<FileInfo> listarFicheros(FileSystemInfo[] filesInfo)
         {
             List<FileInfo> retorno = new List<FileInfo>();
 

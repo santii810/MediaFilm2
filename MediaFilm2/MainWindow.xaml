@@ -61,12 +61,12 @@
                                 </StackPanel>
                             </Border>
                             <Border BorderBrush="Bisque" BorderThickness="4" Margin="2">
-                                <StackPanel  Height="125">
+                                <StackPanel Name="panelResultadoFicherosBorrados" Height="125">
                                     <Label Content="Ficheros borrados: " Style="{StaticResource Label1}"/>
                                 </StackPanel>
                             </Border>
                             <Border BorderBrush="Bisque" BorderThickness="4" Margin="2">
-                                <StackPanel  Height="125">
+                                <StackPanel Name="panelResultadoErroresMoviendo" Height="125">
                                     <Label Content="Errores: " Style="{StaticResource Label1}"/>
                                 </StackPanel>
                             </Border>
