@@ -25,12 +25,12 @@
                 <StackPanel Name="panelOrdenarVideos" Orientation="Vertical">
                     <StackPanel Name="botonesPanelOrdenarVideos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical">
-                            <Label Content="Recoger videos" Style="{StaticResource Label1}"/>
+                            <Label Content="Recoger videos" Width="150" Style="{StaticResource Label1}"/>
                             <Image Source="Iconos/recorrerTorrent.png" Height="120" MouseLeftButtonUp="RecogerVideos_MouseLeftButtonUp"/>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <Label Content="Ordenar Videos" Style="{StaticResource Label1}"/>
-                            <Image Source="Iconos/ordenarVideos.jpg" Height="120"/>
+                            <Label Content="Renombrar Videos" Width="150"  Style="{StaticResource Label1}"/>
+                            <Image Source="Iconos/ordenarVideos.jpg" Height="120" MouseLeftButtonUp="RenombrarVideos_MouseLeftButtonUp"/>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Right">
                             <Border Style="{StaticResource Border}">
@@ -49,9 +49,7 @@
                     </StackPanel>
 
                     <StackPanel Name="consolaPanelVideos" Orientation="Horizontal" Width="660" Height="400">
-                        <StackPanel Name="consolaPanelRecogerVideos"  Orientation="Horizontal"  Visibility="Visible">
-
-
+                        <StackPanel Name="consolaPanelRecogerVideos"  Orientation="Horizontal"  Visibility="Collapsed">
                             <Border Style="{StaticResource Border}">
                                 <StackPanel Width="320">
                                     <Label Content="Videos movidos: " Style="{StaticResource Label1}"/>
@@ -60,7 +58,7 @@
                                     </ScrollViewer>
                                 </StackPanel>
                             </Border>
-                            
+
                             <StackPanel Width="330">
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel Height="190">
@@ -82,24 +80,34 @@
 
                         </StackPanel>
 
-                        <StackPanel Name="consolaPanelOrdenarVideos"  Orientation="Vertical" Width="320" Visibility="Collapsed">
+                        <StackPanel Name="consolaPanelOrdenarVideos"  Orientation="Vertical" Visibility="Visible">
 
                             <Border Style="{StaticResource Border}">
-                                <StackPanel  Height="125">
+                                <StackPanel  Width="650" Height="190">
                                     <Label Content="Videos renombrados: " Style="{StaticResource Label1}"/>
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <StackPanel Name="panelResultadoVideosRenombrados" Orientation="Vertical"/>
+                                    </ScrollViewer>
                                 </StackPanel>
                             </Border>
-
-                            <Border Style="{StaticResource Border}">
-                                <StackPanel  Height="125">
-                                    <Label Content="Patrones ejecutados: " Style="{StaticResource Label1}"/>
-                                </StackPanel>
-                            </Border>
-                            <Border Style="{StaticResource Border}">
-                                <StackPanel  Height="125">
-                                    <Label Content="Errores: " Style="{StaticResource Label1}"/>
-                                </StackPanel>
-                            </Border>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Style="{StaticResource Border}">
+                                    <StackPanel  Height="190" Width="320">
+                                        <Label Content="Errores: " Style="{StaticResource Label1}"/>
+                                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                            <StackPanel Name="panelResultadoErroresRenombrado" Orientation="Vertical"/>
+                                        </ScrollViewer>
+                                    </StackPanel>
+                                </Border>
+                                <Border Style="{StaticResource Border}">
+                                    <StackPanel  Height="190" Width="320">
+                                        <Label Content="Patrones ejecutados: " Style="{StaticResource Label1}"/>
+                                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                            <StackPanel Name="panelResultadoPatronesEjecurados" Orientation="Vertical"/>
+                                        </ScrollViewer>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

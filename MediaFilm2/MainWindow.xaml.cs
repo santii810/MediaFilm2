@@ -30,6 +30,11 @@ namespace MediaFilm2
         public LoggerXML LogErrorXML;
         public LoggerXML LogMediaXML;
         public LoggerXML LogDatosXML;
+        public SeriesXML SeriesXML;
+
+        //Estructuras
+        public List<Serie> series = new List<Serie>();
+
 
         public MainWindow()
         {
@@ -58,6 +63,14 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER);
             GestorVideos.recogerTorrent(this);
             UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RECOGER);
+        }
+
+        private void RenombrarVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR);
+
+
+            UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RENOMBRAR);
         }
     }
 }

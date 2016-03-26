@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -13,7 +14,7 @@ namespace MediaFilm2.Modelo
     static public class GestorVideos
     {
 
-
+        #region Recorrer torrent
         public static void recogerTorrent(MainWindow mainWindow)
         {
             int directoriosBorrados = 0;
@@ -89,12 +90,7 @@ namespace MediaFilm2.Modelo
             //mostrar tiempo
             mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
         }
-
-
-
-
-
-
+        
         /// <summary>
         /// funcion recursiva que devuelve todos los ficheros dentro de la carpeta.
         /// </summary>
@@ -197,5 +193,77 @@ namespace MediaFilm2.Modelo
             catch (UnauthorizedAccessException) { }
             return retorno;
         }
+
+        #endregion
+
+
+        #region Renombrar videos
+        public static void renombrarVideos(MainWindow mainWindow)
+        {
+            Stopwatch tiempo = Stopwatch.StartNew();
+            int videosRenombrados = 0;
+            int erroresRenombrado = 0;
+            int numeroPatrones = 0;
+            int seriesActivas = 0;
+            mainWindow.series = mainWindow.SeriesXML.leerSeries();
+            mainWindow.series.Sort();
+            foreach (Serie itSerie in mainWindow.series)
+            {
+                if (itSerie.estado.Equals("A"))
+                {
+                    itSerie.getPatrones(mainWindow.config);
+                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 12 (strings que se comprueban en cada patron)
+                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 12;
+                    seriesActivas++;
+                    foreach (Patron itPatron in itSerie.patrones)
+                    {
+                        for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
+                        {
+                            for (int cap = 1; cap <= itSerie.capitulosPorTemporada; cap++)
+                            {
+                                FileInfo fi;
+                                string dirSerie = @mainWindow.config.dirSeries + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
+                                string[] strPatrones = new string[]
+                                {
+                                    //patrones para capitulos<10  y extension == mkv
+                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.mkv" ,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.mkv" ,
+                                    temp.ToString()+"x0"+cap.ToString()+"*"+itPatron.textoPatron+"*.mkv",
+
+                                    //patrones para capitulos<10  y extension == avi
+                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.avi" ,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.avi" ,
+                                    temp.ToString()+"x0"+cap.ToString()+"*"+itPatron.textoPatron+"*.avi",
+
+                                    //patrones para capitulos>10  y extension == mkv
+                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.mkv",
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.mkv",
+                                    temp.ToString()+"x"+cap.ToString()+"*"+itPatron.textoPatron+"*.mkv",
+
+                                    //patrones para capitulos>10  y extension == avi
+                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.avi",
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.avi",
+                                    temp.ToString()+"x"+cap.ToString()+"*"+itPatron.textoPatron+"*.avi",
+                              };
+
+                                for (int i = 0; i < 6; i++)
+                                {
+                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 6]);
+                                    else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
+                                    if (fi != null)
+                                    {
+                                        if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension)) videosRenombrados++;
+                                        else erroresRenombrado++;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones, seriesActivas, Convert.ToInt32(tiempo.ElapsedMilliseconds) };
+        }
+
+        #endregion
     }
 }

@@ -160,6 +160,30 @@ namespace MediaFilm2 {
         #line default
         #line hidden
         
+        
+        #line 89 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.StackPanel panelResultadoVideosRenombrados;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 98 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.StackPanel panelResultadoErroresRenombrado;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 106 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.StackPanel panelResultadoPatronesEjecurados;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -225,31 +249,48 @@ namespace MediaFilm2 {
             #line hidden
             return;
             case 9:
-            this.labelTiempoRecoger = ((System.Windows.Controls.Label)(target));
+            
+            #line 33 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Image)(target)).MouseLeftButtonUp += new System.Windows.Input.MouseButtonEventHandler(this.RenombrarVideos_MouseLeftButtonUp);
+            
+            #line default
+            #line hidden
             return;
             case 10:
-            this.labelTiempoOrden = ((System.Windows.Controls.Label)(target));
+            this.labelTiempoRecoger = ((System.Windows.Controls.Label)(target));
             return;
             case 11:
-            this.consolaPanelVideos = ((System.Windows.Controls.StackPanel)(target));
+            this.labelTiempoOrden = ((System.Windows.Controls.Label)(target));
             return;
             case 12:
-            this.consolaPanelRecogerVideos = ((System.Windows.Controls.StackPanel)(target));
+            this.consolaPanelVideos = ((System.Windows.Controls.StackPanel)(target));
             return;
             case 13:
-            this.scrollResultadoVideosMovidos = ((System.Windows.Controls.ScrollViewer)(target));
+            this.consolaPanelRecogerVideos = ((System.Windows.Controls.StackPanel)(target));
             return;
             case 14:
-            this.panelResultadoVideosMovidos = ((System.Windows.Controls.StackPanel)(target));
+            this.scrollResultadoVideosMovidos = ((System.Windows.Controls.ScrollViewer)(target));
             return;
             case 15:
-            this.panelResultadoFicherosBorrados = ((System.Windows.Controls.StackPanel)(target));
+            this.panelResultadoVideosMovidos = ((System.Windows.Controls.StackPanel)(target));
             return;
             case 16:
-            this.panelResultadoErroresMoviendo = ((System.Windows.Controls.StackPanel)(target));
+            this.panelResultadoFicherosBorrados = ((System.Windows.Controls.StackPanel)(target));
             return;
             case 17:
+            this.panelResultadoErroresMoviendo = ((System.Windows.Controls.StackPanel)(target));
+            return;
+            case 18:
             this.consolaPanelOrdenarVideos = ((System.Windows.Controls.StackPanel)(target));
+            return;
+            case 19:
+            this.panelResultadoVideosRenombrados = ((System.Windows.Controls.StackPanel)(target));
+            return;
+            case 20:
+            this.panelResultadoErroresRenombrado = ((System.Windows.Controls.StackPanel)(target));
+            return;
+            case 21:
+            this.panelResultadoPatronesEjecurados = ((System.Windows.Controls.StackPanel)(target));
             return;
             }
             this._contentLoaded = true;

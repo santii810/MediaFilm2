@@ -37,6 +37,11 @@ namespace MediaFilm2.Iconos
                     mainWindow.panelResultadoFicherosBorrados.Children.Clear();
                     mainWindow.panelResultadoErroresMoviendo.Children.Clear();
                     break;
+                case Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR:
+                    mainWindow.panelResultadoErroresRenombrado.Children.Clear();
+                    mainWindow.panelResultadoPatronesEjecurados.Children.Clear();
+                    mainWindow.panelResultadoVideosRenombrados.Children.Clear();
+                    break;
                 case Codigos.MOSTRAR_RESULTADOS_RECOGER:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
@@ -64,13 +69,6 @@ namespace MediaFilm2.Iconos
             mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
 
-
-
-        }
-
-        internal static void Update(MainWindow mainWindow, object mOSTRAR_RESULTADOS_RECOGER)
-        {
-            throw new NotImplementedException();
         }
     }
 }

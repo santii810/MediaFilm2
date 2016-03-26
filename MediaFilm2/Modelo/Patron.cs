@@ -1,4 +1,4 @@
-﻿namespace MediaFilm2.Datos
+﻿namespace MediaFilm2
 {
     public class Patron
     {
