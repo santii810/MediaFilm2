@@ -12,6 +12,7 @@ namespace MediaFilm2
         public const int PANEL_ORDENAR_VIDEOS = 1;
         public const int LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER = 2;
         public const int MOSTRAR_RESULTADOS_RECOGER = 3;
+        public const int MOSTRAR_RESULTADOS_ORDENAR = 4;
 
         public const int a = 4;
         public const int b = 5;

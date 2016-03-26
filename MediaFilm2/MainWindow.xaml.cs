@@ -58,7 +58,6 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER);
             GestorVideos.recogerTorrent(this);
             UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RECOGER);
-
         }
     }
 }

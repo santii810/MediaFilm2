@@ -34,14 +34,19 @@ namespace MediaFilm2.Iconos
                     break;
                 case Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER:
                     mainWindow.panelResultadoVideosMovidos.Children.Clear();
-
+                    mainWindow.panelResultadoFicherosBorrados.Children.Clear();
+                    mainWindow.panelResultadoErroresMoviendo.Children.Clear();
                     break;
                 case Codigos.MOSTRAR_RESULTADOS_RECOGER:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
-
+                    mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
+                    mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Visible;
+                    break;
+                case Codigos.MOSTRAR_RESULTADOS_ORDENAR:
+                    mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Visible;
-                 
+
                     break;
                 default:
                     throw new UpdateIUException(cod);
@@ -56,6 +61,10 @@ namespace MediaFilm2.Iconos
             //siempre ocultos
             mainWindow.panelOrdenarVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelVideos.Visibility = Visibility.Collapsed;
+            mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
+            mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
+
+
 
         }
 
