@@ -121,7 +121,7 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 58 "..\..\MainWindow.xaml"
+        #line 56 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ScrollViewer scrollResultadoVideosMovidos;
         
@@ -129,7 +129,7 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 59 "..\..\MainWindow.xaml"
+        #line 57 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.StackPanel panelResultadoVideosMovidos;
         
@@ -137,7 +137,7 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 69 "..\..\MainWindow.xaml"
+        #line 67 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.StackPanel panelResultadoFicherosBorrados;
         
@@ -145,7 +145,7 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 77 "..\..\MainWindow.xaml"
+        #line 75 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.StackPanel panelResultadoErroresMoviendo;
         
@@ -153,7 +153,7 @@ namespace MediaFilm2 {
         #line hidden
         
         
-        #line 85 "..\..\MainWindow.xaml"
+        #line 83 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.StackPanel consolaPanelOrdenarVideos;
         
