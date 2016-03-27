@@ -9,7 +9,7 @@ using System.Windows.Controls;
 
 namespace MediaFilm2
 {
-   static class CrearVistar
+   static class CrearVistas
     {
         public static Label getLabelFichero(FileInfo item)
         {
@@ -33,6 +33,19 @@ namespace MediaFilm2
             tmpLabel.Content = "Error borrando: " + (item.Name);
             tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
             return tmpLabel;
+        }
+
+        internal static Label getLabelVideosRenombrados(string nombreOriginal, FileInfo fi)
+        {
+            Label tmpLabel = new Label();
+            tmpLabel.Content = nombreOriginal + "    =>    " + fi.Name + fi.Extension;
+            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            return tmpLabel;
+        }
+
+        internal static UIElement getLabelErrorRenombrando(string nombreOriginal)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -38,46 +38,46 @@ namespace MediaFilm2.Modelo
                     //borrar
                     case ".txt":
                         if (borrarFichero(item, mainWindow))
-                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorBorrando(item));
                         break;
                     case ".!ut":
                         if (borrarFichero(item, mainWindow))
-                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorBorrando(item));
                         break;
                     case ".url":
                         if (borrarFichero(item, mainWindow))
-                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorBorrando(item));
                         break;
                     case ".jpg":
                         if (borrarFichero(item, mainWindow))
-                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorBorrando(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorBorrando(item));
                         break;
                     //mover
                     case ".avi":
                         if (moverFichero(item, mainWindow))
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorMoviendo(item));
                         break;
                     case ".mkv":
                         if (moverFichero(item, mainWindow))
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorMoviendo(item));
                         break;
                     case ".mp4":
                         if (moverFichero(item, mainWindow))
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistar.getLabelFichero(item));
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelFichero(item));
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistar.getLabelErrorMoviendo(item));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelErrorMoviendo(item));
                         break;
                     default:
                         throw new TipoArchivoNoSoportadoException(item);
@@ -90,7 +90,7 @@ namespace MediaFilm2.Modelo
             //mostrar tiempo
             mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
         }
-        
+
         /// <summary>
         /// funcion recursiva que devuelve todos los ficheros dentro de la carpeta.
         /// </summary>
@@ -248,12 +248,13 @@ namespace MediaFilm2.Modelo
 
                                 for (int i = 0; i < 6; i++)
                                 {
-                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 6]);
-                                    else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
+                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
+                                    else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
                                     if (fi != null)
                                     {
-                                        if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension)) videosRenombrados++;
-                                        else erroresRenombrado++;
+                                        (ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension);
+                                           
+                                    
                                     }
                                 }
                             }
@@ -261,8 +262,77 @@ namespace MediaFilm2.Modelo
                     }
                 }
             }
+
+
+
+            //mostrar tiempo
+            mainWindow.labelTiempoOrden.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
             //return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones, seriesActivas, Convert.ToInt32(tiempo.ElapsedMilliseconds) };
         }
+
+
+
+
+        /// <summary>
+        /// Mueve los ficheros.
+        /// </summary>
+        /// <param name="fi">Fichero a mover</param>
+        /// <param name="dirSerie">Directorio de destino</param>
+        /// <param name="titulo">Titulo del fichero.</param>
+        /// <param name="temp">The temporada.</param>
+        /// <param name="cap">The capitulo.</param>
+        /// <param name="ext">The extension.</param>
+        /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
+        private static bool ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+        {
+            string nombreOriginal = fi.Name;
+            //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
+            Directory.CreateDirectory(dirSerie);
+            try
+            {
+                if (cap < 10)
+                {
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+                }
+                else
+                {
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + cap + ext);
+                }
+                mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
+                mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelVideosRenombrados(nombreOriginal, fi));
+                return true;
+            }
+            catch (Exception e)
+            {
+                mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelErrorRenombrando(nombreOriginal));
+                mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
+                return false;
+            }
+        }
+
+
+        /// <summary>
+        /// Busca en el directorio de trabajo si existe algun fichero que coincida con el patron enviado.
+        /// </summary>
+        /// <param name="pat">Patron a buscar</param>
+        /// <returns>FileInfo del fichero si hay coincidencias</returns>
+        /// <exception cref="TooManySerieCoincidencesException"></exception>
+        static private FileInfo obtenerCoincidenciaBusqueda(MainWindow mainWindow, string pat)
+        {
+            DirectoryInfo iomegaInfo = new DirectoryInfo(mainWindow.config.dirTrabajo);
+            FileSystemInfo[] fsi;
+            fsi = iomegaInfo.GetFileSystemInfos(pat);
+            if (fsi.Length == 1 && fsi[0] is FileInfo)
+            {
+                return (FileInfo)fsi[0];
+            }
+            if (fsi.Length > 1)
+            {
+                throw new TooManySerieCoincidencesException(pat);
+            }
+            return null;
+        }
+
 
         #endregion
     }

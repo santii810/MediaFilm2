@@ -69,7 +69,8 @@
     </Compile>
     <Compile Include="Datos\SeriesXML.cs" />
     <Compile Include="Modelo\Serie.cs" />
-    <Compile Include="Vista\CrearVistar.cs" />
+    <Compile Include="Excepciones\TooManySerieCoincidencesException.cs" />
+    <Compile Include="Vista\CrearVistas.cs" />
     <Compile Include="Datos\ConfigXML.cs" />
     <Compile Include="Datos\LoggerXML.cs" />
     <Compile Include="Modelo\Patron.cs" />
