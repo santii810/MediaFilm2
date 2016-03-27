@@ -1,0 +1,30 @@
+﻿Añadido mensaje de videos renombrados
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sun Mar 27 19:00:38 2016 +0200
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 5 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   .vs/MediaFilm2/v14/.suo
+#	modified:   MediaFilm2/MediaFilm2.csproj
+#	modified:   MediaFilm2/Modelo/GestorVideos.cs
+#	modified:   MediaFilm2/Modelo/Serie.cs
+#	renamed:    MediaFilm2/Vista/CrearVistar.cs -> MediaFilm2/Vista/CrearVistas.cs
+#	deleted:    MediaFilm2/obj/Debug/App.baml
+#	deleted:    MediaFilm2/obj/Debug/Dictionary.baml
+#	deleted:    MediaFilm2/obj/Debug/MainWindow.baml
+#	modified:   MediaFilm2/obj/Debug/MainWindow.g.cs
+#	modified:   MediaFilm2/obj/Debug/MainWindow.g.i.cs
+#	modified:   MediaFilm2/obj/Debug/MediaFilm2_MarkupCompile.cache
+#	modified:   MediaFilm2/obj/Debug/MediaFilm2_MarkupCompile.i.cache
+#	new file:   MediaFilm2/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+#
+# Changes not staged for commit:
+#	modified:   MediaFilm2/Modelo/GestorVideos.cs
+#
+

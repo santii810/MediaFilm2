@@ -201,8 +201,6 @@ namespace MediaFilm2.Modelo
         public static void renombrarVideos(MainWindow mainWindow)
         {
             Stopwatch tiempo = Stopwatch.StartNew();
-            int videosRenombrados = 0;
-            int erroresRenombrado = 0;
             int numeroPatrones = 0;
             int seriesActivas = 0;
             mainWindow.series = mainWindow.SeriesXML.leerSeries();
@@ -251,11 +249,6 @@ namespace MediaFilm2.Modelo
                                     if (cap >= 10) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
                                     else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
                                     if (fi != null)
-                                    {
-                                        (ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension);
-                                           
-                                    
-                                    }
                                 }
                             }
                         }
@@ -263,15 +256,10 @@ namespace MediaFilm2.Modelo
                 }
             }
 
-
-
             //mostrar tiempo
             mainWindow.labelTiempoOrden.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
-            //return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones, seriesActivas, Convert.ToInt32(tiempo.ElapsedMilliseconds) };
         }
-
-
-
+        
 
         /// <summary>
         /// Mueve los ficheros.
@@ -283,7 +271,7 @@ namespace MediaFilm2.Modelo
         /// <param name="cap">The capitulo.</param>
         /// <param name="ext">The extension.</param>
         /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
-        private static bool ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+        private static void ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
         {
             string nombreOriginal = fi.Name;
             //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
@@ -300,16 +288,13 @@ namespace MediaFilm2.Modelo
                 }
                 mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
                 mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelVideosRenombrados(nombreOriginal, fi));
-                return true;
             }
             catch (Exception e)
             {
                 mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelErrorRenombrando(nombreOriginal));
                 mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
-                return false;
             }
         }
-
 
         /// <summary>
         /// Busca en el directorio de trabajo si existe algun fichero que coincida con el patron enviado.
