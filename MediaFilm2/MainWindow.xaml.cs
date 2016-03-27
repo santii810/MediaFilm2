@@ -39,10 +39,13 @@ namespace MediaFilm2
         public MainWindow()
         {
             InitializeComponent();
+            UpdateIU.Update(this, Codigos.ESTADO_INICIAL);
+
             config = configXML.leerConfig();
             LogErrorXML = new LoggerXML(config.errorLog);
             LogMediaXML = new LoggerXML(config.mediaLog);
             LogMediaXML = new LoggerXML(config.datosLog);
+            SeriesXML = new SeriesXML(config);
         }
 
 
@@ -68,8 +71,7 @@ namespace MediaFilm2
         private void RenombrarVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR);
-
-
+            GestorVideos.renombrarVideos(this);
             UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RENOMBRAR);
         }
     }

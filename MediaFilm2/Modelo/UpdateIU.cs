@@ -39,20 +39,24 @@ namespace MediaFilm2.Iconos
                     break;
                 case Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR:
                     mainWindow.panelResultadoErroresRenombrado.Children.Clear();
-                    mainWindow.panelResultadoPatronesEjecurados.Children.Clear();
+                    mainWindow.panelResultadoPatronesEjecutados.Children.Clear();
                     mainWindow.panelResultadoVideosRenombrados.Children.Clear();
                     break;
                 case Codigos.MOSTRAR_RESULTADOS_RECOGER:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Visible;
+                    mainWindow.PanelTiempoRecogido.Visibility = Visibility.Visible;
+
                     break;
-                case Codigos.MOSTRAR_RESULTADOS_ORDENAR:
+                case Codigos.MOSTRAR_RESULTADOS_RENOMBRAR:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Visible;
+                    mainWindow.panelTiempoRenombrado.Visibility = Visibility.Visible;
 
                     break;
+                    
                 default:
                     throw new UpdateIUException(cod);
             }
@@ -68,6 +72,8 @@ namespace MediaFilm2.Iconos
             mainWindow.consolaPanelVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
+            mainWindow.PanelTiempoRecogido.Visibility = Visibility.Collapsed;
+            mainWindow.panelTiempoRenombrado.Visibility = Visibility.Collapsed;
 
         }
     }

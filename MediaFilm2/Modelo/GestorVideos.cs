@@ -249,6 +249,7 @@ namespace MediaFilm2.Modelo
                                     if (cap >= 10) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
                                     else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
                                     if (fi != null)
+                                        ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension);
                                 }
                             }
                         }
@@ -258,6 +259,19 @@ namespace MediaFilm2.Modelo
 
             //mostrar tiempo
             mainWindow.labelTiempoOrden.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
+
+            //patrones 
+            Label tmpLabelPatrones = new Label();
+            tmpLabelPatrones.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabelPatrones.Content = numeroPatrones + " patrones ejecutados";
+            mainWindow.panelResultadoPatronesEjecutados.Children.Add(tmpLabelPatrones);
+
+            //series
+            Label tmpLabelSeries = new Label();
+            tmpLabelSeries.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabelSeries.Content = seriesActivas + " series activas";
+            mainWindow.panelResultadoPatronesEjecutados.Children.Add(tmpLabelSeries);
+
         }
         
 
@@ -317,7 +331,6 @@ namespace MediaFilm2.Modelo
             }
             return null;
         }
-
 
         #endregion
     }

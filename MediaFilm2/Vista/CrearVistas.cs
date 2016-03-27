@@ -43,9 +43,12 @@ namespace MediaFilm2
             return tmpLabel;
         }
 
-        internal static UIElement getLabelErrorRenombrando(string nombreOriginal)
+        internal static Label getLabelErrorRenombrando(string nombreOriginal)
         {
-            throw new NotImplementedException();
+            Label tmpLabel = new Label();
+            tmpLabel.Content = "Error renombrando: " + nombreOriginal;
+            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            return tmpLabel;
         }
     }
 }
