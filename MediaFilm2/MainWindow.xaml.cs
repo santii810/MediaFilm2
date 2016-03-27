@@ -60,7 +60,6 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.PANEL_ORDENAR_VIDEOS);
         }
 
-
         private void RecogerVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER);
@@ -73,6 +72,11 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR);
             GestorVideos.renombrarVideos(this);
             UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RENOMBRAR);
+        }
+
+        private void AddDatos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.PANEL_ADD_DATOS);
         }
     }
 }

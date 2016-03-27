@@ -11,13 +11,16 @@ namespace MediaFilm2
         public const int ESTADO_INICIAL = 0;
         public const int PANEL_ORDENAR_VIDEOS = 1;
         public const int LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER = 2;
-        public const int LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR = 21;
-        public const int MOSTRAR_RESULTADOS_RECOGER = 3;
-        public const int MOSTRAR_RESULTADOS_RENOMBRAR = 31;
+        public const int LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR = 3;
+        public const int MOSTRAR_RESULTADOS_RECOGER = 4;
+        public const int MOSTRAR_RESULTADOS_RENOMBRAR = 5;
+        public const int PANEL_ADD_DATOS = 6;
 
 
 
-        
+
+
+
         public const int a = 4;
         public const int b = 5;
         public const int c = 6;
