@@ -29,7 +29,7 @@ namespace MediaFilm2.Iconos
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.labelTiempoOrden.Content = "";
                     mainWindow.labelTiempoRecoger.Content = "";
-                    mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
+                    mainWindow.consolaPanelRenombrarVideos.Visibility = Visibility.Collapsed;
                     mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
                     break;
                 case Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RECOGER:
@@ -51,7 +51,7 @@ namespace MediaFilm2.Iconos
                 case Codigos.MOSTRAR_RESULTADOS_RENOMBRAR:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.consolaPanelVideos.Visibility = Visibility.Visible;
-                    mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Visible;
+                    mainWindow.consolaPanelRenombrarVideos.Visibility = Visibility.Visible;
                     mainWindow.panelTiempoRenombrado.Visibility = Visibility.Visible;
                     break;
                 case Codigos.PANEL_ADD_DATOS:
@@ -72,7 +72,7 @@ namespace MediaFilm2.Iconos
             mainWindow.panelOrdenarVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelRecogerVideos.Visibility = Visibility.Collapsed;
-            mainWindow.consolaPanelOrdenarVideos.Visibility = Visibility.Collapsed;
+            mainWindow.consolaPanelRenombrarVideos.Visibility = Visibility.Collapsed;
             mainWindow.PanelTiempoRecogido.Visibility = Visibility.Collapsed;
             mainWindow.panelTiempoRenombrado.Visibility = Visibility.Collapsed;
             mainWindow.panelAddDatos.Visibility = Visibility.Collapsed;
