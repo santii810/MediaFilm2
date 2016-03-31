@@ -38,7 +38,7 @@ namespace MediaFilm2
         internal static Label getLabelVideosRenombrados(string nombreOriginal, FileInfo fi)
         {
             Label tmpLabel = new Label();
-            tmpLabel.Content = nombreOriginal + "    =>    " + fi.Name + fi.Extension;
+            tmpLabel.Content = nombreOriginal + "    =>    " + fi.Name ;
             tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
             return tmpLabel;
         }
