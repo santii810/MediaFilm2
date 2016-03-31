@@ -14,3 +14,4 @@ C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.Properti
 C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.csproj.GenerateResource.Cache
 C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.exe
 C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\MediaFilm2.pdb
+C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\obj\Debug\DictionaryCopias.baml
