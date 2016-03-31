@@ -57,7 +57,7 @@
                             <Border Style="{StaticResource Border}">
                                 <StackPanel Width="325">
                                     <Label Content="Videos movidos: " Style="{StaticResource LabelTitulos}"/>
-                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <ScrollViewer>
                                         <StackPanel Name="panelResultadoVideosMovidos" Orientation="Vertical"/>
                                     </ScrollViewer>
                                 </StackPanel>
@@ -67,7 +67,7 @@
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel Height="185">
                                         <Label Content="Ficheros borrados: " Style="{StaticResource LabelTitulos}"/>
-                                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <ScrollViewer>
                                             <StackPanel Name="panelResultadoFicherosBorrados" />
                                         </ScrollViewer>
                                     </StackPanel>
@@ -104,7 +104,7 @@
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel  Width="320">
                                         <Label Content="Patrones ejecutados: " Style="{StaticResource LabelTitulos}"/>
-                                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <ScrollViewer >
                                             <StackPanel Name="panelResultadoPatronesEjecutados" Orientation="Vertical"/>
                                         </ScrollViewer>
                                     </StackPanel>
@@ -128,21 +128,25 @@
                     <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center">
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Titulo:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxTitulo" Width="200"/>
+                            <TextBox Name="textBoxTitulo" Width="200" Style="{StaticResource TextBox}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Temporadas:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxNumeroTemporadas" Width="200"/>
+                            <TextBox Name="textBoxNumeroTemporadas" Width="200" Style="{StaticResource TextBox}" KeyDown="textBoxNumeroTemporadas_KeyDown"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Capitulos:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxCapitulosTemporada" Width="200"/>
+                            <TextBox Name="textBoxCapitulosTemporada" Width="200" KeyDown="textBoxCapitulosTemporada_KeyDown" Style="{StaticResource TextBox}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Extension:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxExtension" Width="200"/>
+                            <ComboBox Name="comboBoxExtensionSerie" Text="Extension" Width="200" Style="{StaticResource ComboBoxFlatStyle}">
+                                <ComboBoxItem Name="mkv" Content=".mkv"/>
+                                <ComboBoxItem Name="avi" Content=".avi"/>
+                                <ComboBoxItem Name="mp4" Content=".mp4"/>
+                            </ComboBox>
                         </StackPanel>
-                        <Button Content="Añadir" Width="100" Height="25" Style="{StaticResource Button}"/>
+                        <Button Content="Añadir" Width="100" Height="25" Style="{StaticResource Button}" Click="ButtonAñadirSerie_Click"/>
                     </StackPanel>
                 </StackPanel>
 

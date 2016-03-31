@@ -78,5 +78,42 @@ namespace MediaFilm2
         {
             UpdateIU.Update(this, Codigos.PANEL_ADD_DATOS);
         }
+
+        private void ButtonAñadirSerie_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (Validar.validarAddSerie(this))
+                {
+                    SeriesXML.añadirSerie(new Serie
+                    {
+                        titulo = textBoxTitulo.Text,
+                        capitulosPorTemporada = Convert.ToInt32(textBoxCapitulosTemporada.Text),
+
+
+                    });
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Datos insertados incorrectos");
+            }
+        }
+
+        private void textBoxCapitulosTemporada_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void textBoxNumeroTemporadas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
     }
 }

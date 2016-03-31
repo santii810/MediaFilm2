@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DictionaryCopias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,19 +72,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Datos\SeriesXML.cs" />
-    <Compile Include="Modelo\Serie.cs" />
+    <Compile Include="Modelo\Clases\Serie.cs" />
     <Compile Include="Excepciones\TooManySerieCoincidencesException.cs" />
+    <Compile Include="Modelo\Validar.cs" />
     <Compile Include="Vista\CrearVistas.cs" />
     <Compile Include="Datos\ConfigXML.cs" />
     <Compile Include="Datos\LoggerXML.cs" />
-    <Compile Include="Modelo\Patron.cs" />
+    <Compile Include="Modelo\Clases\Patron.cs" />
     <Compile Include="Datos\PatronesXML.cs" />
-    <Compile Include="Modelo\Codigos.cs" />
-    <Compile Include="Modelo\Config.cs" />
+    <Compile Include="Modelo\Clases\Codigos.cs" />
+    <Compile Include="Modelo\Clases\Config.cs" />
     <Compile Include="Modelo\GestorVideos.cs" />
     <Compile Include="Excepciones\TipoArchivoNoSoportadoException.cs" />
-    <Compile Include="Modelo\Log.cs" />
-    <Compile Include="Modelo\UpdateIU.cs" />
+    <Compile Include="Modelo\Clases\Log.cs" />
+    <Compile Include="Vista\UpdateIU.cs" />
     <Compile Include="Excepciones\UpdateIUException.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
