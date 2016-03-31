@@ -24,13 +24,23 @@ namespace MediaFilm2
 
 
     
-        internal static Label getVistaSeleccionarSerie(Serie item)
+        internal static StackPanel getVistaSeleccionarSerie(Serie item)
         {
+            StackPanel tmpPanel = new StackPanel();
+            tmpPanel.Orientation = Orientation.Horizontal;
+
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = item.titulo;
-            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelResultados"];
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpPanel.Children.Add(tmpLabelTitulo);
 
-            return tmpLabelTitulo;
+
+            Button tmpButton = new Button();
+            tmpButton.Content = "Seleccionar";
+
+            tmpPanel.Children.Add(tmpButton);
+
+            return tmpPanel;
         }
     }
 }

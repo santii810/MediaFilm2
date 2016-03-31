@@ -253,8 +253,7 @@ namespace MediaFilm2.Modelo
             int seriesActivas = 0;
             int errores = 0;
             int videosRenombrados = 0;
-            mainWindow.series = mainWindow.SeriesXML.leerSeries();
-            mainWindow.series.Sort();
+            mainWindow.actualizarListaSeries();
             foreach (Serie itSerie in mainWindow.series)
             {
                 if (itSerie.estado.Equals("A"))
