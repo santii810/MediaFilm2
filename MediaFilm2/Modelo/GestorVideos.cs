@@ -1,4 +1,6 @@
 ﻿
+using MediaFilm2;
+using MediaFilm2.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -131,7 +133,6 @@ namespace MediaFilm2.Modelo
             directoriosBorrados = borrarDirectoriosVacios(mainWindow.config.dirTorrent);
             Directory.CreateDirectory(mainWindow.config.dirTorrent);
 
-           
             mainWindow.labelNumeroFicherosBorrados.Content = ficherosBorrados;
             mainWindow.labelNumeroErroresRecogiendo.Content = errores;
             mainWindow.labelNumeroVideosMovidos.Content = videosMovidos;
@@ -252,6 +253,8 @@ namespace MediaFilm2.Modelo
             Stopwatch tiempo = Stopwatch.StartNew();
             int numeroPatrones = 0;
             int seriesActivas = 0;
+            int errores = 0;
+            int videosRenombrados = 0;
             mainWindow.series = mainWindow.SeriesXML.leerSeries();
             mainWindow.series.Sort();
             foreach (Serie itSerie in mainWindow.series)
@@ -298,7 +301,10 @@ namespace MediaFilm2.Modelo
                                     if (cap >= 10) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
                                     else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
                                     if (fi != null)
-                                        ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension);
+                                        if (ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension))
+                                            videosRenombrados++;
+                                        else
+                                            errores++;
                                 }
                             }
                         }
@@ -315,6 +321,12 @@ namespace MediaFilm2.Modelo
             //series
             mainWindow.panelResultadoPatronesEjecutados.Children.Add(CrearVistas.getLabelResultado(seriesActivas + " series activas"));
 
+            //errores
+            mainWindow.labelNumeroErroresRenombrando.Content = errores;
+
+            //videos renombrados
+            mainWindow.labelNumeroVideosRenombrados.Content = videosRenombrados;
+
         }
 
 
@@ -328,7 +340,7 @@ namespace MediaFilm2.Modelo
         /// <param name="cap">The capitulo.</param>
         /// <param name="ext">The extension.</param>
         /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
-        private static void ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+        private static bool ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
         {
             string nombreOriginal = fi.Name;
             //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
@@ -345,11 +357,14 @@ namespace MediaFilm2.Modelo
                 }
                 mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
                 mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelResultado(nombreOriginal + "    =>    " + fi.Name));
+                return true;
+
             }
             catch (Exception e)
             {
                 mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
                 mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
+                return false;
             }
         }
 
