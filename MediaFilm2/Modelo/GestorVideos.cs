@@ -15,7 +15,6 @@ namespace MediaFilm2.Modelo
 {
     static public class GestorVideos
     {
-
         #region Recorrer torrent
         public static void recogerTorrent(MainWindow mainWindow)
         {
@@ -245,8 +244,7 @@ namespace MediaFilm2.Modelo
         }
 
         #endregion
-
-
+        
         #region Renombrar videos
         public static void renombrarVideos(MainWindow mainWindow)
         {
@@ -321,6 +319,9 @@ namespace MediaFilm2.Modelo
             //series
             mainWindow.panelResultadoPatronesEjecutados.Children.Add(CrearVistas.getLabelResultado(seriesActivas + " series activas"));
 
+            //series
+            mainWindow.panelResultadoPatronesEjecutados.Children.Add(CrearVistas.getLabelResultado(contarFicherosARenombrar(mainWindow) + " ficheros a renombrar"));
+
             //errores
             mainWindow.labelNumeroErroresRenombrando.Content = errores;
 
@@ -390,6 +391,22 @@ namespace MediaFilm2.Modelo
             return null;
         }
 
+
+        /// <summary>
+        /// Cuenta los ficheros de tipo video que hay en el directorio de trabajo.
+        /// </summary>
+        /// <returns>Numero de ficheros con extension de video en el directorio de trabajo</returns>
+        /// <exception cref="DirectoryNotFoundException">Directorio de trabajo no encontrado</exception>
+       static private int contarFicherosARenombrar(MainWindow mainWindow)
+        {
+            int retorno = 0;
+            DirectoryInfo dir = new DirectoryInfo(mainWindow.config.dirTrabajo);
+            if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
+            FileSystemInfo[] filesInfo = dir.GetFileSystemInfos();
+            foreach (FileInfo item in filesInfo)
+                if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
+            return retorno;
+        }
         #endregion
     }
 }
