@@ -83,15 +83,22 @@ namespace MediaFilm2
         {
             try
             {
+                string[] extensiones = { ".mkv", ".avi", ".mp4" };
                 if (Validar.validarAddSerie(this))
                 {
                     SeriesXML.añadirSerie(new Serie
                     {
                         titulo = textBoxTitulo.Text,
                         capitulosPorTemporada = Convert.ToInt32(textBoxCapitulosTemporada.Text),
-
-
+                        estado = "A",
+                        extension = extensiones[comboBoxExtensionSerie.SelectedIndex],
+                        numeroTemporadas = Convert.ToInt32(textBoxNumeroTemporadas.Text),
+                        temporadaActual = 1
                     });
+
+                    MessageBox.Show("Serie añadida correctamente");
+                    UpdateIU.Update(this, Codigos.COD_ADD_SERIE_OK);
+
                 }
             }
             catch (Exception)
@@ -114,6 +121,16 @@ namespace MediaFilm2
                 e.Handled = false;
             else
                 e.Handled = true;
+        }
+
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void ImageAddSerie_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.COD_ADD_SERIE);
         }
     }
 }

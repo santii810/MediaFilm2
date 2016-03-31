@@ -57,7 +57,18 @@ namespace MediaFilm2.Iconos
                 case Codigos.PANEL_ADD_DATOS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     break;
-                    
+                case Codigos.COD_ADD_SERIE:
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    mainWindow.panelAddSerie.Visibility = Visibility.Visible;
+
+                    break;
+                case Codigos.COD_ADD_SERIE_OK:
+                    mainWindow.textBoxCapitulosTemporada.Text = "";
+                    mainWindow.textBoxNumeroTemporadas.Text = "";
+                    mainWindow.textBoxTitulo.Text = "";
+                    mainWindow.comboBoxExtensionSerie.SelectedIndex = -1;
+                    break;
+
                 default:
                     throw new UpdateIUException(cod);
             }
@@ -76,6 +87,7 @@ namespace MediaFilm2.Iconos
             mainWindow.PanelTiempoRecogido.Visibility = Visibility.Collapsed;
             mainWindow.panelTiempoRenombrado.Visibility = Visibility.Collapsed;
             mainWindow.panelAddDatos.Visibility = Visibility.Collapsed;
+            mainWindow.panelAddSerie.Visibility = Visibility.Collapsed;
 
 
         }

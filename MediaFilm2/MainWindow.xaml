@@ -118,7 +118,7 @@
                     <StackPanel Name="panelBotonesAddDatos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical"  Margin="20,0">
                             <Label Content="Añadir serie"  Style="{StaticResource LabelTitulos}"/>
-                            <Image Source="Iconos\film.png" Height="120"/>
+                            <Image Source="Iconos\film.png" Height="120" MouseLeftButtonUp="ImageAddSerie_MouseLeftButtonUp"/>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" Margin="20,0">
                             <Label Content="Añadir patron"  Style="{StaticResource LabelTitulos}"/>
