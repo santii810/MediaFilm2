@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediaFilm2.Modelo;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace MediaFilm2
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = (item.Name);
-            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
         }
 
@@ -23,7 +24,7 @@ namespace MediaFilm2
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = "Error borrando: " + (item.Name);
-            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
         }
 
@@ -31,7 +32,7 @@ namespace MediaFilm2
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = "Error borrando: " + (item.Name);
-            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
         }
 
@@ -39,7 +40,7 @@ namespace MediaFilm2
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = nombreOriginal + "    =>    " + fi.Name ;
-            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
         }
 
@@ -47,8 +48,21 @@ namespace MediaFilm2
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = "Error renombrando: " + nombreOriginal;
-            tmpLabel.Style = (Style)Application.Current.Resources["Label1"];
+            tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
+        }
+
+        internal static Label getVistaSeleccionarSerie(Serie item)
+        {
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = item.titulo;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelResultados"];
+
+
+
+
+
+            return tmpLabelTitulo;
         }
     }
 }

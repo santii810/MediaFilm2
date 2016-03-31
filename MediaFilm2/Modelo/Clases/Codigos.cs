@@ -15,17 +15,14 @@ namespace MediaFilm2
         public const int MOSTRAR_RESULTADOS_RECOGER = 4;
         public const int MOSTRAR_RESULTADOS_RENOMBRAR = 5;
         public const int PANEL_ADD_DATOS = 6;
-        public const int COD_ADD_SERIE = 7;
-        public const int COD_ADD_SERIE_OK = 8;
+        public const int ADD_SERIE = 7;
+        public const int ADD_SERIE_OK = 8;
+        public const int ADD_PATRON = 9;
+        public const int ADD_PATRON_SERIE_SELEC = 10;
+        
 
 
 
-
-
-
-
-        public const int f = 9;
-        public const int g = 10;
         public const int h = 11;
         public const int i = 12;
         public const int j = 13;

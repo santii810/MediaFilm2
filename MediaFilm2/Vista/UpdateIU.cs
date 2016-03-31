@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediaFilm2.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace MediaFilm2.Iconos
             switch (cod)
             {
                 case Codigos.ESTADO_INICIAL:
+
+
+
 
                     break;
                 case Codigos.PANEL_ORDENAR_VIDEOS:
@@ -57,22 +61,33 @@ namespace MediaFilm2.Iconos
                 case Codigos.PANEL_ADD_DATOS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     break;
-                case Codigos.COD_ADD_SERIE:
+                case Codigos.ADD_SERIE:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelAddSerie.Visibility = Visibility.Visible;
 
                     break;
-                case Codigos.COD_ADD_SERIE_OK:
+                case Codigos.ADD_SERIE_OK:
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    mainWindow.panelAddSerie.Visibility = Visibility.Visible;
                     mainWindow.textBoxCapitulosTemporada.Text = "";
                     mainWindow.textBoxNumeroTemporadas.Text = "";
                     mainWindow.textBoxTitulo.Text = "";
                     mainWindow.comboBoxExtensionSerie.SelectedIndex = -1;
                     break;
-
+                case Codigos.ADD_PATRON:
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    mainWindow.panelAddPatron.Visibility = Visibility.Visible;
+                    mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
+                    rellenaPanelSeleccionarSeries(mainWindow);
+                    break;
+                case Codigos.ADD_PATRON_SERIE_SELEC:
+                    mainWindow.panelNuevoPatron.Visibility = Visibility.Visible;
+                    break;
                 default:
                     throw new UpdateIUException(cod);
             }
         }
+
 
         private static void collapseAll(MainWindow mainWindow)
         {
@@ -88,8 +103,20 @@ namespace MediaFilm2.Iconos
             mainWindow.panelTiempoRenombrado.Visibility = Visibility.Collapsed;
             mainWindow.panelAddDatos.Visibility = Visibility.Collapsed;
             mainWindow.panelAddSerie.Visibility = Visibility.Collapsed;
+            mainWindow.panelAddPatron.Visibility = Visibility.Collapsed;
+            mainWindow.panelAddPatron.Visibility = Visibility.Collapsed;
+            mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Collapsed;
 
 
+
+        }
+
+        private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
+        {
+            foreach (Serie item in mainWindow.series)
+            {
+            mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(item));
+            }
         }
     }
 }

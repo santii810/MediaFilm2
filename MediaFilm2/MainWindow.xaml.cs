@@ -97,7 +97,7 @@ namespace MediaFilm2
                     });
 
                     MessageBox.Show("Serie añadida correctamente");
-                    UpdateIU.Update(this, Codigos.COD_ADD_SERIE_OK);
+                    UpdateIU.Update(this, Codigos.ADD_SERIE_OK);
 
                 }
             }
@@ -130,7 +130,13 @@ namespace MediaFilm2
 
         private void ImageAddSerie_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            UpdateIU.Update(this, Codigos.COD_ADD_SERIE);
+            UpdateIU.Update(this, Codigos.ADD_SERIE);
+        }
+
+
+        private void ImageAddPatron_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.ADD_PATRON);
         }
     }
 }

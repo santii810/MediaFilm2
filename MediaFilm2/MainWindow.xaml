@@ -122,10 +122,10 @@
                         </StackPanel>
                         <StackPanel Orientation="Vertical" Margin="20,0">
                             <Label Content="Añadir patron"  Style="{StaticResource LabelTitulos}"/>
-                            <Image Source="Iconos\patron.png" Height="120"/>
+                            <Image Source="Iconos\patron.png" Height="120" MouseLeftButtonUp="ImageAddPatron_MouseLeftButtonUp_1"/>
                         </StackPanel>
                     </StackPanel>
-                    <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center">
+                    <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center" Visibility="Collapsed">
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Titulo:" Style="{StaticResource LabelAddSerie}"/>
                             <TextBox Name="textBoxTitulo" Width="200" Style="{StaticResource TextBox}"/>
@@ -148,6 +148,17 @@
                         </StackPanel>
                         <Button Content="Añadir" Width="100" Height="25" Style="{StaticResource Button}" Click="ButtonAñadirSerie_Click"/>
                     </StackPanel>
+
+                    <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420">
+                        <ScrollViewer>
+                            <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="340" Style="{StaticResource StackPanelBordes}" />
+                        </ScrollViewer>
+
+                        <StackPanel Name="panelNuevoPatron" Width="340"/>
+
+
+                    </StackPanel>
+
                 </StackPanel>
 
             </Grid>
