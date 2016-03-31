@@ -30,6 +30,14 @@
         <Setter Property="Foreground" Value="Red"/>
         <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
     </Style>
+    <Style x:Key="LabelNumeroVideos" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontStyle" Value="Italic"/>
+        <Setter Property="Foreground" Value="Red"/>
+        <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
+    </Style>
 
     <Style x:Key="Border" TargetType="{x:Type Border}">
         <Setter Property="BorderBrush" Value="Bisque"/>

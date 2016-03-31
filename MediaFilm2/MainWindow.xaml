@@ -26,7 +26,7 @@
             <!--#region paneles principales -->
             <Grid Name="panelSecundario" Visibility="Visible">
 
-                <StackPanel Name="panelOrdenarVideos" Orientation="Vertical" Visibility="Collapsed">
+                <StackPanel Name="panelOrdenarVideos" Orientation="Vertical" Visibility="Visible">
                     <StackPanel Name="botonesPanelOrdenarVideos" Orientation="Horizontal" Height="165">
                         <StackPanel Orientation="Vertical">
                             <Label Content="Recoger videos" Width="150" Style="{StaticResource LabelTitulos}"/>
@@ -53,10 +53,13 @@
                     </StackPanel>
 
                     <StackPanel Name="consolaPanelVideos" Orientation="Horizontal" Width="660" Height="390">
-                        <StackPanel Name="consolaPanelRecogerVideos"  Orientation="Horizontal"  Visibility="Visible">
+                        <StackPanel Name="consolaPanelRecogerVideos"  Orientation="Horizontal"  Visibility="Collapsed">
                             <Border Style="{StaticResource Border}">
                                 <StackPanel Width="325">
-                                    <Label Content="Videos movidos: " Style="{StaticResource LabelTitulos}"/>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Label Content="Videos movidos: " Style="{StaticResource LabelTitulos}"/>
+                                        <Label Name="labelNumeroVideosMovidos" Style="{StaticResource LabelNumeroVideos}"/>
+                                    </StackPanel>
                                     <ScrollViewer>
                                         <StackPanel Name="panelResultadoVideosMovidos" Orientation="Vertical"/>
                                     </ScrollViewer>
@@ -66,7 +69,10 @@
                             <StackPanel Width="325">
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel Height="185">
-                                        <Label Content="Ficheros borrados: " Style="{StaticResource LabelTitulos}"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Label Content="Ficheros borrados: " Style="{StaticResource LabelTitulos}"/>
+                                            <Label Name="labelNumeroFicherosBorrados"  Style="{StaticResource LabelNumeroVideos}"/>
+                                        </StackPanel>
                                         <ScrollViewer>
                                             <StackPanel Name="panelResultadoFicherosBorrados" />
                                         </ScrollViewer>
@@ -74,7 +80,10 @@
                                 </Border>
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel Height="185">
-                                        <Label Content="Errores: " Style="{StaticResource LabelTitulos}"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Label Content="Errores: " Style="{StaticResource LabelTitulos}"/>
+                                            <Label Name="labelNumeroErroresRecogiendo"  Style="{StaticResource LabelNumeroVideos}"/>
+                                        </StackPanel>
                                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                                             <StackPanel Name="panelResultadoErroresMoviendo"/>
                                         </ScrollViewer>
@@ -83,10 +92,13 @@
                             </StackPanel>
                         </StackPanel>
 
-                        <StackPanel Name="consolaPanelRenombrarVideos"  Orientation="Vertical" Visibility="Collapsed">
+                        <StackPanel Name="consolaPanelRenombrarVideos"  Orientation="Vertical" Visibility="Visible">
                             <Border Style="{StaticResource Border}">
                                 <StackPanel  Width="650" Height="185">
-                                    <Label Content="Videos renombrados: " Style="{StaticResource LabelTitulos}"/>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Label Content="Videos renombrados: " Style="{StaticResource LabelTitulos}"/>
+                                        <Label Name="labelNumeroVideosRenombrados" Style="{StaticResource LabelNumeroVideos}"/>
+                                    </StackPanel>
                                     <ScrollViewer VerticalScrollBarVisibility="Auto">
                                         <StackPanel Name="panelResultadoVideosRenombrados" Orientation="Vertical"/>
                                     </ScrollViewer>
@@ -95,7 +107,10 @@
                             <StackPanel Orientation="Horizontal"  Height="185">
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel Width="320">
-                                        <Label Content="Errores: " Style="{StaticResource LabelTitulos}"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Label Content="Errores: " Style="{StaticResource LabelTitulos}"/>
+                                            <Label Name="labelNumeroErroresRenombrando" Style="{StaticResource LabelNumeroVideos}"/>
+                                        </StackPanel>
                                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                                             <StackPanel Name="panelResultadoErroresRenombrado" Orientation="Vertical"/>
                                         </ScrollViewer>
@@ -114,7 +129,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Visible">
+                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Collapsed">
                     <StackPanel Name="panelBotonesAddDatos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical"  Margin="20,0">
                             <Label Content="Añadir serie"  Style="{StaticResource LabelTitulos}"/>

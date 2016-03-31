@@ -18,6 +18,9 @@ namespace MediaFilm2.Modelo
         public static void recogerTorrent(MainWindow mainWindow)
         {
             int directoriosBorrados = 0;
+            int ficherosBorrados = 0;
+            int videosMovidos = 0;
+            int errores = 0;
 
             Stopwatch tiempo = Stopwatch.StartNew();
 
@@ -38,46 +41,88 @@ namespace MediaFilm2.Modelo
                     //borrar
                     case ".txt":
                         if (borrarFichero(item, mainWindow))
+                        {
+                            ficherosBorrados++;
                             mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error borrando: " +item.Name));
+                        {
+                            errores++;
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error borrando: " + item.Name));
+                        }
                         break;
                     case ".!ut":
                         if (borrarFichero(item, mainWindow))
+                        {
+                            ficherosBorrados++;
                             mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error borrando: " + item.Name));
+                        }
                         break;
                     case ".url":
                         if (borrarFichero(item, mainWindow))
+                        {
+                            ficherosBorrados++;
                             mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error borrando: " + item.Name));
+                        }
                         break;
                     case ".jpg":
                         if (borrarFichero(item, mainWindow))
+                        {
+                            ficherosBorrados++;
                             mainWindow.panelResultadoFicherosBorrados.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error borrando: " + item.Name));
+                        }
                         break;
                     //mover
                     case ".avi":
                         if (moverFichero(item, mainWindow))
+                        {
+                            videosMovidos++;
                             mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
+                        }
                         break;
                     case ".mkv":
                         if (moverFichero(item, mainWindow))
+                        {
+                            videosMovidos++;
                             mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
+                        }
                         break;
                     case ".mp4":
                         if (moverFichero(item, mainWindow))
+                        {
+                            videosMovidos++;
                             mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                        }
                         else
+                        {
+                            errores++;
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
+                        }
                         break;
                     default:
                         throw new TipoArchivoNoSoportadoException(item);
@@ -86,6 +131,10 @@ namespace MediaFilm2.Modelo
             directoriosBorrados = borrarDirectoriosVacios(mainWindow.config.dirTorrent);
             Directory.CreateDirectory(mainWindow.config.dirTorrent);
 
+           
+            mainWindow.labelNumeroFicherosBorrados.Content = ficherosBorrados;
+            mainWindow.labelNumeroErroresRecogiendo.Content = errores;
+            mainWindow.labelNumeroVideosMovidos.Content = videosMovidos;
 
             //mostrar tiempo
             mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
@@ -267,7 +316,7 @@ namespace MediaFilm2.Modelo
             mainWindow.panelResultadoPatronesEjecutados.Children.Add(CrearVistas.getLabelResultado(seriesActivas + " series activas"));
 
         }
-        
+
 
         /// <summary>
         /// Mueve los ficheros.
