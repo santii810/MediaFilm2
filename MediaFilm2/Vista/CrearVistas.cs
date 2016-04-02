@@ -41,7 +41,7 @@ namespace MediaFilm2
             Button tmpButton = new Button();
             tmpButton.Click += delegate {
                 buttonSeleccionarSerie_Click(mainWindow,item); };
-            tmpButton.Style = (Style)Application.Current.Resources["MetroButton"];
+            tmpButton.Style = (Style)Application.Current.Resources["Button"];
 
             tmpButton.Content = "Seleccionar";
 

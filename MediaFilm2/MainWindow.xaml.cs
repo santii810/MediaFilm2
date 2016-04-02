@@ -32,6 +32,7 @@ namespace MediaFilm2
         public LoggerXML LogMediaXML;
         public LoggerXML LogDatosXML;
         public SeriesXML SeriesXML;
+        public PatronesXML PatronesXML;
 
         //Estructuras
         public List<Serie> series = new List<Serie>();
@@ -48,6 +49,7 @@ namespace MediaFilm2
             LogMediaXML = new LoggerXML(config.mediaLog);
             LogMediaXML = new LoggerXML(config.datosLog);
             SeriesXML = new SeriesXML(config);
+            PatronesXML = new PatronesXML(config);
         }
 
 
@@ -117,11 +119,11 @@ namespace MediaFilm2
                 {
                     SeriesXML.añadirSerie(new Serie
                     {
-                        titulo = textBoxTitulo.Text,
-                        capitulosPorTemporada = Convert.ToInt32(textBoxCapitulosTemporada.Text),
+                        titulo = textBoxTitulo.Text.Trim(),
+                        capitulosPorTemporada = Convert.ToInt32(textBoxCapitulosTemporada.Text.Trim()),
                         estado = "A",
                         extension = extensiones[comboBoxExtensionSerie.SelectedIndex],
-                        numeroTemporadas = Convert.ToInt32(textBoxNumeroTemporadas.Text),
+                        numeroTemporadas = Convert.ToInt32(textBoxNumeroTemporadas.Text.Trim()),
                         temporadaActual = 1
                     });
 
@@ -145,5 +147,14 @@ namespace MediaFilm2
         }
 
 
+        private void ButtonAddPatron_Click(object sender, RoutedEventArgs e)
+        {
+           if(Validar.validarAddPatron(this))
+            {
+                PatronesXML.añadirPatron(new Patron { nombreSerie = serieSeleccionada.titulo, textoPatron = textBoxNuevoPatron.Text.Trim() });
+                serieSeleccionada.getPatrones(config);
+                UpdateIU.Update(this, Codigos.ADD_PATRON_SERIE_SELEC);
+            }
+        }
     }
 }

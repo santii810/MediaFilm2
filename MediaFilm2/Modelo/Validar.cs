@@ -12,16 +12,16 @@ namespace MediaFilm2.Modelo
 
         public static bool validarAddSerie(MainWindow mainWindow)
         {
-            if (mainWindow.textBoxTitulo.Text == "")
+            if (mainWindow.textBoxTitulo.Text.Trim() == "")
             {
                 MessageBox.Show("El titulo de la serie no puede estar vacio");
                 return false;
             }
-            if (mainWindow.textBoxCapitulosTemporada.Text == "")
+            if (mainWindow.textBoxCapitulosTemporada.Text.Trim() == "")
             {
                 mainWindow.textBoxCapitulosTemporada.Text = "25";
             }
-            if (mainWindow.textBoxNumeroTemporadas.Text == "")
+            if (mainWindow.textBoxNumeroTemporadas.Text.Trim() == "")
             {
                 mainWindow.textBoxNumeroTemporadas.Text = "1";
             }
@@ -31,6 +31,13 @@ namespace MediaFilm2.Modelo
             }
 
 
+            return true;
+        }
+
+        internal static bool validarAddPatron(MainWindow mainWindow)
+        {
+            if (mainWindow.textBoxNuevoPatron.Text.Trim() == "")
+                return false;
             return true;
         }
     }

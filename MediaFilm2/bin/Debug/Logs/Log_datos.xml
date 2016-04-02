@@ -294,4 +294,10 @@
   <Log tipo="Renombrado" fichero="A:\Series\Better call Saul\Temporada2\Better call Saul 207.avi" fecha="31/03/2016 15:59:22" mensaje="Fichero 'Better.Call.Saul.2x07.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Better call Saul\Temporada2\Better call Saul 207.avi'" />
   <Log tipo="Renombrado" fichero="A:\Series\The Flash\Temporada2\The Flash 207.mkv" fecha="31/03/2016 15:59:24" mensaje="Fichero 'The Flash 720p 2x07 [www.newpct1.com].mkv' renombrado a 'A:\Series\The Flash\Temporada2\The Flash 207.mkv'" />
   <Log tipo="Renombrado" fichero="A:\Series\The Flash\Temporada2\The Flash 208.mkv" fecha="31/03/2016 15:59:24" mensaje="Fichero 'Tflsh208720p [www.newpct1.com].mkv' renombrado a 'A:\Series\The Flash\Temporada2\The Flash 208.mkv'" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 17:56:56" mensaje="Serie 'a' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 17:56:57" mensaje="patron 'a-a' añadido correctamente a serie " />
+  <Log tipo="Movido" fecha="02/04/2016 18:06:26" mensaje="Fichero 'Scorpion.2x18.HDTV.XviD.[www.DivxTotaL.com].avi' movido a 'A:\Iomega\Scorpion.2x18.HDTV.XviD.[www.DivxTotaL.com].avi'" />
+  <Log tipo="Renombrado" fichero="A:\Series\a\Temporada1\a 101.mkv" fecha="02/04/2016 18:06:31" mensaje="Fichero 'Asc101720p [www.newpct1.com].mkv' renombrado a 'A:\Series\a\Temporada1\a 101.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\a\Temporada1\a 102.mkv" fecha="02/04/2016 18:06:31" mensaje="Fichero 'Asc102720p [www.newpct1.com].mkv' renombrado a 'A:\Series\a\Temporada1\a 102.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\Scorpion\Temporada2\Scorpion 218.avi" fecha="02/04/2016 18:06:32" mensaje="Fichero 'Scorpion.2x18.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Scorpion\Temporada2\Scorpion 218.avi'" />
 </Logs>

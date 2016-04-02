@@ -143,15 +143,15 @@
                     <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center" Visibility="Collapsed">
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Titulo:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxTitulo" Width="200" Style="{StaticResource TextBox}"/>
+                            <TextBox Name="textBoxTitulo" Width="200" Style="{StaticResource TextBoxAddSerie}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Temporadas:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxNumeroTemporadas" Width="200" Style="{StaticResource TextBox}" KeyDown="textBoxNumeroTemporadas_KeyDown"/>
+                            <TextBox Name="textBoxNumeroTemporadas" Width="200" Style="{StaticResource TextBoxAddSerie}" KeyDown="textBoxNumeroTemporadas_KeyDown"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Capitulos:" Style="{StaticResource LabelAddSerie}"/>
-                            <TextBox Name="textBoxCapitulosTemporada" Width="200" KeyDown="textBoxCapitulosTemporada_KeyDown" Style="{StaticResource TextBox}"/>
+                            <TextBox Name="textBoxCapitulosTemporada" Width="200" KeyDown="textBoxCapitulosTemporada_KeyDown" Style="{StaticResource TextBoxAddSerie}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Extension:" Style="{StaticResource LabelAddSerie}"/>
@@ -179,17 +179,15 @@
                             </Border>
                             <Border Style="{StaticResource Border}">
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal">
-                                        <Label Content="Texto patron"/>
-                                        <TextBox Name="textBoxNuevoPatron" Width="150" Style="{StaticResource TextBox}"/>
-                                        <Button Content="Añadir" />
+                                    <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal" >
+                                        <Label Content="Texto patron" Width="100" Style="{StaticResource LabelListaSeries}"/>
+                                        <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}"/>
+                                        <Button Content="Añadir" Style="{StaticResource Button}" Click="ButtonAddPatron_Click"/>
                                     </StackPanel>
-                                    
+
                                 </ScrollViewer>
                             </Border>
                         </StackPanel>
-
-
                     </StackPanel>
 
                 </StackPanel>

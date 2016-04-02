@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace MediaFilm2.Datos
 {
-    class PatronesXML
+   public class PatronesXML
     {
         string nombreFichero;
         XmlDocument documento;
