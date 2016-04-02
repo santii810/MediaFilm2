@@ -26,6 +26,7 @@
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
+        <Setter Property="Width" Value="200"/>
     </Style>
     <Style x:Key="LabelTiempo" TargetType="{x:Type Label}">
         <Setter Property="FontSize" Value="30"/>
@@ -59,6 +60,10 @@
 
     <Style x:Key="StackPanelAddSerie" TargetType="{x:Type StackPanel}">
         <Setter Property="Margin" Value="0,5"/>
+    </Style>
+    <Style x:Key="StackPanelSeleccionarSerie" TargetType="{x:Type StackPanel}">
+        <Setter Property="Margin" Value="0,5"/>
+        <Setter Property="Width" Value="340"/>
     </Style>
     <Style x:Key="StackPanelBordes" TargetType="{x:Type StackPanel}">
         <Setter Property="Margin" Value="0,5"/>

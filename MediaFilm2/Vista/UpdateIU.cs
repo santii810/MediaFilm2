@@ -1,4 +1,5 @@
-﻿using MediaFilm2.Modelo;
+﻿using MediaFilm2.Excepciones;
+using MediaFilm2.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace MediaFilm2.Iconos
+namespace MediaFilm2.Vista
 {
     static class UpdateIU
     {
@@ -81,7 +82,11 @@ namespace MediaFilm2.Iconos
                     rellenaPanelSeleccionarSeries(mainWindow);
                     break;
                 case Codigos.ADD_PATRON_SERIE_SELEC:
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    mainWindow.panelAddPatron.Visibility = Visibility.Visible;
+                    mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
                     mainWindow.panelNuevoPatron.Visibility = Visibility.Visible;
+                    rellenaPanelPatronesActuales(mainWindow);
                     break;
                 default:
                     throw new UpdateIUException(cod);
@@ -113,10 +118,21 @@ namespace MediaFilm2.Iconos
 
         private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
         {
+            mainWindow.panelSeleccionarSeriePatron.Children.Clear();
             foreach (Serie item in mainWindow.series)
             {
-            mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(item));
+                mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
             }
         }
+
+        private static void rellenaPanelPatronesActuales(MainWindow mainWindow)
+        {
+            mainWindow.panelPatronesActuales.Children.Clear();
+            foreach (Patron item in  mainWindow.serieSeleccionada.patrones)
+            {
+                mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaPatronesActuales(item));
+            }
+        }
+
     }
 }

@@ -166,10 +166,12 @@
 
                     <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420">
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="340" Style="{StaticResource StackPanelBordes}" />
+                            <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="340" Style="{StaticResource StackPanelSeleccionarSerie}" />
                         </ScrollViewer>
 
-                        <StackPanel Name="panelNuevoPatron" Width="340"/>
+                        <StackPanel Name="panelNuevoPatron" Width="340">
+                            <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"></StackPanel>
+                        </StackPanel>
 
 
                     </StackPanel>

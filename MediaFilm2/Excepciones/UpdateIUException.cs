@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using System.Windows;
 
-namespace MediaFilm2.Iconos
+namespace MediaFilm2.Excepciones
 {
     [Serializable]
     internal class UpdateIUException : Exception

@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using System.Windows;
 
-namespace MediaFilm2.Modelo
+namespace MediaFilm2.Excepciones
 {
     [Serializable]
     internal class TooManySerieCoincidencesException : Exception

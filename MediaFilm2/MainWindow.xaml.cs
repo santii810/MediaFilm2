@@ -1,6 +1,7 @@
 ﻿using MediaFilm2.Datos;
-using MediaFilm2.Iconos;
+
 using MediaFilm2.Modelo;
+using MediaFilm2.Vista;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,7 @@ namespace MediaFilm2
         //Estructuras
         public List<Serie> series = new List<Serie>();
 
+        public Serie serieSeleccionada;
 
         public MainWindow()
         {
@@ -47,6 +49,7 @@ namespace MediaFilm2
             LogMediaXML = new LoggerXML(config.datosLog);
             SeriesXML = new SeriesXML(config);
         }
+
 
         internal void actualizarListaSeries()
         {

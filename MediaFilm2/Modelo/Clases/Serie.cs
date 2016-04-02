@@ -21,20 +21,24 @@ namespace MediaFilm2.Modelo
         {
             this.patrones.Add(pat);
         }
+
         public void getPatrones(Config config)
         {
             PatronesXML xmlPat = new PatronesXML(config);
             patrones = xmlPat.leerPatrones(titulo);
 
         }
+
         public void limpiarPatrones()
         {
             patrones.Clear();
         }
+
         public int CompareTo(Serie obj)
         {
             return String.Compare(this.titulo, obj.titulo);
         }
+
         public int CompareTo(object obj)
         {
             Serie tmp = (Serie)obj;

@@ -1,5 +1,6 @@
 ﻿
 using MediaFilm2;
+using MediaFilm2.Excepciones;
 using MediaFilm2.Modelo;
 using System;
 using System.Collections.Generic;
