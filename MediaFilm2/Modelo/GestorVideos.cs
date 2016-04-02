@@ -141,6 +141,7 @@ namespace MediaFilm2.Modelo
             mainWindow.labelTiempoRecoger.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
         }
 
+
         /// <summary>
         /// funcion recursiva que devuelve todos los ficheros dentro de la carpeta.
         /// </summary>
@@ -378,8 +379,17 @@ namespace MediaFilm2.Modelo
                 return true;
 
             }
+        catch(IOException e)
+            {
+                if (e.Message == "No se puede crear un archivo que ya existe.\r\n")
+                    fi.Delete();
+                mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("(Borrado) Error renombrando: " + nombreOriginal));
+                return false;
+
+            }
             catch (Exception e)
             {
+                
                 mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
                 mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
                 return false;
@@ -425,5 +435,23 @@ namespace MediaFilm2.Modelo
             return retorno;
         }
         #endregion
+
+
+
+
+
+
+        /// <summary>
+        /// Gets the ficheros a renombrar.
+        /// </summary>
+        /// <param name="mainWindow">The main window.</param>
+        /// <returns></returns>
+        /// <exception cref="DirectoryNotFoundException">Directorio de trabajo no encontrado</exception>
+        internal static FileSystemInfo[] getFicherosARenombrar(MainWindow mainWindow)
+        {
+            DirectoryInfo dir = new DirectoryInfo(mainWindow.config.dirTrabajo);
+            if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
+            return dir.GetFileSystemInfos();
+        }
     }
 }

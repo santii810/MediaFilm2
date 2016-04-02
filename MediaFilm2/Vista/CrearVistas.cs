@@ -70,7 +70,7 @@ namespace MediaFilm2
         {
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = "Series";
-            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
+
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
             return tmpLabelTitulo;
         }
@@ -78,9 +78,17 @@ namespace MediaFilm2
         {
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = "Patrones actuales";
-            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
+        
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
             return tmpLabelTitulo;
+        }
+
+        internal static UIElement getVistaFicheroARenombrar(string name)
+        {
+            Label tmpLabelFichero = new Label();
+            tmpLabelFichero.Content = name;
+            tmpLabelFichero.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            return tmpLabelFichero;
         }
     }
 }

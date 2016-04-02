@@ -119,7 +119,7 @@
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel  Width="320">
                                         <Label Content="Patrones ejecutados: " Style="{StaticResource LabelTitulos}"/>
-                                            <StackPanel Name="panelResultadoPatronesEjecutados" Orientation="Vertical"/>
+                                        <StackPanel Name="panelResultadoPatronesEjecutados" Orientation="Vertical"/>
                                     </StackPanel>
                                 </Border>
                             </StackPanel>
@@ -166,34 +166,41 @@
                         <Button Content="Añadir" Width="100" Height="25" Style="{StaticResource Button}" Click="ButtonAñadirSerie_Click"/>
                     </StackPanel>
 
-                    <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420" Visibility="Collapsed">
+                    <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420" Visibility="Visible">
                         <Border Style="{StaticResource Border}">
                             <ScrollViewer VerticalScrollBarVisibility="Auto">
                                 <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
                             </ScrollViewer>
                         </Border>
 
-                        <StackPanel Name="panelNuevoPatron" Width="320">
+                        <StackPanel Orientation="Vertical" Width="320">
                             <Border Style="{StaticResource Border}">
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"/>
+                                    <StackPanel Name="panelFicherosARenombrar" Orientation="Vertical" Height="150"/>
                                 </ScrollViewer>
                             </Border>
-                            <Border Style="{StaticResource Border}">
-                                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal" >
-                                        <Label Content="Texto patron" Width="100" Style="{StaticResource LabelListaSeries}"/>
-                                        <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}" KeyDown="textBoxNuevoPatron_KeyDown"/>
-                                        <Button Content="Añadir" Style="{StaticResource Button}" Click="ButtonAddPatron_Click"/>
-                                    </StackPanel>
-                                </ScrollViewer>
-                            </Border>
+                            <StackPanel Name="panelNuevoPatron" >
+                                <Border Style="{StaticResource Border}">
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"/>
+                                    </ScrollViewer>
+                                </Border>
+                                <Border Style="{StaticResource Border}">
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal" >
+                                            <Label Content="Texto patron" Width="100" Style="{StaticResource LabelListaSeries}"/>
+                                            <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}" KeyDown="textBoxNuevoPatron_KeyDown"/>
+                                            <Button Content="Añadir" Style="{StaticResource Button}" Click="ButtonAddPatron_Click"/>
+                                        </StackPanel>
+                                    </ScrollViewer>
+                                </Border>
+                            </StackPanel>
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Name="IOSerie"></StackPanel>
-                    
-                    
+
+
                 </StackPanel>
 
             </Grid>

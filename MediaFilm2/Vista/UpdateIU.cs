@@ -2,6 +2,7 @@
 using MediaFilm2.Modelo;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,18 +80,25 @@ namespace MediaFilm2.Vista
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelAddPatron.Visibility = Visibility.Visible;
                     mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
+                    mainWindow.panelFicherosARenombrar.Visibility = Visibility.Visible;
                     rellenaPanelSeleccionarSeries(mainWindow);
+                    rellenaPanelFicherosARenombrar(mainWindow);
+
                     break;
                 case Codigos.ADD_PATRON_SERIE_SELEC:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelAddPatron.Visibility = Visibility.Visible;
                     mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
                     mainWindow.panelNuevoPatron.Visibility = Visibility.Visible;
-                                       rellenaPanelPatronesActuales(mainWindow);
+                    mainWindow.panelFicherosARenombrar.Visibility = Visibility.Visible;
+                    rellenaPanelFicherosARenombrar(mainWindow);
+                    rellenaPanelPatronesActuales(mainWindow);
                     break;
                 case Codigos.ADD_PATRON_OK:
                     mainWindow.textBoxNuevoPatron.Text = "";
                     Update(mainWindow ,Codigos.ADD_PATRON_SERIE_SELEC);
+                    
+
 
                     break;
                 default:
@@ -117,12 +125,17 @@ namespace MediaFilm2.Vista
             mainWindow.panelAddPatron.Visibility = Visibility.Collapsed;
             mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Collapsed;
             mainWindow.panelNuevoPatron.Visibility = Visibility.Collapsed;
-
-
-
+            mainWindow.panelFicherosARenombrar.Visibility = Visibility.Collapsed;
 
         }
 
+        private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
+        {
+
+            foreach (FileInfo item in GestorVideos.getFicherosARenombrar(mainWindow))
+                if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4"))
+                    mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaFicheroARenombrar(item.Name));
+        }
         private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
