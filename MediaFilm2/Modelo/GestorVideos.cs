@@ -245,7 +245,7 @@ namespace MediaFilm2.Modelo
         }
 
         #endregion
-        
+
         #region Renombrar videos
         public static void renombrarVideos(MainWindow mainWindow)
         {
@@ -292,26 +292,38 @@ namespace MediaFilm2.Modelo
                                     itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.avi",
                                     itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.avi",
                                     temp.ToString()+"x"+cap.ToString()+"*"+itPatron.textoPatron+"*.avi",
-                              };
 
-                                for (int i = 0; i < 6; i++)
-                                {
-                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
-                                    else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
-                                    if (fi != null)
-                                        if (ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension))
-                                            videosRenombrados++;
-                                        else
-                                            errores++;
-                                }
+                                    //patrones especiales
+                                    itPatron.textoPatron+temp + "(" + cap.ToString()+ ")" + ".avi",
+                                    itPatron.textoPatron+temp + "(" + cap.ToString()+ ")" + ".mkv"
+                            };
+
+                            /* 
+                            Los ultimos 2 patrones no dependen de si el capitulo es mayor o menor que 10
+                            luego se ejecuta 1 vez cada patron cuando i pasa por las posiciones 6 y 7
+                            como los patrones estan en la posicion 12 y 13 respectivamente se suma 6 a la i
+
+                            Los patrones de capitulos mayores que 10 estan en las posiciones del 7 al 12
+                            asi que si el numero del capitulo es >=  10 se coge la posicion 6+i
+                            */
+                            for (int i = 0; i < 8; i++)
+                            {
+                                if (cap >= 10 || i > 5) fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i + 6]);
+                                else fi = obtenerCoincidenciaBusqueda(mainWindow, strPatrones[i]);
+                                if (fi != null)
+                                    if (ejecutarMovimiento(mainWindow, fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension))
+                                        videosRenombrados++;
+                                    else
+                                        errores++;
                             }
                         }
                     }
                 }
             }
+        }
 
-            //mostrar tiempo
-            mainWindow.labelTiempoOrden.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
+        //mostrar tiempo
+        mainWindow.labelTiempoOrden.Content = tiempo.ElapsedMilliseconds.ToString() + " ms";
 
             //patrones 
             mainWindow.panelResultadoPatronesEjecutados.Children.Add(CrearVistas.getLabelResultado(numeroPatrones + " patrones ejecutados"));
@@ -331,82 +343,82 @@ namespace MediaFilm2.Modelo
         }
 
 
-        /// <summary>
-        /// Mueve los ficheros.
-        /// </summary>
-        /// <param name="fi">Fichero a mover</param>
-        /// <param name="dirSerie">Directorio de destino</param>
-        /// <param name="titulo">Titulo del fichero.</param>
-        /// <param name="temp">The temporada.</param>
-        /// <param name="cap">The capitulo.</param>
-        /// <param name="ext">The extension.</param>
-        /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
-        private static bool ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+    /// <summary>
+    /// Mueve los ficheros.
+    /// </summary>
+    /// <param name="fi">Fichero a mover</param>
+    /// <param name="dirSerie">Directorio de destino</param>
+    /// <param name="titulo">Titulo del fichero.</param>
+    /// <param name="temp">The temporada.</param>
+    /// <param name="cap">The capitulo.</param>
+    /// <param name="ext">The extension.</param>
+    /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
+    private static bool ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+    {
+        string nombreOriginal = fi.Name;
+        //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
+        Directory.CreateDirectory(dirSerie);
+        try
         {
-            string nombreOriginal = fi.Name;
-            //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
-            Directory.CreateDirectory(dirSerie);
-            try
+            if (cap < 10)
             {
-                if (cap < 10)
-                {
-                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
-                }
-                else
-                {
-                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + cap + ext);
-                }
-                mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
-                mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelResultado(nombreOriginal + "    =>    " + fi.Name));
-                return true;
+                fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+            }
+            else
+            {
+                fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + cap + ext);
+            }
+            mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
+            mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelResultado(nombreOriginal + "    =>    " + fi.Name));
+            return true;
 
-            }
-            catch (Exception e)
-            {
-                mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
-                mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
-                return false;
-            }
         }
-
-        /// <summary>
-        /// Busca en el directorio de trabajo si existe algun fichero que coincida con el patron enviado.
-        /// </summary>
-        /// <param name="pat">Patron a buscar</param>
-        /// <returns>FileInfo del fichero si hay coincidencias</returns>
-        /// <exception cref="TooManySerieCoincidencesException"></exception>
-        static private FileInfo obtenerCoincidenciaBusqueda(MainWindow mainWindow, string pat)
+        catch (Exception e)
         {
-            DirectoryInfo iomegaInfo = new DirectoryInfo(mainWindow.config.dirTrabajo);
-            FileSystemInfo[] fsi;
-            fsi = iomegaInfo.GetFileSystemInfos(pat);
-            if (fsi.Length == 1 && fsi[0] is FileInfo)
-            {
-                return (FileInfo)fsi[0];
-            }
-            if (fsi.Length > 1)
-            {
-                throw new TooManySerieCoincidencesException(pat);
-            }
-            return null;
+            mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
+            mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
+            return false;
         }
-
-
-        /// <summary>
-        /// Cuenta los ficheros de tipo video que hay en el directorio de trabajo.
-        /// </summary>
-        /// <returns>Numero de ficheros con extension de video en el directorio de trabajo</returns>
-        /// <exception cref="DirectoryNotFoundException">Directorio de trabajo no encontrado</exception>
-       static private int contarFicherosARenombrar(MainWindow mainWindow)
-        {
-            int retorno = 0;
-            DirectoryInfo dir = new DirectoryInfo(mainWindow.config.dirTrabajo);
-            if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
-            FileSystemInfo[] filesInfo = dir.GetFileSystemInfos();
-            foreach (FileInfo item in filesInfo)
-                if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
-            return retorno;
-        }
-        #endregion
     }
+
+    /// <summary>
+    /// Busca en el directorio de trabajo si existe algun fichero que coincida con el patron enviado.
+    /// </summary>
+    /// <param name="pat">Patron a buscar</param>
+    /// <returns>FileInfo del fichero si hay coincidencias</returns>
+    /// <exception cref="TooManySerieCoincidencesException"></exception>
+    static private FileInfo obtenerCoincidenciaBusqueda(MainWindow mainWindow, string pat)
+    {
+        DirectoryInfo iomegaInfo = new DirectoryInfo(mainWindow.config.dirTrabajo);
+        FileSystemInfo[] fsi;
+        fsi = iomegaInfo.GetFileSystemInfos(pat);
+        if (fsi.Length == 1 && fsi[0] is FileInfo)
+        {
+            return (FileInfo)fsi[0];
+        }
+        if (fsi.Length > 1)
+        {
+            throw new TooManySerieCoincidencesException(pat);
+        }
+        return null;
+    }
+
+
+    /// <summary>
+    /// Cuenta los ficheros de tipo video que hay en el directorio de trabajo.
+    /// </summary>
+    /// <returns>Numero de ficheros con extension de video en el directorio de trabajo</returns>
+    /// <exception cref="DirectoryNotFoundException">Directorio de trabajo no encontrado</exception>
+    static private int contarFicherosARenombrar(MainWindow mainWindow)
+    {
+        int retorno = 0;
+        DirectoryInfo dir = new DirectoryInfo(mainWindow.config.dirTrabajo);
+        if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
+        FileSystemInfo[] filesInfo = dir.GetFileSystemInfos();
+        foreach (FileInfo item in filesInfo)
+            if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
+        return retorno;
+    }
+    #endregion
+}
 }
