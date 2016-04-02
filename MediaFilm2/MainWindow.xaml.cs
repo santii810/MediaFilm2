@@ -155,6 +155,18 @@ namespace MediaFilm2
                 serieSeleccionada.getPatrones(config);
                 UpdateIU.Update(this, Codigos.ADD_PATRON_OK);
             }
+            else
+            {
+                MessageBox.Show("Patron invalido");
+            }
+        }
+
+        private void textBoxNuevoPatron_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                ButtonAddPatron_Click(new object(), new RoutedEventArgs());
+            }
         }
     }
 }

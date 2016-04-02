@@ -91,7 +91,6 @@ namespace MediaFilm2.Vista
                 case Codigos.ADD_PATRON_OK:
                     mainWindow.textBoxNuevoPatron.Text = "";
                     Update(mainWindow ,Codigos.ADD_PATRON_SERIE_SELEC);
-                    MessageBox.Show("Patron añadido correctamente");
 
                     break;
                 default:

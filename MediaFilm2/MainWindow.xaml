@@ -181,7 +181,7 @@
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                                     <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal" >
                                         <Label Content="Texto patron" Width="100" Style="{StaticResource LabelListaSeries}"/>
-                                        <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}"/>
+                                        <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}" KeyDown="textBoxNuevoPatron_KeyDown"/>
                                         <Button Content="Añadir" Style="{StaticResource Button}" Click="ButtonAddPatron_Click"/>
                                     </StackPanel>
 
