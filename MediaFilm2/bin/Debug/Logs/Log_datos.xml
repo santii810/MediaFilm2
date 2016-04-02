@@ -300,4 +300,7 @@
   <Log tipo="Renombrado" fichero="A:\Series\a\Temporada1\a 101.mkv" fecha="02/04/2016 18:06:31" mensaje="Fichero 'Asc101720p [www.newpct1.com].mkv' renombrado a 'A:\Series\a\Temporada1\a 101.mkv'" />
   <Log tipo="Renombrado" fichero="A:\Series\a\Temporada1\a 102.mkv" fecha="02/04/2016 18:06:31" mensaje="Fichero 'Asc102720p [www.newpct1.com].mkv' renombrado a 'A:\Series\a\Temporada1\a 102.mkv'" />
   <Log tipo="Renombrado" fichero="A:\Series\Scorpion\Temporada2\Scorpion 218.avi" fecha="02/04/2016 18:06:32" mensaje="Fichero 'Scorpion.2x18.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Scorpion\Temporada2\Scorpion 218.avi'" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 18:12:49" mensaje="patron '666 Park Avenue-123' añadido correctamente a serie " />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 18:14:35" mensaje="patron '666 Park Avenue-12' añadido correctamente a serie " />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 18:15:10" mensaje="patron '666 Park Avenue-34' añadido correctamente a serie " />
 </Logs>

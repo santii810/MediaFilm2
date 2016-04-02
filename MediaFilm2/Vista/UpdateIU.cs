@@ -86,8 +86,13 @@ namespace MediaFilm2.Vista
                     mainWindow.panelAddPatron.Visibility = Visibility.Visible;
                     mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
                     mainWindow.panelNuevoPatron.Visibility = Visibility.Visible;
-                   
-                    rellenaPanelPatronesActuales(mainWindow);
+                                       rellenaPanelPatronesActuales(mainWindow);
+                    break;
+                case Codigos.ADD_PATRON_OK:
+                    mainWindow.textBoxNuevoPatron.Text = "";
+                    Update(mainWindow ,Codigos.ADD_PATRON_SERIE_SELEC);
+                    MessageBox.Show("Patron añadido correctamente");
+
                     break;
                 default:
                     throw new UpdateIUException(cod);

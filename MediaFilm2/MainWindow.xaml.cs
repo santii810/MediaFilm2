@@ -153,7 +153,7 @@ namespace MediaFilm2
             {
                 PatronesXML.añadirPatron(new Patron { nombreSerie = serieSeleccionada.titulo, textoPatron = textBoxNuevoPatron.Text.Trim() });
                 serieSeleccionada.getPatrones(config);
-                UpdateIU.Update(this, Codigos.ADD_PATRON_SERIE_SELEC);
+                UpdateIU.Update(this, Codigos.ADD_PATRON_OK);
             }
         }
     }
