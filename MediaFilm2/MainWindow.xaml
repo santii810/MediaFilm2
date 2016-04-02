@@ -165,12 +165,18 @@
                     </StackPanel>
 
                     <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420">
-                        <ScrollViewer VerticalScrollBarVisibility="Auto">
-                            <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="340" Style="{StaticResource StackPanelSeleccionarSerie}" />
-                        </ScrollViewer>
+                        <Border Style="{StaticResource Border}">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
+                            </ScrollViewer>
+                        </Border>
 
-                        <StackPanel Name="panelNuevoPatron" Width="340">
-                            <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"></StackPanel>
+                        <StackPanel Name="panelNuevoPatron" Width="320">
+                            <Border Style="{StaticResource Border}">
+                                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"></StackPanel>
+                                </ScrollViewer>
+                            </Border>
                         </StackPanel>
 
 

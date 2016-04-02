@@ -86,6 +86,7 @@ namespace MediaFilm2.Vista
                     mainWindow.panelAddPatron.Visibility = Visibility.Visible;
                     mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Visible;
                     mainWindow.panelNuevoPatron.Visibility = Visibility.Visible;
+                   
                     rellenaPanelPatronesActuales(mainWindow);
                     break;
                 default:
@@ -111,6 +112,8 @@ namespace MediaFilm2.Vista
             mainWindow.panelAddPatron.Visibility = Visibility.Collapsed;
             mainWindow.panelAddPatron.Visibility = Visibility.Collapsed;
             mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Collapsed;
+            mainWindow.panelNuevoPatron.Visibility = Visibility.Collapsed;
+
 
 
 
