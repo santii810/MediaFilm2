@@ -17,6 +17,11 @@ namespace MediaFilm2.Modelo
                 MessageBox.Show("El titulo de la serie no puede estar vacio");
                 return false;
             }
+            if (mainWindow.textBoxTitulo.Text.Trim().Length<3)
+            {
+                MessageBox.Show("El titulo de la serie debe ser de al menos 3 caracteres");
+                return false;
+            }
             if (mainWindow.textBoxCapitulosTemporada.Text.Trim() == "")
             {
                 mainWindow.textBoxCapitulosTemporada.Text = "25";
@@ -37,6 +42,8 @@ namespace MediaFilm2.Modelo
         internal static bool validarAddPatron(MainWindow mainWindow)
         {
             if (mainWindow.textBoxNuevoPatron.Text.Trim() == "")
+                return false;
+            if (mainWindow.textBoxNuevoPatron.Text.Trim().Length<2)
                 return false;
             return true;
         }
