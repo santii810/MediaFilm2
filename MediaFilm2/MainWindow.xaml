@@ -119,9 +119,7 @@
                                 <Border Style="{StaticResource Border}">
                                     <StackPanel  Width="320">
                                         <Label Content="Patrones ejecutados: " Style="{StaticResource LabelTitulos}"/>
-                                        <ScrollViewer >
                                             <StackPanel Name="panelResultadoPatronesEjecutados" Orientation="Vertical"/>
-                                        </ScrollViewer>
                                     </StackPanel>
                                 </Border>
                             </StackPanel>
