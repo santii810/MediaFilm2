@@ -50,6 +50,10 @@ namespace MediaFilm2
             LogMediaXML = new LoggerXML(config.datosLog);
             SeriesXML = new SeriesXML(config);
             PatronesXML = new PatronesXML(config);
+
+
+
+    
         }
 
 

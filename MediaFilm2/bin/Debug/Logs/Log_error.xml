@@ -127,4 +127,536 @@
   <Log tipo="Error renombrando" fichero="A:\Iomega\The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi" fecha="02/04/2016 19:34:50" mensaje="Fichero 'The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi' no se ha podido renombrar a  'A:\Iomega\The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi' /nSystem.IO.IOException: No se puede crear un archivo que ya existe.&#xD;&#xA;&#xD;&#xA;   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)&#xD;&#xA;   en System.IO.__Error.WinIOError()&#xD;&#xA;   en System.IO.FileInfo.MoveTo(String destFileName)&#xD;&#xA;   en MediaFilm2.Modelo.GestorVideos.ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, String dirSerie, String titulo, Int32 temp, Int32 cap, String ext) en C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\Modelo\GestorVideos.cs:línea 371" />
   <Log tipo="Error renombrando" fichero="A:\Iomega\2.Chicas.Sin.Blanca.5x07.HDTV.XviD.[www.DivxTotaL.com].avi" fecha="02/04/2016 19:44:04" mensaje="Fichero '2.Chicas.Sin.Blanca.5x07.HDTV.XviD.[www.DivxTotaL.com].avi' no se ha podido renombrar a  'A:\Iomega\2.Chicas.Sin.Blanca.5x07.HDTV.XviD.[www.DivxTotaL.com].avi' /nSystem.IO.IOException: No se puede crear un archivo que ya existe.&#xD;&#xA;&#xD;&#xA;   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)&#xD;&#xA;   en System.IO.__Error.WinIOError()&#xD;&#xA;   en System.IO.FileInfo.MoveTo(String destFileName)&#xD;&#xA;   en MediaFilm2.Modelo.GestorVideos.ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, String dirSerie, String titulo, Int32 temp, Int32 cap, String ext) en C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\Modelo\GestorVideos.cs:línea 371" />
   <Log tipo="Error renombrando" fichero="A:\Iomega\The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi" fecha="02/04/2016 19:44:07" mensaje="Fichero 'The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi' no se ha podido renombrar a  'A:\Iomega\The.Flash.2x05.HDTV.XviD.[www.DivxTotaL.com].avi' /nSystem.IO.IOException: No se puede crear un archivo que ya existe.&#xD;&#xA;&#xD;&#xA;   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)&#xD;&#xA;   en System.IO.__Error.WinIOError()&#xD;&#xA;   en System.IO.FileInfo.MoveTo(String destFileName)&#xD;&#xA;   en MediaFilm2.Modelo.GestorVideos.ejecutarMovimiento(MainWindow mainWindow, FileInfo fi, String dirSerie, String titulo, Int32 temp, Int32 cap, String ext) en C:\Users\sgomez\Repositorios\MediaFilm2\MediaFilm2\Modelo\GestorVideos.cs:línea 371" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie '666 Park Avenue' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Agents of SHIELD' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Allegiance' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Almost Human' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Alphas' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'American dad' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'American Summer' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Amigos con suerte' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Apocalipsis en el instituto' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Arrow' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Ataque a los titanes' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'BackStorm' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Banshee' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Bates Motel' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Benched' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Betrayal' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Better call Saul' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Between' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Big Time in Hollywood' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Black Mirror' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'BloodLine' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Boardwalk Empire' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Breaking bad' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Broadchurch' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Bron' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Brotherhood' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Catastrophe' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Chuck' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Community' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Como conoci a vuestra madre' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Crisis' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Crosing lines' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Daredevil' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Dates' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Da Vinci demons' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Defiance' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Dexter' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:14" mensaje="Serie 'Dominion' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Dos hombres y medio' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Dos chicas sin blanca' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'El mentalista' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'El Ministerio del tiempo' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'El ultimo hombre en la tierra' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Elementary' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Episodes' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Eres lo peor' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Eureka' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Falling Skies' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Familia de acogida' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Fargo' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Fear the walking dead' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Finales felices' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Forever' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Fortitude' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Fringe' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Generation kill' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Getting on' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Gotham' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Grace and Frankie' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Graceland' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hannibal' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hart of Dixie' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Helix' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hello ladies' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hemlock grove' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Heroes Reborn' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hijos del tercer Reich' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Hope' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'House of cards' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'House of lies' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'In the flesh' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Inteligence' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Into the badlands' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Invisible' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Killjoys' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'La cupula' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Ladron de guante blanco' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Las cronicas de shanara' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Legends' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Les revenant' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Looking' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Los cien' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Los crimenes de Fjallbacka' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Los farsantes' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Louie' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Mad Men' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Manhattan' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Manhattan Love Story' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Masters of sex' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Men at work' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Misfits' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Mob City' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Modern Family' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Mom' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Mozart in the jungle' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Mr selfridge' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Nashville' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Orange is the new black' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Outlander' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Padre de familia' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Peaky Blinders' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Penny Dreadful' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Peque¤as mentirosas' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Perception' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Person of interest' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Powers' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Ray Donovan' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Real humans' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Recien llegados' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Refugiados' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Rehenes' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Residue' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Revolution' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Roma criminal' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Scandal' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Scorpion' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Sense 8' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'ShadownHunters' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Silicon Valley' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Sleepy Hollow' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Sons of anarchy' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Star Wars Rebels' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'Suits' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'The affair' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'The Americans' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'The big bang theory' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'The blacklist' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:15" mensaje="Serie 'The Bridge' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The brink' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Client List' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The crazy ones' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Flash' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Following' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Following' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The frankenstein chronicles' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The leftovers' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Millers' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Mindy Proyect' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The newsroom' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The returned' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The strain' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Walking Dead' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The Wrong Mans' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Transparent' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Transporter' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Trophy Wife' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Unbreakable Kimmy Schmidt' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Vaya Vecinos' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Veep' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Vikingos' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Vivo con modelos' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Wilfred' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'El sequito' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Black Sails' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Angie Tribeca' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Sin limites' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Las cronicas de shannara' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'The last man of the earth' ya existe" />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:01:16" mensaje="Serie 'Ascension' ya existe" />
+  <Log tipo="Error" fecha="02/04/2016 20:02:22" mensaje="patron '666 Park Avenue-666 Park Avenue' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:22" mensaje="patron '666 Park Avenue-666.Park.Avenue' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Agents of SHIELD-Agents of SHIELD' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Agents of SHIELD-Agents.of.SHIELD' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Allegiance-Allegiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Allegiance-Allegiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Allegiance-Allegiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Almost Human-Almost Human' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Almost Human-Almost.Human' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Alphas-Alphas' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Alphas-Alphas' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Alphas-Alphas' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'American dad-American dad' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'American dad-American.dad' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'American Summer-American Summer' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'American Summer-American.Summer' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Amigos con suerte-Amigos con suerte' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Amigos con suerte-Amigos.con.suerte' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Apocalipsis en el instituto-Apocalipsis en el instituto' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Apocalipsis en el instituto-Apocalipsis.en.el.instituto' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Arrow-Arrow' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Arrow-Arrow' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Arrow-Arrow' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Ataque a los titanes-Ataque a los titanes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Ataque a los titanes-Ataque.a.los.titanes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BackStorm-BackStorm' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BackStorm-BackStorm' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BackStorm-BackStorm' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Banshee-Banshee' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Banshee-Banshee' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Banshee-Banshee' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Bates Motel-Bates Motel' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Bates Motel-Bates.Motel' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Benched-Benched' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Benched-Benched' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Benched-Benched' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Betrayal-Betrayal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Betrayal-Betrayal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Betrayal-Betrayal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Better call Saul-Better call Saul' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Better call Saul-Better.call.Saul' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Between-Between' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Between-Between' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Between-Between' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Big Time in Hollywood-Big Time in Hollywood' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Big Time in Hollywood-Big.Time.in.Hollywood' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Black Mirror-Black Mirror' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Black Mirror-Black.Mirror' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BloodLine-BloodLine' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BloodLine-BloodLine' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'BloodLine-BloodLine' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Boardwalk Empire-Boardwalk Empire' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Boardwalk Empire-Boardwalk.Empire' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Breaking bad-Breaking bad' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Breaking bad-Breaking.bad' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Broadchurch-Broadchurch' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Broadchurch-Broadchurch' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:23" mensaje="patron 'Broadchurch-Broadchurch' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Bron-Bron' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Bron-Bron' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Bron-Bron' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Brotherhood-Brotherhood' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Brotherhood-Brotherhood' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Brotherhood-Brotherhood' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Catastrophe-Catastrophe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Catastrophe-Catastrophe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Catastrophe-Catastrophe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Chuck-Chuck' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Chuck-Chuck' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Chuck-Chuck' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Community-Community' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Community-Community' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Community-Community' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Como conoci a vuestra madre-Como conoci a vuestra madre' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Como conoci a vuestra madre-Como.conoci.a.vuestra.madre' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Crisis-Crisis' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Crisis-Crisis' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Crisis-Crisis' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Crosing lines-Crosing lines' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Crosing lines-Crosing.lines' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Daredevil-Daredevil' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Daredevil-Daredevil' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Daredevil-Daredevil' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dates-Dates' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dates-Dates' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dates-Dates' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Da Vinci demons-Da Vinci demons' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Da Vinci demons-Da.Vinci.demons' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Defiance-Defiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Defiance-Defiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Defiance-Defiance' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dexter-Dexter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dexter-Dexter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dexter-Dexter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dominion-Dominion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dominion-Dominion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dominion-Dominion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos hombres y medio-Dos hombres y medio' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos hombres y medio-Dos.hombres.y.medio' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos chicas sin blanca-Dos.chicas.sin.blanca' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El mentalista-El mentalista' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El mentalista-El.mentalista' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El Ministerio del tiempo-El Ministerio del tiempo' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El Ministerio del tiempo-El.Ministerio.del.tiempo' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El ultimo hombre en la tierra-El ultimo hombre en la tierra' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'El ultimo hombre en la tierra-El.ultimo.hombre.en.la.tierra' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Elementary-Elementary' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Elementary-Elementary' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Elementary-Elementary' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Episodes-Episodes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Episodes-Episodes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Episodes-Episodes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Eres lo peor-Eres lo peor' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Eres lo peor-Eres.lo.peor' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Eureka-Eureka' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:24" mensaje="patron 'Eureka-Eureka' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Eureka-Eureka' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Falling Skies-Falling Skies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Falling Skies-Falling.Skies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Familia de acogida-Familia de acogida' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Familia de acogida-Familia.de.acogida' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fargo-Fargo' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fargo-Fargo' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fargo-Fargo' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fear the walking dead-Fear the walking dead' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fear the walking dead-Fear.the.walking.dead' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Finales felices-Finales felices' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Finales felices-Finales.felices' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Forever-Forever' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Forever-Forever' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Forever-Forever' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fortitude-Fortitude' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fortitude-Fortitude' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fortitude-Fortitude' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fringe-Fringe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fringe-Fringe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Fringe-Fringe' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Generation kill-Generation kill' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Generation kill-Generation.kill' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Getting on-Getting on' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Getting on-Getting.on' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Gotham-Gotham' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Gotham-Gotham' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Gotham-Gotham' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Grace and Frankie-Grace and Frankie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Grace and Frankie-Grace.and.Frankie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Graceland-Graceland' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Graceland-Graceland' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Graceland-Graceland' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hannibal-Hannibal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hannibal-Hannibal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hannibal-Hannibal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hart of Dixie-Hart of Dixie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hart of Dixie-Hart.of.Dixie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Helix-Helix' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Helix-Helix' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Helix-Helix' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hello ladies-Hello ladies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hello ladies-Hello.ladies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hemlock grove-Hemlock grove' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hemlock grove-Hemlock.grove' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Heroes Reborn-Heroes Reborn' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Heroes Reborn-Heroes.Reborn' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hijos del tercer Reich-Hijos del tercer Reich' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hijos del tercer Reich-Hijos.del.tercer.Reich' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hope-Hope' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hope-Hope' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'Hope-Hope' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'House of cards-House of cards' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:25" mensaje="patron 'House of cards-House.of.cards' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'House of lies-House of lies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'House of lies-House.of.lies' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'In the flesh-In the flesh' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'In the flesh-In.the.flesh' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Inteligence-Inteligence' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Inteligence-Inteligence' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Inteligence-Inteligence' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Into the badlands-Into the badlands' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Into the badlands-Into.the.badlands' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Invisible-Invisible' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Invisible-Invisible' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Invisible-Invisible' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Killjoys-Killjoys' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Killjoys-Killjoys' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Killjoys-Killjoys' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'La cupula-La cupula' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'La cupula-La.cupula' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Ladron de guante blanco-Ladron de guante blanco' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Ladron de guante blanco-Ladron.de.guante.blanco' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Legends-Legends' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Legends-Legends' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Legends-Legends' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Les revenant-Les revenant' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Les revenant-Les.revenant' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Looking-Looking' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Looking-Looking' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Looking-Looking' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los cien-Los cien' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los cien-Los.cien' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los crimenes de Fjallbacka-Los crimenes de Fjallbacka' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los crimenes de Fjallbacka-Los.crimenes.de.Fjallbacka' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los farsantes-Los farsantes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Los farsantes-Los.farsantes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Louie-Louie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Louie-Louie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Louie-Louie' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Mad Men-Mad Men' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Mad Men-Mad.Men' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan-Manhattan' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan-Manhattan' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan-Manhattan' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan Love Story-Manhattan Love Story' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan Love Story-Manhattan.Love.Story' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Masters of sex-Masters of sex' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:26" mensaje="patron 'Masters of sex-Masters.of.sex' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Men at work-Men at work' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Men at work-Men.at.work' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Misfits-Misfits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Misfits-Misfits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Misfits-Misfits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mob City-Mob City' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mob City-Mob.City' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Modern Family-Modern Family' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Modern Family-Modern.Family' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mom-Mom' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mom-Mom' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mom-Mom' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mozart in the jungle-Mozart in the jungle' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mozart in the jungle-Mozart.in.the.jungle' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mr selfridge-Mr selfridge' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Mr selfridge-Mr.selfridge' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Nashville-Nashville' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Nashville-Nashville' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Nashville-Nashville' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Orange is the new black-Orange is the new black' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Orange is the new black-Orange.is.the.new.black' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Outlander-Outlander' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Outlander-Outlander' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Outlander-Outlander' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Padre de familia-Padre de familia' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Padre de familia-Padre.de.familia' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Peaky Blinders-Peaky Blinders' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Peaky Blinders-Peaky.Blinders' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Penny Dreadful-Penny Dreadful' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Penny Dreadful-Penny.Dreadful' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Peque¤as mentirosas-Peque¤as mentirosas' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Peque¤as mentirosas-Peque¤as.mentirosas' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Perception-Perception' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Perception-Perception' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Perception-Perception' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Person of interest-Person of interest' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Person of interest-Person.of.interest' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Powers-Powers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Powers-Powers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Powers-Powers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Ray Donovan-Ray Donovan' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Ray Donovan-Ray.Donovan' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Real humans-Real humans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Real humans-Real.humans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Recien llegados-Recien llegados' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:27" mensaje="patron 'Recien llegados-Recien.llegados' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Refugiados-Refugiados' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Refugiados-Refugiados' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Refugiados-Refugiados' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Rehenes-Rehenes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Rehenes-Rehenes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Rehenes-Rehenes' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Residue-Residue' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Residue-Residue' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Residue-Residue' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Revolution-Revolution' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Revolution-Revolution' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Revolution-Revolution' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Roma criminal-Roma criminal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Roma criminal-Roma.criminal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scandal-Scandal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scandal-Scandal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scandal-Scandal' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scorpion-Scorpion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scorpion-Scorpion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Scorpion-Scorpion' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sense 8-Sense 8' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sense 8-Sense.8' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'ShadownHunters-ShadownHunters' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'ShadownHunters-ShadownHunters' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'ShadownHunters-ShadownHunters' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Silicon Valley-Silicon Valley' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Silicon Valley-Silicon.Valley' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sleepy Hollow-Sleepy Hollow' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sleepy Hollow-Sleepy.Hollow' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sons of anarchy-Sons of anarchy' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Sons of anarchy-Sons.of.anarchy' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Star Wars Rebels-Star Wars Rebels' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Star Wars Rebels-Star.Wars.Rebels' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Suits-Suits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Suits-Suits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'Suits-Suits' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The affair-The affair' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The affair-The.affair' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The Americans-The Americans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The Americans-The.Americans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The big bang theory-The big bang theory' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The big bang theory-The.big.bang.theory' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The blacklist-The blacklist' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The blacklist-The.blacklist' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:28" mensaje="patron 'The Bridge-The Bridge' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Bridge-The.Bridge' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The brink-The brink' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The brink-The.brink' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Client List-The Client List' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Client List-The.Client.List' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The crazy ones-The crazy ones' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The crazy ones-The.crazy.ones' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Flash-The Flash' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Flash-The.Flash' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Following-The Following' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Following-The.Following' Ya existe " />
+  <Log tipo="Error añadiendo datos" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Following' ya existe" />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The frankenstein chronicles-The frankenstein chronicles' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The frankenstein chronicles-The.frankenstein.chronicles' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The leftovers-The leftovers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The leftovers-The.leftovers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Millers-The Millers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Millers-The.Millers' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Mindy Proyect-The Mindy Proyect' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Mindy Proyect-The.Mindy.Proyect' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The newsroom-The newsroom' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The newsroom-The.newsroom' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The returned-The returned' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The returned-The.returned' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The strain-The strain' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The strain-The.strain' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Walking Dead-The Walking Dead' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Walking Dead-The.Walking.Dead' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Wrong Mans-The Wrong Mans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'The Wrong Mans-The.Wrong.Mans' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Transparent-Transparent' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Transparent-Transparent' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Transporter-Transporter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Transporter-Transporter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Transporter-Transporter' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Trophy Wife-Trophy Wife' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:29" mensaje="patron 'Trophy Wife-Trophy.Wife' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Unbreakable Kimmy Schmidt-Unbreakable Kimmy Schmidt' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Unbreakable Kimmy Schmidt-Unbreakable.Kimmy.Schmidt' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vaya Vecinos-Vaya Vecinos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vaya Vecinos-Vaya.Vecinos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Veep-Veep' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Veep-Veep' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Veep-Veep' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vikingos-Vikingos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vikingos-Vikingos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vikingos-Vikingos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vivo con modelos-Vivo con modelos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Vivo con modelos-Vivo.con.modelos' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Wilfred-Wilfred' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Wilfred-Wilfred' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Wilfred-Wilfred' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'El sequito-El sequito' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'El sequito-El.sequito' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Black Sails-Black Sails' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Black Sails-Black.Sails' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Angie Tribeca-Angie Tribeca' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Angie Tribeca-Angie.Tribeca' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Sin limites-Sin limites' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Sin limites-Sin.limites' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Las cronicas de shannara-Las cronicas de shannara' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Las cronicas de shannara-Las.cronicas.de.shannara' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'The last man of the earth-The last man of the earth' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'The last man of the earth-The.last.man.of.the.earth' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Ascension-Ascension' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Ascension-Ascension' Ya existe " />
+  <Log tipo="Error" fecha="02/04/2016 20:02:30" mensaje="patron 'Ascension-Ascension' Ya existe " />
 </Logs>

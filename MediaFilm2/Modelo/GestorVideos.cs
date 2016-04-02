@@ -413,6 +413,7 @@ namespace MediaFilm2.Modelo
             }
             if (fsi.Length > 1)
             {
+                if(!pat.Contains("720")&& pat.Contains("1080"))
                 throw new TooManySerieCoincidencesException(pat);
             }
             return null;

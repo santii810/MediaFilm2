@@ -79,7 +79,9 @@ namespace MediaFilm2
         {
             Label tmpLabelFichero = new Label();
             tmpLabelFichero.Content = name;
-            tmpLabelFichero.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabelFichero.Style = (Style)Application.Current.Resources["FicherosARenombrar"];
+         
+            
             return tmpLabelFichero;
         }
     }

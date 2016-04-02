@@ -316,4 +316,318 @@
   <Log tipo="Renombrado" fichero="A:\Series\Better call Saul\Temporada2\Better call Saul 203.mkv" fecha="02/04/2016 19:32:50" mensaje="Fichero 'BCSaul203720p [www.newpct1.com].mkv' renombrado a 'A:\Series\Better call Saul\Temporada2\Better call Saul 203.mkv'" />
   <Log tipo="Renombrado" fichero="A:\Series\Better call Saul\Temporada2\Better call Saul 204.mkv" fecha="02/04/2016 19:32:50" mensaje="Fichero 'BCS204720p [www.newpct1.com].mkv' renombrado a 'A:\Series\Better call Saul\Temporada2\Better call Saul 204.mkv'" />
   <Log tipo="Renombrado" fichero="A:\Series\Better call Saul\Temporada2\Better call Saul 205.mkv" fecha="02/04/2016 19:32:50" mensaje="Fichero 'BCSaul205720p [www.newpct1.com].mkv' renombrado a 'A:\Series\Better call Saul\Temporada2\Better call Saul 205.mkv'" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:22" mensaje="Serie '666 Park Avenue' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:22" mensaje="patron '666 Park Avenue-666_Park_Avenue' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:22" mensaje="Serie 'Agents of SHIELD' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Agents of SHIELD-Agents_of_SHIELD' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Allegiance' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Almost Human' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Almost Human-Almost_Human' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Alphas' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'American dad' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'American dad-American_dad' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'American Summer' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'American Summer-American_Summer' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Amigos con suerte' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Amigos con suerte-Amigos_con_suerte' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Apocalipsis en el instituto' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Apocalipsis en el instituto-Apocalipsis_en_el_instituto' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Arrow' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Ataque a los titanes' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Ataque a los titanes-Ataque_a_los_titanes' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'BackStorm' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Banshee' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Bates Motel' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Bates Motel-Bates_Motel' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Benched' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Betrayal' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Better call Saul' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Better call Saul-Better_call_Saul' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Between' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Big Time in Hollywood' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Big Time in Hollywood-Big_Time_in_Hollywood' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Black Mirror' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Black Mirror-Black_Mirror' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'BloodLine' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Boardwalk Empire' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Boardwalk Empire-Boardwalk_Empire' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Breaking bad' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:23" mensaje="patron 'Breaking bad-Breaking_bad' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:23" mensaje="Serie 'Broadchurch' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Bron' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Brotherhood' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Catastrophe' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Chuck' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Community' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Como conoci a vuestra madre' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Como conoci a vuestra madre-Como_conoci_a_vuestra_madre' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Crisis' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Crosing lines' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Crosing lines-Crosing_lines' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Daredevil' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Dates' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Da Vinci demons' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Da Vinci demons-Da_Vinci_demons' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Defiance' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Dexter' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Dominion' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Dos hombres y medio' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos hombres y medio-Dos_hombres_y_medio' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Dos chicas sin blanca' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos chicas sin blanca-Dos chicas sin blanca' añadido correctamente a serie " />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Dos chicas sin blanca-Dos_chicas_sin_blanca' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'El mentalista' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'El mentalista-El_mentalista' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'El Ministerio del tiempo' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'El Ministerio del tiempo-El_Ministerio_del_tiempo' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'El ultimo hombre en la tierra' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'El ultimo hombre en la tierra-El_ultimo_hombre_en_la_tierra' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Elementary' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Episodes' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Eres lo peor' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:24" mensaje="patron 'Eres lo peor-Eres_lo_peor' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:24" mensaje="Serie 'Eureka' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Falling Skies' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Falling Skies-Falling_Skies' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Familia de acogida' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Familia de acogida-Familia_de_acogida' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Fargo' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Fear the walking dead' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Fear the walking dead-Fear_the_walking_dead' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Finales felices' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Finales felices-Finales_felices' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Forever' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Fortitude' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Fringe' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Generation kill' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Generation kill-Generation_kill' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Getting on' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Getting on-Getting_on' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Gotham' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Grace and Frankie' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Grace and Frankie-Grace_and_Frankie' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Graceland' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hannibal' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hart of Dixie' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Hart of Dixie-Hart_of_Dixie' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Helix' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hello ladies' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Hello ladies-Hello_ladies' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hemlock grove' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Hemlock grove-Hemlock_grove' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Heroes Reborn' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Heroes Reborn-Heroes_Reborn' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hijos del tercer Reich' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:25" mensaje="patron 'Hijos del tercer Reich-Hijos_del_tercer_Reich' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'Hope' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:25" mensaje="Serie 'House of cards' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'House of cards-House_of_cards' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'House of lies' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'House of lies-House_of_lies' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'In the flesh' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'In the flesh-In_the_flesh' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Inteligence' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Into the badlands' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Into the badlands-Into_the_badlands' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Invisible' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Killjoys' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'La cupula' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'La cupula-La_cupula' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Ladron de guante blanco' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Ladron de guante blanco-Ladron_de_guante_blanco' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Las cronicas de shanara' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Las cronicas de shanara-Las cronicas de shanara' añadido correctamente a serie " />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Las cronicas de shanara-Las.cronicas.de.shanara' añadido correctamente a serie " />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Las cronicas de shanara-Las_cronicas_de_shanara' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Legends' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Les revenant' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Les revenant-Les_revenant' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Looking' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Los cien' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Los cien-Los_cien' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Los crimenes de Fjallbacka' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Los crimenes de Fjallbacka-Los_crimenes_de_Fjallbacka' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Los farsantes' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Los farsantes-Los_farsantes' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Louie' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Mad Men' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Mad Men-Mad_Men' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Manhattan' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Manhattan Love Story' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Manhattan Love Story-Manhattan_Love_Story' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:26" mensaje="Serie 'Masters of sex' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:26" mensaje="patron 'Masters of sex-Masters_of_sex' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Men at work' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Men at work-Men_at_work' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Misfits' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Mob City' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Mob City-Mob_City' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Modern Family' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Modern Family-Modern_Family' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Mom' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Mozart in the jungle' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Mozart in the jungle-Mozart_in_the_jungle' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Mr selfridge' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Mr selfridge-Mr_selfridge' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Nashville' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Orange is the new black' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Orange is the new black-Orange_is_the_new_black' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Outlander' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Padre de familia' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Padre de familia-Padre_de_familia' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Peaky Blinders' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Peaky Blinders-Peaky_Blinders' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Penny Dreadful' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Penny Dreadful-Penny_Dreadful' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Peque¤as mentirosas' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Peque¤as mentirosas-Peque¤as_mentirosas' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Perception' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Person of interest' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Person of interest-Person_of_interest' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Powers' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Ray Donovan' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Ray Donovan-Ray_Donovan' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Real humans' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:27" mensaje="patron 'Real humans-Real_humans' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:27" mensaje="Serie 'Recien llegados' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Recien llegados-Recien_llegados' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Refugiados' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Rehenes' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Residue' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Revolution' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Roma criminal' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Roma criminal-Roma_criminal' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Scandal' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Scorpion' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Sense 8' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Sense 8-Sense_8' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'ShadownHunters' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Silicon Valley' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Silicon Valley-Silicon_Valley' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Sleepy Hollow' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Sleepy Hollow-Sleepy_Hollow' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Sons of anarchy' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Sons of anarchy-Sons_of_anarchy' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Star Wars Rebels' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'Star Wars Rebels-Star_Wars_Rebels' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'Suits' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'The affair' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'The affair-The_affair' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'The Americans' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'The Americans-The_Americans' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'The big bang theory' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'The big bang theory-The_big_bang_theory' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'The blacklist' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:28" mensaje="patron 'The blacklist-The_blacklist' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:28" mensaje="Serie 'The Bridge' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Bridge-The_Bridge' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The brink' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The brink-The_brink' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Client List' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Client List-The_Client_List' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The crazy ones' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The crazy ones-The_crazy_ones' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Flash' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Flash-The_Flash' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Following' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Following-The_Following' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The frankenstein chronicles' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The frankenstein chronicles-The_frankenstein_chronicles' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The leftovers' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The leftovers-The_leftovers' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Millers' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Millers-The_Millers' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Mindy Proyect' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Mindy Proyect-The_Mindy_Proyect' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The newsroom' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The newsroom-The_newsroom' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The returned' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The returned-The_returned' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The strain' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The strain-The_strain' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Walking Dead' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Walking Dead-The_Walking_Dead' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'The Wrong Mans' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'The Wrong Mans-The_Wrong_Mans' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'Transparent' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'Transparent-Transparent' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'Transporter' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:29" mensaje="Serie 'Trophy Wife' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:29" mensaje="patron 'Trophy Wife-Trophy_Wife' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Unbreakable Kimmy Schmidt' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Unbreakable Kimmy Schmidt-Unbreakable_Kimmy_Schmidt' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Vaya Vecinos' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Vaya Vecinos-Vaya_Vecinos' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Veep' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Vikingos' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Vivo con modelos' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Vivo con modelos-Vivo_con_modelos' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Wilfred' añadida correctamente" />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'El sequito' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'El sequito-El_sequito' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Black Sails' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Black Sails-Black_Sails' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Angie Tribeca' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Angie Tribeca-Angie_Tribeca' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Sin limites' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Sin limites-Sin_limites' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Las cronicas de shannara' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'Las cronicas de shannara-Las_cronicas_de_shannara' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'The last man of the earth' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="02/04/2016 20:02:30" mensaje="patron 'The last man of the earth-The_last_man_of_the_earth' añadido correctamente a serie " />
+  <Log tipo="AñadirSerie" fecha="02/04/2016 20:02:30" mensaje="Serie 'Ascension' añadida correctamente" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 401.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x01_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 401.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 402.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x02_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 402.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 403.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x03_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 403.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 404.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x04_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 404.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 405.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x05_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 405.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 406.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x06_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 406.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 407.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x07_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 407.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 408.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x08_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 408.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 409.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x09_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 409.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 410.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x10_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 410.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 411.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x11_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 411.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada4\El sequito 412.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_4x12_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada4\El sequito 412.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 501.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x01_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 501.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 502.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x02_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 502.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 503.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x03_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 503.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 504.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x04_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 504.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 505.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x05_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 505.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 506.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x06_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 506.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 507.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x07_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 507.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 508.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x08_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 508.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 509.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x09_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 509.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 510.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x10_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 510.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 511.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x11_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 511.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada5\El sequito 512.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_5x12_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada5\El sequito 512.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 601.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x01_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 601.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 602.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x02_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 602.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 603.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x03_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 603.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 604.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x04_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 604.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 605.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x05_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 605.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 606.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x06_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 606.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 607.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x07_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 607.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 608.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x08_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 608.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 609.mkv" fecha="02/04/2016 20:03:41" mensaje="Fichero 'El_Sequito_6x09_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 609.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 610.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_6x10_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 610.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 611.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_6x11_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 611.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada6\El sequito 612.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_6x12_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada6\El sequito 612.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 701.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x01_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 701.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 702.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x02_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 702.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 703.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x03_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 703.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 704.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x04_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 704.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 705.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x05_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 705.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 706.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x06_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 706.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 707.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x07_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 707.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 708.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x08_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 708.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 709.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x09_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 709.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada7\El sequito 710.mkv" fecha="02/04/2016 20:03:42" mensaje="Fichero 'El_Sequito_7x10_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada7\El sequito 710.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 801.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x01_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 801.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 802.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x02_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 802.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 803.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x03_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 803.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 804.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x04_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 804.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 805.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x05_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 805.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 806.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x06_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 806.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 807.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x07_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 807.mkv'" />
+  <Log tipo="Renombrado" fichero="A:\Series\El sequito\Temporada8\El sequito 808.mkv" fecha="02/04/2016 20:07:24" mensaje="Fichero 'El_Sequito_8x08_720p.mkv' renombrado a 'A:\Series\El sequito\Temporada8\El sequito 808.mkv'" />
 </Logs>

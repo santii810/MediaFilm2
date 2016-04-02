@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+ï»¿<?xml version="1.0" encoding="utf-8"?>
 <Series>
   <serie titulo="666 Park Avenue">
     <titulo>666 Park Avenue</titulo>
@@ -816,8 +816,8 @@
     <estado>D</estado>
     <extension>.mkV</extension>
   </serie>
-  <serie titulo="Peque¤as mentirosas">
-    <titulo>Peque¤as mentirosas</titulo>
+  <serie titulo="PequeÂ¤as mentirosas">
+    <titulo>PequeÂ¤as mentirosas</titulo>
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
@@ -1055,6 +1055,16 @@
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
     <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The Following">
+    <titulo>The Following</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>
+      .mkv
+    </extension>
   </serie>
   <serie titulo="The Following">
     <titulo>The Following</titulo>
