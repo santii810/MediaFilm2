@@ -137,6 +137,10 @@
                             <Label Content="Añadir patron"  Style="{StaticResource LabelTitulos}"/>
                             <Image Source="Iconos\patron.png" Height="120" MouseLeftButtonUp="ImageAddPatron_MouseLeftButtonUp_1"/>
                         </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="20,0">
+                            <Label Content="I/O serie"  Style="{StaticResource LabelTitulos}"/>
+                            <Image Source="Iconos\IO.png" Height="120" MouseLeftButtonUp="ImageIOSerie_MouseLeftButtonUp_1"/>
+                        </StackPanel>
                     </StackPanel>
                     <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center" Visibility="Collapsed">
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
@@ -162,7 +166,7 @@
                         <Button Content="Añadir" Width="100" Height="25" Style="{StaticResource Button}" Click="ButtonAñadirSerie_Click"/>
                     </StackPanel>
 
-                    <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420">
+                    <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="420" Visibility="Collapsed">
                         <Border Style="{StaticResource Border}">
                             <ScrollViewer VerticalScrollBarVisibility="Auto">
                                 <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
@@ -182,12 +186,14 @@
                                         <TextBox Name="textBoxNuevoPatron" Width="150" Margin="2" Style="{StaticResource TextBox}" KeyDown="textBoxNuevoPatron_KeyDown"/>
                                         <Button Content="Añadir" Style="{StaticResource Button}" Click="ButtonAddPatron_Click"/>
                                     </StackPanel>
-
                                 </ScrollViewer>
                             </Border>
                         </StackPanel>
                     </StackPanel>
 
+                    <StackPanel Name="IOSerie"></StackPanel>
+                    
+                    
                 </StackPanel>
 
             </Grid>

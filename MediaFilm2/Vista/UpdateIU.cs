@@ -126,6 +126,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
+            mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaTituloSeleccionarSerie());
             foreach (Serie item in mainWindow.series)
             {
                 if(item.estado == "A")
@@ -136,6 +137,8 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelPatronesActuales(MainWindow mainWindow)
         {
             mainWindow.panelPatronesActuales.Children.Clear();
+            mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaTituloPatronesActuales());
+
             foreach (Patron item in  mainWindow.serieSeleccionada.patrones)
             {
                 mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaPatronesActuales(item));

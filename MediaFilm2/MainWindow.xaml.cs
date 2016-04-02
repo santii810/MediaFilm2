@@ -168,5 +168,10 @@ namespace MediaFilm2
                 ButtonAddPatron_Click(new object(), new RoutedEventArgs());
             }
         }
+
+        private void ImageIOSerie_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

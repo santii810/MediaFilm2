@@ -65,5 +65,22 @@ namespace MediaFilm2
             return tmpLabelTitulo;
 
         }
+
+        internal static Label getVistaTituloSeleccionarSerie()
+        {
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = "Series";
+            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
+            return tmpLabelTitulo;
+        }
+        internal static Label getVistaTituloPatronesActuales()
+        {
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = "Patrones actuales";
+            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
+            return tmpLabelTitulo;
+        }
     }
 }
