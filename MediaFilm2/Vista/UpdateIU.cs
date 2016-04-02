@@ -128,6 +128,7 @@ namespace MediaFilm2.Vista
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
             foreach (Serie item in mainWindow.series)
             {
+                if(item.estado == "A")
                 mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
             }
         }
