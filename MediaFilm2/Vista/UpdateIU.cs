@@ -131,7 +131,7 @@ namespace MediaFilm2.Vista
 
         private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
         {
-
+            mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaTitulo("Ficheros a renombrar"));
             foreach (FileInfo item in GestorVideos.getFicherosARenombrar(mainWindow))
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4"))
                     mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaFicheroARenombrar(item.Name));
@@ -139,7 +139,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
-            mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaTituloSeleccionarSerie());
+            mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaTitulo("Series"));
             foreach (Serie item in mainWindow.series)
             {
                 if(item.estado == "A")
@@ -150,7 +150,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelPatronesActuales(MainWindow mainWindow)
         {
             mainWindow.panelPatronesActuales.Children.Clear();
-            mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaTituloPatronesActuales());
+            mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaTitulo("Patrones"));
 
             foreach (Patron item in  mainWindow.serieSeleccionada.patrones)
             {

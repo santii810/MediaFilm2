@@ -66,19 +66,11 @@ namespace MediaFilm2
 
         }
 
-        internal static Label getVistaTituloSeleccionarSerie()
+        internal static Label getVistaTitulo(string titulo)
         {
             Label tmpLabelTitulo = new Label();
-            tmpLabelTitulo.Content = "Series";
+            tmpLabelTitulo.Content = titulo;
 
-            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
-            return tmpLabelTitulo;
-        }
-        internal static Label getVistaTituloPatronesActuales()
-        {
-            Label tmpLabelTitulo = new Label();
-            tmpLabelTitulo.Content = "Patrones actuales";
-        
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
             return tmpLabelTitulo;
         }
