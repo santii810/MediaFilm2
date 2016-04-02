@@ -175,7 +175,14 @@ namespace MediaFilm2
 
         private void ImageIOSerie_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
+            actualizarListaSeries();
+            UpdateIU.Update(this, Codigos.PANEL_IO_SERIES);
+        }
 
+        private void ImageIncTemp_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            actualizarListaSeries();
+            UpdateIU.Update(this, Codigos.PANEL_INC_TEMP);
         }
     }
 }

@@ -24,8 +24,8 @@ namespace MediaFilm2
 
 
         public const int ADD_PATRON_OK = 11;
-        public const int i = 12;
-        public const int j = 13;
+        public const int PANEL_IO_SERIES = 12;
+        public const int PANEL_INC_TEMP = 13;
         public const int k = 14;
         public const int l = 15;
         public const int m = 16;

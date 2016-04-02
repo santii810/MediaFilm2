@@ -1266,4 +1266,12 @@
     <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
+  <serie titulo="Guardians of galaxy">
+    <titulo>Guardians of galaxy</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
 </Series>
