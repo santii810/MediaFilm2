@@ -174,7 +174,17 @@
                         <StackPanel Name="panelNuevoPatron" Width="320">
                             <Border Style="{StaticResource Border}">
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"></StackPanel>
+                                    <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"/>
+                                </ScrollViewer>
+                            </Border>
+                            <Border Style="{StaticResource Border}">
+                                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <StackPanel  Name="panelnuevoPatron" Orientation="Horizontal">
+                                        <Label Content="Texto patron"/>
+                                        <TextBox Name="textBoxNuevoPatron" Width="150" Style="{StaticResource TextBox}"/>
+                                        <Button Content="Añadir" />
+                                    </StackPanel>
+                                    
                                 </ScrollViewer>
                             </Border>
                         </StackPanel>
