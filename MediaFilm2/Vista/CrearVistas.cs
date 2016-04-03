@@ -87,7 +87,7 @@ namespace MediaFilm2
             return tmpLabelFichero;
         }
 
-        internal static UIElement getVistaIncrementarTemporadas(MainWindow mainWindow, Serie item)
+        internal static UIElement getVistaIncrementarTemporadas(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
@@ -104,29 +104,36 @@ namespace MediaFilm2
             Image tmpImagenMin = new Image();
             tmpImagenMin.Source = src;
             tmpImagenMin.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenMin.MouseLeftButtonUp += delegate 
+            {
+                serie.temporadaActual++;
+                if (serie.temporadaActual > serie.numeroTemporadas)
+                    serie.numeroTemporadas++;
+                incrementarTemporada(mainWindow, serie);
+            };
             tmpPanel.Children.Add(tmpImagenMin);
 
 
             //temporada min
             Label tmpLabelTemporadaMin = new Label();
-            tmpLabelTemporadaMin.Content = item.temporadaActual;
+            tmpLabelTemporadaMin.Content = serie.temporadaActual;
             tmpLabelTemporadaMin.Style = (Style)Application.Current.Resources["LabelListaSeries"];
-            tmpLabelTemporadaMin.Width = 20;
+            tmpLabelTemporadaMin.Width = 30;
             tmpPanel.Children.Add(tmpLabelTemporadaMin);
 
 
             //titulo
             Label tmpLabelTitulo = new Label();
-            tmpLabelTitulo.Content = item.titulo;
+            tmpLabelTitulo.Content = serie.titulo;
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
             tmpPanel.Children.Add(tmpLabelTitulo);
 
 
             //temporada max
             Label tmpLabelTemporadaMax = new Label();
-            tmpLabelTemporadaMax.Content = item.numeroTemporadas;
+            tmpLabelTemporadaMax.Content = serie.numeroTemporadas;
             tmpLabelTemporadaMax.Style = (Style)Application.Current.Resources["LabelListaSeries"];
-            tmpLabelTemporadaMax.Width = 20;
+            tmpLabelTemporadaMax.Width = 30;
             tmpPanel.Children.Add(tmpLabelTemporadaMax);
 
 
@@ -134,7 +141,82 @@ namespace MediaFilm2
             Image tmpImagenMax = new Image();
             tmpImagenMax.Source = src;
             tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMax.MouseLeftButtonUp += delegate { };
+            tmpImagenMax.MouseLeftButtonUp += delegate { serie.numeroTemporadas++; incrementarTemporada(mainWindow, serie); };
+            tmpPanel.Children.Add(tmpImagenMax);
+
+            return tmpPanel;
+        }
+
+        private static void incrementarTemporada(MainWindow mainWindow,Serie serie)
+        {
+            mainWindow.SeriesXML.actualizarSerie(serie);
+            UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
+        }
+
+        internal static UIElement getVistaSerieActiva(MainWindow mainWindow,Serie serie)
+        {
+            StackPanel tmpPanel = new StackPanel();
+            tmpPanel.Orientation = Orientation.Horizontal;
+            tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
+
+            //bitmap
+            BitmapImage src = new BitmapImage();
+            src.BeginInit();
+            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            src.EndInit();
+
+            //titulo
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = serie.titulo;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpPanel.Children.Add(tmpLabelTitulo);
+
+
+            //imagen max
+            Image tmpImagenMax = new Image();
+            tmpImagenMax.Source = src;
+            tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenMax.MouseLeftButtonUp += delegate 
+            {
+                serie.estado = "D";
+                mainWindow.SeriesXML.actualizarSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_IO_SERIES);
+
+            };
+            tmpPanel.Children.Add(tmpImagenMax);
+
+            return tmpPanel;
+        }
+        internal static UIElement getVistaSerieInactiva(MainWindow mainWindow, Serie serie)
+        {
+            StackPanel tmpPanel = new StackPanel();
+            tmpPanel.Orientation = Orientation.Horizontal;
+            tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
+
+            //bitmap
+            BitmapImage src = new BitmapImage();
+            src.BeginInit();
+            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            src.EndInit();
+
+            //titulo
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = serie.titulo;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpPanel.Children.Add(tmpLabelTitulo);
+
+
+            //imagen max
+            Image tmpImagenMax = new Image();
+            tmpImagenMax.Source = src;
+            tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenMax.MouseLeftButtonUp += delegate
+            {
+                serie.estado = "A";
+                mainWindow.SeriesXML.actualizarSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_IO_SERIES);
+
+            };
             tmpPanel.Children.Add(tmpImagenMax);
 
             return tmpPanel;

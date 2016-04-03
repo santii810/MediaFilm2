@@ -642,4 +642,6 @@
   <Log tipo="Renombrado" fichero="A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 106.avi" fecha="02/04/2016 20:16:19" mensaje="Fichero 'Guardians.Of.Galaxy.1x06.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 106.avi'" />
   <Log tipo="Renombrado" fichero="A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 107.avi" fecha="02/04/2016 20:16:19" mensaje="Fichero 'Guardians.Of.Galaxy.1x07.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 107.avi'" />
   <Log tipo="Renombrado" fichero="A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 108.avi" fecha="02/04/2016 20:16:20" mensaje="Fichero 'Guardians.Of.Galaxy.1x08.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Guardians of galaxy\Temporada1\Guardians of galaxy 108.avi'" />
+  <Log tipo="AñadirSerie" fecha="03/04/2016 19:45:48" mensaje="Serie 'aaaaaa' añadida correctamente" />
+  <Log tipo="AñadirPatron" fecha="03/04/2016 19:45:48" mensaje="patron 'aaaaaa-aaaaaa' añadido correctamente a serie " />
 </Logs>

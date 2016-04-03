@@ -146,6 +146,7 @@
                             <Image Source="Iconos\abaco.png" Height="120" MouseLeftButtonUp="ImageIncTemp_MouseLeftButtonUp_1"/>
                         </StackPanel>
                     </StackPanel>
+
                     <StackPanel Name="panelAddSerie" Width="300" Margin="50" VerticalAlignment="Center" Visibility="Collapsed">
                         <StackPanel Orientation="Horizontal" Style="{StaticResource StackPanelAddSerie}">
                             <Label Content="Titulo:" Style="{StaticResource LabelAddSerie}"/>
@@ -180,9 +181,10 @@
                         <StackPanel Orientation="Vertical" Width="320">
                             <Border Style="{StaticResource Border}">
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel Name="panelFicherosARenombrar" Orientation="Vertical" MaxHeight="150"/>
+                                    <StackPanel Name="panelFicherosARenombrar" Orientation="Vertical"  MaxHeight="150" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
                                 </ScrollViewer>
                             </Border>
+
                             <StackPanel Name="panelNuevoPatron" >
                                 <Border Style="{StaticResource Border}">
                                     <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -202,8 +204,28 @@
                         </StackPanel>
                     </StackPanel>
 
-                    <StackPanel Name="panelIOSerie"></StackPanel>
-                    <StackPanel Name="panelIncrementarTemporadas">
+                    <StackPanel Name="panelIOSerie" Orientation="Horizontal">
+
+                            <StackPanel Name="panelSeriesActivas" Width="320" Height="400">
+                                <Label Content="Series activas" Style="{StaticResource LabelTitulos}"/>
+                        <ScrollViewer>
+                                <StackPanel Name="panelListaSeriesActivas"></StackPanel>
+                        </ScrollViewer>
+                            </StackPanel>
+
+                        <ScrollViewer>
+
+                            <StackPanel Name="panelSeriesInactivas" Width="320" Height="400">
+                                <Label Content="Series inactivas" Style="{StaticResource LabelTitulos}"/>
+                                <ScrollViewer>
+                                    <StackPanel Name="panelListaSeriesInactivas"></StackPanel>
+                                </ScrollViewer>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                    </StackPanel>
+
+                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Collapsed">
                         <Label Content="Series" Style="{StaticResource LabelTitulos}"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Label Content="Temp. Actual" Width="100"  Style="{StaticResource LabelListaSeries}"/>
@@ -212,7 +234,6 @@
                         </StackPanel>
                         <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
                             <StackPanel Name="panelListaIncrementarTemporadas" Width="300" Height="320" Style="{StaticResource StackPanelSeleccionarSerie}" >
-
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>

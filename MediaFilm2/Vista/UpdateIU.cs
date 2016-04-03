@@ -101,6 +101,9 @@ namespace MediaFilm2.Vista
                 case Codigos.PANEL_IO_SERIES:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelIOSerie.Visibility = Visibility.Visible;
+                    rellenaPanelSeriesActivas(mainWindow);
+                    rellenaPanelSeriesInactivas(mainWindow);
+                    
                     break;
                 case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
                     mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
@@ -136,6 +139,30 @@ namespace MediaFilm2.Vista
 
         }
 
+        private static void rellenaPanelSeriesActivas(MainWindow mainWindow)
+        {
+            mainWindow.panelListaSeriesActivas.Children.Clear();
+            mainWindow.actualizarListaSeries();
+            foreach (Serie item in mainWindow.series)
+            {
+                if (item.estado == "A")
+                    mainWindow.panelListaSeriesActivas.Children.Add(CrearVistas.getVistaSerieActiva(mainWindow, item));
+            }
+        }
+
+        private static void rellenaPanelSeriesInactivas(MainWindow mainWindow)
+        {
+            mainWindow.panelListaSeriesInactivas.Children.Clear();
+            mainWindow.actualizarListaSeries();
+            foreach (Serie item in mainWindow.series)
+            {
+                if (item.estado == "D")
+                    mainWindow.panelListaSeriesInactivas.Children.Add(CrearVistas.getVistaSerieInactiva(mainWindow, item));
+            }
+
+        }
+
+
         private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
         {
             mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaTitulo("Ficheros a renombrar"));
@@ -148,6 +175,7 @@ namespace MediaFilm2.Vista
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
             mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaTitulo("Series"));
+            mainWindow.actualizarListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if(item.estado == "A")
@@ -157,6 +185,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelIncrementarTemporadas(MainWindow mainWindow)
         {
             mainWindow.panelListaIncrementarTemporadas.Children.Clear();
+            mainWindow.actualizarListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if (item.estado == "A")
@@ -168,7 +197,6 @@ namespace MediaFilm2.Vista
         {
             mainWindow.panelPatronesActuales.Children.Clear();
             mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaTitulo("Patrones"));
-
             foreach (Patron item in  mainWindow.serieSeleccionada.patrones)
             {
                 mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaPatronesActuales(item));
