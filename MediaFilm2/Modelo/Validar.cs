@@ -17,7 +17,7 @@ namespace MediaFilm2.Modelo
                 MessageBox.Show("El titulo de la serie no puede estar vacio");
                 return false;
             }
-            if (mainWindow.textBoxTitulo.Text.Trim().Length<3)
+            if (mainWindow.textBoxTitulo.Text.Trim().Length < 3)
             {
                 MessageBox.Show("El titulo de la serie debe ser de al menos 3 caracteres");
                 return false;
@@ -30,12 +30,10 @@ namespace MediaFilm2.Modelo
             {
                 mainWindow.textBoxNumeroTemporadas.Text = "1";
             }
-            if(mainWindow.comboBoxExtensionSerie.SelectedIndex == -1)
+            if (mainWindow.comboBoxExtensionSerie.SelectedIndex == -1)
             {
                 mainWindow.comboBoxExtensionSerie.SelectedIndex = 0;
             }
-
-
             return true;
         }
 
@@ -43,7 +41,7 @@ namespace MediaFilm2.Modelo
         {
             if (mainWindow.textBoxNuevoPatron.Text.Trim() == "")
                 return false;
-            if (mainWindow.textBoxNuevoPatron.Text.Trim().Length<2)
+            if (mainWindow.textBoxNuevoPatron.Text.Trim().Length < 2)
                 return false;
             return true;
         }

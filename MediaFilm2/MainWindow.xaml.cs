@@ -53,7 +53,7 @@ namespace MediaFilm2
 
 
 
-    
+
         }
 
 
@@ -97,7 +97,7 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.ADD_SERIE);
 
         }
-        
+
         private void textBoxCapitulosTemporada_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
@@ -143,17 +143,14 @@ namespace MediaFilm2
             }
         }
 
-
         private void ImageAddPatron_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
-            actualizarListaSeries();
             UpdateIU.Update(this, Codigos.ADD_PATRON);
         }
 
-
         private void ButtonAddPatron_Click(object sender, RoutedEventArgs e)
         {
-           if(Validar.validarAddPatron(this))
+            if (Validar.validarAddPatron(this))
             {
                 PatronesXML.añadirPatron(new Patron { nombreSerie = serieSeleccionada.titulo, textoPatron = textBoxNuevoPatron.Text.Trim() });
                 serieSeleccionada.getPatrones(config);
@@ -167,7 +164,7 @@ namespace MediaFilm2
 
         private void textBoxNuevoPatron_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
+            if (e.Key == Key.Enter)
             {
                 ButtonAddPatron_Click(new object(), new RoutedEventArgs());
             }

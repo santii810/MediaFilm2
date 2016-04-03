@@ -12,13 +12,6 @@ namespace MediaFilm2.Vista
 {
     static class UpdateIU
     {
-
-
-        internal static void Update(MainWindow mainWindow)
-        {
-
-        }
-
         internal static void Update(MainWindow mainWindow, int cod)
         {
             collapseAll(mainWindow);
@@ -26,10 +19,7 @@ namespace MediaFilm2.Vista
             switch (cod)
             {
                 case Codigos.ESTADO_INICIAL:
-
-
-
-
+                    
                     break;
                 case Codigos.PANEL_ORDENAR_VIDEOS:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
@@ -115,9 +105,7 @@ namespace MediaFilm2.Vista
                     throw new UpdateIUException(cod);
             }
         }
-
-
-
+        
         private static void collapseAll(MainWindow mainWindow)
         {
             //siempre ocultos
@@ -138,6 +126,9 @@ namespace MediaFilm2.Vista
             mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
 
         }
+
+
+
 
         private static void rellenaPanelSeriesActivas(MainWindow mainWindow)
         {
@@ -161,16 +152,16 @@ namespace MediaFilm2.Vista
             }
 
         }
-
-
+        
         private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
         {
+            mainWindow.panelFicherosARenombrar.Children.Clear();
             mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaTitulo("Ficheros a renombrar"));
-            FileSystemInfo[] fi = GestorVideos.getFicherosARenombrar(mainWindow);
             foreach (FileInfo item in GestorVideos.getFicherosARenombrar(mainWindow))
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4"))
                     mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaFicheroARenombrar(item.Name));
         }
+
         private static void rellenaPanelSeleccionarSeries(MainWindow mainWindow)
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
@@ -182,6 +173,7 @@ namespace MediaFilm2.Vista
                 mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
             }
         }
+
         private static void rellenaPanelIncrementarTemporadas(MainWindow mainWindow)
         {
             mainWindow.panelListaIncrementarTemporadas.Children.Clear();

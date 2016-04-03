@@ -339,7 +339,7 @@
   <serie titulo="El ultimo hombre en la tierra">
     <titulo>El ultimo hombre en la tierra</titulo>
     <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
     <extension>.avi</extension>
@@ -1268,6 +1268,22 @@
   </serie>
   <serie titulo="Guardians of galaxy">
     <titulo>Guardians of galaxy</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Los simpson">
+    <titulo>Los simpson</titulo>
+    <temporadaActual>24</temporadaActual>
+    <numeroTemporadas>25</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The magicians">
+    <titulo>The magicians</titulo>
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>

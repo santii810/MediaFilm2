@@ -22,8 +22,6 @@
                 </StackPanel>
             </Border>
             <!--#endregion menu-->
-
-            <!--#region paneles principales -->
             <Grid Name="panelSecundario" Visibility="Visible">
 
                 <StackPanel Name="panelOrdenarVideos" Orientation="Vertical" Visibility="Collapsed">
@@ -174,7 +172,7 @@
                     <StackPanel Name="panelAddPatron" Orientation="Horizontal" Height="410" Visibility="Collapsed">
                         <Border Style="{StaticResource Border}">
                             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
+                                <StackPanel Name="panelSeleccionarSeriePatron" Orientation="Vertical" Width="320" />
                             </ScrollViewer>
                         </Border>
 
@@ -204,7 +202,7 @@
                         </StackPanel>
                     </StackPanel>
 
-                    <StackPanel Name="panelIOSerie" Orientation="Horizontal">
+                    <StackPanel Name="panelIOSerie" Orientation="Horizontal" Visibility="Collapsed">
 
                         <StackPanel Name="panelSeriesActivas" Width="320" Height="400">
                             <Label Content="Series activas" Style="{StaticResource LabelTitulos}"/>
@@ -212,7 +210,7 @@
 
                                 <ScrollViewer>
                                     <StackPanel Name="panelListaSeriesActivas" Height="360"></StackPanel>
-                            </ScrollViewer>
+                                </ScrollViewer>
                             </Border>
                         </StackPanel>
 
@@ -222,14 +220,14 @@
                             <Border Style="{StaticResource Border}">
 
                                 <ScrollViewer>
-                                <StackPanel Name="panelListaSeriesInactivas" Height="360"></StackPanel>
-                            </ScrollViewer>
+                                    <StackPanel Name="panelListaSeriesInactivas" Height="360"></StackPanel>
+                                </ScrollViewer>
                             </Border>
                         </StackPanel>
 
                     </StackPanel>
 
-                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Collapsed">
+                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Visible">
                         <Label Content="Series" Style="{StaticResource LabelTitulos}"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Label Content="Temp. Actual" Width="100"  Style="{StaticResource LabelListaSeries}"/>
@@ -237,13 +235,12 @@
                             <Label Content="Num temp" Width="180" Style="{StaticResource LabelListaSeries}"/>
                         </StackPanel>
                         <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
-                            <StackPanel Name="panelListaIncrementarTemporadas" Width="300" Height="320" Style="{StaticResource StackPanelSeleccionarSerie}" >
+                            <StackPanel Name="panelListaIncrementarTemporadas" Width="300" Height="320" >
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>
                 </StackPanel>
             </Grid>
-            <!--#endregion paneles principales-->
         </DockPanel>
     </Grid>
 </Window>

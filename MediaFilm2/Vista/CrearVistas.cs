@@ -26,7 +26,6 @@ namespace MediaFilm2
         internal static StackPanel getVistaSeleccionarSerie(MainWindow mainWindow, Serie item)
         {
             StackPanel tmpPanel = new StackPanel();
-            tmpPanel.Orientation = Orientation.Horizontal;
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
 
@@ -45,7 +44,6 @@ namespace MediaFilm2
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
             tmpButton.Content = "Seleccionar";
-
             tmpPanel.Children.Add(tmpButton);
 
             return tmpPanel;
@@ -64,7 +62,6 @@ namespace MediaFilm2
         {
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = titulo;
-
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelTitulos"];
             return tmpLabelTitulo;
         }
@@ -74,15 +71,12 @@ namespace MediaFilm2
             Label tmpLabelFichero = new Label();
             tmpLabelFichero.Content = name;
             tmpLabelFichero.Style = (Style)Application.Current.Resources["FicherosARenombrar"];
-
-
             return tmpLabelFichero;
         }
 
         internal static StackPanel getVistaIncrementarTemporadas(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
-            tmpPanel.Orientation = Orientation.Horizontal;
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
             //bitmap
@@ -148,8 +142,6 @@ namespace MediaFilm2
         internal static StackPanel getVistaSerieActiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
-            tmpPanel.Orientation = Orientation.Horizontal;
-
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
             //bitmap
@@ -185,7 +177,6 @@ namespace MediaFilm2
         internal static StackPanel getVistaSerieInactiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
-            tmpPanel.Orientation = Orientation.Horizontal;
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
             //bitmap

@@ -437,11 +437,7 @@ namespace MediaFilm2.Modelo
         }
         #endregion
 
-
-
-
-
-
+        
         /// <summary>
         /// Gets the ficheros a renombrar.
         /// </summary>
