@@ -19,13 +19,11 @@ namespace MediaFilm2
         public const int ADD_SERIE_OK = 8;
         public const int ADD_PATRON = 9;
         public const int ADD_PATRON_SERIE_SELEC = 10;
-        
-
-
-
         public const int ADD_PATRON_OK = 11;
         public const int PANEL_IO_SERIES = 12;
-        public const int PANEL_INC_TEMP = 13;
+        public const int PANEL_INCREMENTAR_TEMPORADAS = 13;
+        
+        
         public const int k = 14;
         public const int l = 15;
         public const int m = 16;

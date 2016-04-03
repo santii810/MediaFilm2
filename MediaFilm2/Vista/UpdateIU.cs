@@ -97,9 +97,16 @@ namespace MediaFilm2.Vista
                 case Codigos.ADD_PATRON_OK:
                     mainWindow.textBoxNuevoPatron.Text = "";
                     Update(mainWindow ,Codigos.ADD_PATRON_SERIE_SELEC);
+                    break;
+                case Codigos.PANEL_IO_SERIES:
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    mainWindow.panelIOSerie.Visibility = Visibility.Visible;
+                    break;
+                case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
+                    mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
+                    mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                    rellenaPanelIncrementarTemporadas(mainWindow);
                     
-
-
                     break;
                 default:
                     throw new UpdateIUException(cod);
@@ -107,11 +114,9 @@ namespace MediaFilm2.Vista
         }
 
 
+
         private static void collapseAll(MainWindow mainWindow)
         {
-            //siempre visibles
-            mainWindow.panelMenu.Visibility = Visibility.Visible;
-
             //siempre ocultos
             mainWindow.panelOrdenarVideos.Visibility = Visibility.Collapsed;
             mainWindow.consolaPanelVideos.Visibility = Visibility.Collapsed;
@@ -126,12 +131,15 @@ namespace MediaFilm2.Vista
             mainWindow.panelSeleccionarSeriePatron.Visibility = Visibility.Collapsed;
             mainWindow.panelNuevoPatron.Visibility = Visibility.Collapsed;
             mainWindow.panelFicherosARenombrar.Visibility = Visibility.Collapsed;
+            mainWindow.panelIOSerie.Visibility = Visibility.Collapsed;
+            mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
 
         }
 
         private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
         {
             mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaTitulo("Ficheros a renombrar"));
+            FileSystemInfo[] fi = GestorVideos.getFicherosARenombrar(mainWindow);
             foreach (FileInfo item in GestorVideos.getFicherosARenombrar(mainWindow))
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4"))
                     mainWindow.panelFicherosARenombrar.Children.Add(CrearVistas.getVistaFicheroARenombrar(item.Name));
@@ -144,6 +152,15 @@ namespace MediaFilm2.Vista
             {
                 if(item.estado == "A")
                 mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
+            }
+        }
+        private static void rellenaPanelIncrementarTemporadas(MainWindow mainWindow)
+        {
+            mainWindow.panelListaIncrementarTemporadas.Children.Clear();
+            foreach (Serie item in mainWindow.series)
+            {
+                if (item.estado == "A")
+                    mainWindow.panelListaIncrementarTemporadas.Children.Add(CrearVistas.getVistaIncrementarTemporadas(mainWindow, item));
             }
         }
 

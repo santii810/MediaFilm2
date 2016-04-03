@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace MediaFilm2
 {
@@ -83,6 +85,58 @@ namespace MediaFilm2
          
             
             return tmpLabelFichero;
+        }
+
+        internal static UIElement getVistaIncrementarTemporadas(MainWindow mainWindow, Serie item)
+        {
+            StackPanel tmpPanel = new StackPanel();
+            tmpPanel.Orientation = Orientation.Horizontal;
+            tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
+
+            //bitmap
+            BitmapImage src = new BitmapImage();
+            src.BeginInit();
+            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            src.EndInit();
+
+
+            //añado imagen min
+            Image tmpImagenMin = new Image();
+            tmpImagenMin.Source = src;
+            tmpImagenMin.Style = (Style)Application.Current.Resources["Image"];
+            tmpPanel.Children.Add(tmpImagenMin);
+
+
+            //temporada min
+            Label tmpLabelTemporadaMin = new Label();
+            tmpLabelTemporadaMin.Content = item.temporadaActual;
+            tmpLabelTemporadaMin.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabelTemporadaMin.Width = 20;
+            tmpPanel.Children.Add(tmpLabelTemporadaMin);
+
+
+            //titulo
+            Label tmpLabelTitulo = new Label();
+            tmpLabelTitulo.Content = item.titulo;
+            tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpPanel.Children.Add(tmpLabelTitulo);
+
+
+            //temporada max
+            Label tmpLabelTemporadaMax = new Label();
+            tmpLabelTemporadaMax.Content = item.numeroTemporadas;
+            tmpLabelTemporadaMax.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabelTemporadaMax.Width = 20;
+            tmpPanel.Children.Add(tmpLabelTemporadaMax);
+
+
+            //imagen max
+            Image tmpImagenMax = new Image();
+            tmpImagenMax.Source = src;
+            tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpPanel.Children.Add(tmpImagenMax);
+
+            return tmpPanel;
         }
     }
 }
