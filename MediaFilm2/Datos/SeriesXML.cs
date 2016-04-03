@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace MediaFilm2.Datos
 {
-   public class SeriesXML
+    public class SeriesXML
     {
         string nombreFichero;
         XmlDocument documento;
@@ -26,6 +26,7 @@ namespace MediaFilm2.Datos
             xmlError = new LoggerXML(config.errorLog);
             xmlPatrones = new PatronesXML(config);
         }
+
         public bool cargarXML()
         {
             if (File.Exists(nombreFichero))
@@ -37,6 +38,7 @@ namespace MediaFilm2.Datos
             }
             else return false;
         }
+
         public List<Serie> leerSeries()
         {
             List<Serie> series = new List<Serie>();
@@ -57,6 +59,7 @@ namespace MediaFilm2.Datos
             }
             return series;
         }
+
         public Serie buscarSerie(string nombreSerie)
         {
             Serie serie = new Serie();
@@ -113,7 +116,8 @@ namespace MediaFilm2.Datos
                 xmlError.añadirEntrada(new Log("Error añadiendo datos", "Serie '" + serie.titulo + "' ya existe"));
             }
         }
-        public XmlNode crearNodo(Serie serie)
+
+        private XmlNode crearNodo(Serie serie)
         {
             XmlElement nodoSerie = documento.CreateElement("serie");
             nodoSerie.SetAttribute("titulo", serie.titulo);
@@ -145,12 +149,32 @@ namespace MediaFilm2.Datos
 
             return nodoSerie;
         }
+
         public bool existe(string nombreSerie)
         {
             foreach (XmlNode item in documento.GetElementsByTagName("serie"))
                 if (item.Attributes["titulo"].Value.Equals(nombreSerie))
                     return true;
             return false;
+        }
+
+        public void actualizarSerie(Serie serie)
+        {
+            XmlNode nodoViejo = buscarNodo(serie.titulo);
+            if (nodoViejo != null)
+            {
+                raiz.ReplaceChild(crearNodo(serie), nodoViejo);
+                documento.Save(nombreFichero);
+            }
+
+        }
+
+        private XmlNode buscarNodo(string tituloSerie)
+        {
+            if (cargarXML())
+                foreach (XmlNode item in documento.GetElementsByTagName("serie"))
+                    if (item["titulo"].InnerText.ToString().Equals(tituloSerie)) return item;
+            return null;
         }
     }
 

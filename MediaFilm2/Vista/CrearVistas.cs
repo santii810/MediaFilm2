@@ -134,6 +134,7 @@ namespace MediaFilm2
             Image tmpImagenMax = new Image();
             tmpImagenMax.Source = src;
             tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenMax.MouseLeftButtonUp += delegate { };
             tmpPanel.Children.Add(tmpImagenMax);
 
             return tmpPanel;
