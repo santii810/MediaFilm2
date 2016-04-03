@@ -206,22 +206,26 @@
 
                     <StackPanel Name="panelIOSerie" Orientation="Horizontal">
 
-                            <StackPanel Name="panelSeriesActivas" Width="320" Height="400">
-                                <Label Content="Series activas" Style="{StaticResource LabelTitulos}"/>
-                        <ScrollViewer>
-                                <StackPanel Name="panelListaSeriesActivas"></StackPanel>
-                        </ScrollViewer>
-                            </StackPanel>
+                        <StackPanel Name="panelSeriesActivas" Width="320" Height="400">
+                            <Label Content="Series activas" Style="{StaticResource LabelTitulos}"/>
+                            <Border Style="{StaticResource Border}">
 
-                        <ScrollViewer>
-
-                            <StackPanel Name="panelSeriesInactivas" Width="320" Height="400">
-                                <Label Content="Series inactivas" Style="{StaticResource LabelTitulos}"/>
                                 <ScrollViewer>
-                                    <StackPanel Name="panelListaSeriesInactivas"></StackPanel>
-                                </ScrollViewer>
-                            </StackPanel>
-                        </ScrollViewer>
+                                    <StackPanel Name="panelListaSeriesActivas" Height="360"></StackPanel>
+                            </ScrollViewer>
+                            </Border>
+                        </StackPanel>
+
+
+                        <StackPanel Name="panelSeriesInactivas" Width="320" Height="400">
+                            <Label Content="Series inactivas" Style="{StaticResource LabelTitulos}"/>
+                            <Border Style="{StaticResource Border}">
+
+                                <ScrollViewer>
+                                <StackPanel Name="panelListaSeriesInactivas" Height="360"></StackPanel>
+                            </ScrollViewer>
+                            </Border>
+                        </StackPanel>
 
                     </StackPanel>
 

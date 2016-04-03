@@ -26,8 +26,8 @@ namespace MediaFilm2
 
 
 
-    
-        internal static StackPanel getVistaSeleccionarSerie(MainWindow  mainWindow,Serie item)
+
+        internal static StackPanel getVistaSeleccionarSerie(MainWindow mainWindow, Serie item)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
@@ -41,8 +41,10 @@ namespace MediaFilm2
 
 
             Button tmpButton = new Button();
-            tmpButton.Click += delegate {
-                buttonSeleccionarSerie_Click(mainWindow,item); };
+            tmpButton.Click += delegate
+            {
+                buttonSeleccionarSerie_Click(mainWindow, item);
+            };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
 
             tmpButton.Content = "Seleccionar";
@@ -55,7 +57,7 @@ namespace MediaFilm2
         private static void buttonSeleccionarSerie_Click(MainWindow mainWindow, Serie item)
         {
             mainWindow.serieSeleccionada = item;
-           mainWindow.serieSeleccionada.getPatrones(mainWindow.config);
+            mainWindow.serieSeleccionada.getPatrones(mainWindow.config);
             UpdateIU.Update(mainWindow, Codigos.ADD_PATRON_SERIE_SELEC);
         }
 
@@ -82,8 +84,8 @@ namespace MediaFilm2
             Label tmpLabelFichero = new Label();
             tmpLabelFichero.Content = name;
             tmpLabelFichero.Style = (Style)Application.Current.Resources["FicherosARenombrar"];
-         
-            
+
+
             return tmpLabelFichero;
         }
 
@@ -104,7 +106,7 @@ namespace MediaFilm2
             Image tmpImagenMin = new Image();
             tmpImagenMin.Source = src;
             tmpImagenMin.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMin.MouseLeftButtonUp += delegate 
+            tmpImagenMin.MouseLeftButtonUp += delegate
             {
                 serie.temporadaActual++;
                 if (serie.temporadaActual > serie.numeroTemporadas)
@@ -147,28 +149,30 @@ namespace MediaFilm2
             return tmpPanel;
         }
 
-        private static void incrementarTemporada(MainWindow mainWindow,Serie serie)
+        private static void incrementarTemporada(MainWindow mainWindow, Serie serie)
         {
             mainWindow.SeriesXML.actualizarSerie(serie);
             UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
         }
 
-        internal static UIElement getVistaSerieActiva(MainWindow mainWindow,Serie serie)
+        internal static UIElement getVistaSerieActiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
+
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
             //bitmap
             BitmapImage src = new BitmapImage();
             src.BeginInit();
-            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            src.UriSource = new Uri("Iconos/powerOff.png", UriKind.Relative);
             src.EndInit();
 
             //titulo
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = serie.titulo;
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
             tmpPanel.Children.Add(tmpLabelTitulo);
 
 
@@ -176,7 +180,7 @@ namespace MediaFilm2
             Image tmpImagenMax = new Image();
             tmpImagenMax.Source = src;
             tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMax.MouseLeftButtonUp += delegate 
+            tmpImagenMax.MouseLeftButtonUp += delegate
             {
                 serie.estado = "D";
                 mainWindow.SeriesXML.actualizarSerie(serie);
@@ -196,13 +200,14 @@ namespace MediaFilm2
             //bitmap
             BitmapImage src = new BitmapImage();
             src.BeginInit();
-            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            src.UriSource = new Uri("Iconos/powerOn.png", UriKind.Relative);
             src.EndInit();
 
             //titulo
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = serie.titulo;
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabelTitulo.HorizontalAlignment = HorizontalAlignment.Center;
             tmpPanel.Children.Add(tmpLabelTitulo);
 
 
