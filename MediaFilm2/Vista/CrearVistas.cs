@@ -15,17 +15,13 @@ namespace MediaFilm2
 {
     class CrearVistas
     {
-        public static Label getLabelResultado(string content)
+        internal static Label getLabelResultado(string content)
         {
             Label tmpLabel = new Label();
             tmpLabel.Content = content;
             tmpLabel.Style = (Style)Application.Current.Resources["LabelResultados"];
             return tmpLabel;
         }
-
-
-
-
 
         internal static StackPanel getVistaSeleccionarSerie(MainWindow mainWindow, Serie item)
         {
@@ -41,24 +37,18 @@ namespace MediaFilm2
 
 
             Button tmpButton = new Button();
-            tmpButton.Click += delegate
+            tmpButton.Click += delegate 
             {
-                buttonSeleccionarSerie_Click(mainWindow, item);
+                mainWindow.serieSeleccionada = item;
+                mainWindow.serieSeleccionada.getPatrones(mainWindow.config);
+                UpdateIU.Update(mainWindow, Codigos.ADD_PATRON_SERIE_SELEC);
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
-
             tmpButton.Content = "Seleccionar";
 
             tmpPanel.Children.Add(tmpButton);
 
             return tmpPanel;
-        }
-
-        private static void buttonSeleccionarSerie_Click(MainWindow mainWindow, Serie item)
-        {
-            mainWindow.serieSeleccionada = item;
-            mainWindow.serieSeleccionada.getPatrones(mainWindow.config);
-            UpdateIU.Update(mainWindow, Codigos.ADD_PATRON_SERIE_SELEC);
         }
 
         internal static Label getVistaPatronesActuales(Patron item)
@@ -79,7 +69,7 @@ namespace MediaFilm2
             return tmpLabelTitulo;
         }
 
-        internal static UIElement getVistaFicheroARenombrar(string name)
+        internal static Label getVistaFicheroARenombrar(string name)
         {
             Label tmpLabelFichero = new Label();
             tmpLabelFichero.Content = name;
@@ -89,7 +79,7 @@ namespace MediaFilm2
             return tmpLabelFichero;
         }
 
-        internal static UIElement getVistaIncrementarTemporadas(MainWindow mainWindow, Serie serie)
+        internal static StackPanel getVistaIncrementarTemporadas(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
@@ -111,7 +101,8 @@ namespace MediaFilm2
                 serie.temporadaActual++;
                 if (serie.temporadaActual > serie.numeroTemporadas)
                     serie.numeroTemporadas++;
-                incrementarTemporada(mainWindow, serie);
+                mainWindow.SeriesXML.actualizarSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
             };
             tmpPanel.Children.Add(tmpImagenMin);
 
@@ -143,19 +134,18 @@ namespace MediaFilm2
             Image tmpImagenMax = new Image();
             tmpImagenMax.Source = src;
             tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMax.MouseLeftButtonUp += delegate { serie.numeroTemporadas++; incrementarTemporada(mainWindow, serie); };
+            tmpImagenMax.MouseLeftButtonUp += delegate 
+            {
+                serie.numeroTemporadas++;
+                mainWindow.SeriesXML.actualizarSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
+            };
             tmpPanel.Children.Add(tmpImagenMax);
 
             return tmpPanel;
         }
 
-        private static void incrementarTemporada(MainWindow mainWindow, Serie serie)
-        {
-            mainWindow.SeriesXML.actualizarSerie(serie);
-            UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
-        }
-
-        internal static UIElement getVistaSerieActiva(MainWindow mainWindow, Serie serie)
+        internal static StackPanel getVistaSerieActiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
@@ -191,7 +181,8 @@ namespace MediaFilm2
 
             return tmpPanel;
         }
-        internal static UIElement getVistaSerieInactiva(MainWindow mainWindow, Serie serie)
+
+        internal static StackPanel getVistaSerieInactiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
             tmpPanel.Orientation = Orientation.Horizontal;
