@@ -365,7 +365,7 @@
     <temporadaActual>2</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
+    <estado>D</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Eureka">
@@ -405,7 +405,7 @@
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
+    <estado>D</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Finales felices">
@@ -616,14 +616,6 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
-  <serie titulo="Las cronicas de shanara">
-    <titulo>Las cronicas de shanara</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>4</numeroTemporadas>
-    <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
-    <extension>.avi</extension>
-  </serie>
   <serie titulo="Legends">
     <titulo>Legends</titulo>
     <temporadaActual>1</temporadaActual>
@@ -637,7 +629,7 @@
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
+    <estado>D</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Looking">
@@ -1269,7 +1261,7 @@
   <serie titulo="Guardians of galaxy">
     <titulo>Guardians of galaxy</titulo>
     <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
     <extension>.mkv</extension>

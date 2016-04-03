@@ -186,7 +186,7 @@
                             <StackPanel Name="panelNuevoPatron" >
                                 <Border Style="{StaticResource Border}">
                                     <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                        <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"  MaxHeight="200"/>
+                                        <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"  MaxHeight="180"/>
                                     </ScrollViewer>
                                 </Border>
                                 <Border Style="{StaticResource Border}">
@@ -227,14 +227,14 @@
 
                     </StackPanel>
 
-                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Visible">
+                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Collapsed">
                         <Label Content="Series" Style="{StaticResource LabelTitulos}"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Label Content="Temp. Actual" Width="100"  Style="{StaticResource LabelListaSeries}"/>
                             <Label Content="Serie" HorizontalContentAlignment="Center" Width="180" Style="{StaticResource LabelListaSeries}"/>
                             <Label Content="Num temp" Width="180" Style="{StaticResource LabelListaSeries}"/>
                         </StackPanel>
-                        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+                        <ScrollViewer>
                             <StackPanel Name="panelListaIncrementarTemporadas" Width="300" Height="320" >
                             </StackPanel>
                         </ScrollViewer>

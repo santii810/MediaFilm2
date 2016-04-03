@@ -19,8 +19,8 @@ namespace MediaFilm2.Vista
             switch (cod)
             {
                 case Codigos.ESTADO_INICIAL:
-                    
                     break;
+                #region Paneles 1
                 case Codigos.PANEL_ORDENAR_VIDEOS:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.labelTiempoOrden.Content = "";
@@ -50,13 +50,15 @@ namespace MediaFilm2.Vista
                     mainWindow.consolaPanelRenombrarVideos.Visibility = Visibility.Visible;
                     mainWindow.panelTiempoRenombrado.Visibility = Visibility.Visible;
                     break;
+                #endregion
+
+                #region Paneles 2
                 case Codigos.PANEL_ADD_DATOS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     break;
                 case Codigos.ADD_SERIE:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelAddSerie.Visibility = Visibility.Visible;
-
                     break;
                 case Codigos.ADD_SERIE_OK:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
@@ -73,7 +75,6 @@ namespace MediaFilm2.Vista
                     mainWindow.panelFicherosARenombrar.Visibility = Visibility.Visible;
                     rellenaPanelSeleccionarSeries(mainWindow);
                     rellenaPanelFicherosARenombrar(mainWindow);
-
                     break;
                 case Codigos.ADD_PATRON_SERIE_SELEC:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
@@ -86,26 +87,25 @@ namespace MediaFilm2.Vista
                     break;
                 case Codigos.ADD_PATRON_OK:
                     mainWindow.textBoxNuevoPatron.Text = "";
-                    Update(mainWindow ,Codigos.ADD_PATRON_SERIE_SELEC);
+                    Update(mainWindow, Codigos.ADD_PATRON_SERIE_SELEC);
                     break;
                 case Codigos.PANEL_IO_SERIES:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     mainWindow.panelIOSerie.Visibility = Visibility.Visible;
                     rellenaPanelSeriesActivas(mainWindow);
                     rellenaPanelSeriesInactivas(mainWindow);
-                    
                     break;
                 case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
                     mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     rellenaPanelIncrementarTemporadas(mainWindow);
-                    
                     break;
+                #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
         }
-        
+
         private static void collapseAll(MainWindow mainWindow)
         {
             //siempre ocultos
@@ -126,8 +126,6 @@ namespace MediaFilm2.Vista
             mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
 
         }
-
-
 
 
         private static void rellenaPanelSeriesActivas(MainWindow mainWindow)
@@ -152,7 +150,7 @@ namespace MediaFilm2.Vista
             }
 
         }
-        
+
         private static void rellenaPanelFicherosARenombrar(MainWindow mainWindow)
         {
             mainWindow.panelFicherosARenombrar.Children.Clear();
@@ -169,8 +167,8 @@ namespace MediaFilm2.Vista
             mainWindow.actualizarListaSeries();
             foreach (Serie item in mainWindow.series)
             {
-                if(item.estado == "A")
-                mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
+                if (item.estado == "A")
+                    mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaSeleccionarSerie(mainWindow, item));
             }
         }
 
@@ -189,7 +187,7 @@ namespace MediaFilm2.Vista
         {
             mainWindow.panelPatronesActuales.Children.Clear();
             mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaTitulo("Patrones"));
-            foreach (Patron item in  mainWindow.serieSeleccionada.patrones)
+            foreach (Patron item in mainWindow.serieSeleccionada.patrones)
             {
                 mainWindow.panelPatronesActuales.Children.Add(CrearVistas.getVistaPatronesActuales(item));
             }
