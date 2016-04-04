@@ -10,6 +10,14 @@
         <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
+    <Style x:Key="LabelMenu" TargetType="{x:Type Label}">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
     <Style x:Key="LabelAddSerie" TargetType="{x:Type Label}">
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>

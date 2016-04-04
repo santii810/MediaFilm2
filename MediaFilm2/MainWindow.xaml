@@ -19,6 +19,10 @@
                         <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="AddDatos_MouseLeftButtonUp"/>
                         <Label Content="Añadir" Style="{StaticResource LabelTitulos}" />
                     </StackPanel>
+                    <StackPanel Name="stackMenuMantenimiento" Orientation="Vertical" Width="100" Margin="0,5">
+                        <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="ImageMantenimiento_MouseLeftButtonUp"/>
+                        <Label Content="Mantenimiento" Style="{StaticResource LabelMenu}" />
+                    </StackPanel>
                 </StackPanel>
             </Border>
             <!--#endregion menu-->
@@ -125,7 +129,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Visible">
+                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Collapsed">
                     <StackPanel Name="panelBotonesAddDatos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical"  Margin="20,0">
                             <Label Content="Añadir serie"  Style="{StaticResource LabelTitulos}"/>
@@ -239,6 +243,17 @@
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>
+                </StackPanel>
+
+                <StackPanel Name="panelMantenimiento" Visibility="Visible" Orientation="Horizontal">
+                    <StackPanel Width="250">
+                        <Image Source="Iconos/start.png" Height="100"  Margin="20"/>
+                        <Border Style="{StaticResource Border}">
+                            <StackPanel Name="panelResultadoMantenimiento">
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
                 </StackPanel>
             </Grid>
         </DockPanel>

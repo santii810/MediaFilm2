@@ -181,5 +181,10 @@ namespace MediaFilm2
             actualizarListaSeries();
             UpdateIU.Update(this, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
         }
+
+        private void ImageMantenimiento_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.PANEL_MANTENIMIENTO);
+        }
     }
 }

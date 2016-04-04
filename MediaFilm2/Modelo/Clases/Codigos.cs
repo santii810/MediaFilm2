@@ -24,7 +24,7 @@ namespace MediaFilm2
         public const int PANEL_INCREMENTAR_TEMPORADAS = 13;
         
         
-        public const int k = 14;
+        public const int PANEL_MANTENIMIENTO = 14;
         public const int l = 15;
         public const int m = 16;
         public const int n = 17;

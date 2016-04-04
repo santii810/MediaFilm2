@@ -1282,4 +1282,20 @@
     <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
+    <serie titulo="Juego de tronos">
+    <titulo>Juego de tronos</titulo>
+    <temporadaActual>6</temporadaActual>
+    <numeroTemporadas>6</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="New girl">
+    <titulo>New girl</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
 </Series>

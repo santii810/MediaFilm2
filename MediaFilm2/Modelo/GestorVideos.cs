@@ -126,8 +126,8 @@ namespace MediaFilm2.Modelo
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
                         }
                         break;
-                    default:
-                        throw new TipoArchivoNoSoportadoException(item);
+                //    default:
+                    //    throw new TipoArchivoNoSoportadoException(item);
                 }
             }
             directoriosBorrados = borrarDirectoriosVacios(mainWindow.config.dirTorrent);
@@ -368,11 +368,11 @@ namespace MediaFilm2.Modelo
             {
                 if (cap < 10)
                 {
-                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "x0" + cap + ext);
                 }
                 else
                 {
-                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + cap + ext);
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp +"x"+ cap + ext);
                 }
                 mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
                 mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelResultado(nombreOriginal + "    =>    " + fi.Name));

@@ -101,6 +101,13 @@ namespace MediaFilm2.Vista
                     rellenaPanelIncrementarTemporadas(mainWindow);
                     break;
                 #endregion
+
+                #region Paneles 3
+                case Codigos.PANEL_MANTENIMIENTO:
+
+
+                    break;
+                #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
