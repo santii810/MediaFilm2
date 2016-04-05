@@ -126,8 +126,8 @@ namespace MediaFilm2.Modelo
                             mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
                         }
                         break;
-                //    default:
-                    //    throw new TipoArchivoNoSoportadoException(item);
+                        //    default:
+                        //    throw new TipoArchivoNoSoportadoException(item);
                 }
             }
             directoriosBorrados = borrarDirectoriosVacios(mainWindow.config.dirTorrent);
@@ -165,6 +165,10 @@ namespace MediaFilm2.Modelo
             }
             return retorno;
         }
+
+
+
+
 
         /// <summary>
         /// Borra el fichero enviado como parametro.
@@ -372,14 +376,14 @@ namespace MediaFilm2.Modelo
                 }
                 else
                 {
-                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp +"x"+ cap + ext);
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "x" + cap + ext);
                 }
                 mainWindow.LogMediaXML.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'", fi));
                 mainWindow.panelResultadoVideosRenombrados.Children.Add(CrearVistas.getLabelResultado(nombreOriginal + "    =>    " + fi.Name));
                 return true;
 
             }
-        catch(IOException e)
+            catch (IOException e)
             {
                 if (e.Message == "No se puede crear un archivo que ya existe.\r\n")
                     fi.Delete();
@@ -389,7 +393,7 @@ namespace MediaFilm2.Modelo
             }
             catch (Exception e)
             {
-                
+
                 mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
                 mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
                 return false;
@@ -413,8 +417,8 @@ namespace MediaFilm2.Modelo
             }
             if (fsi.Length > 1)
             {
-                if(!pat.Contains("720")&& pat.Contains("1080"))
-                throw new TooManySerieCoincidencesException(pat);
+                if (!pat.Contains("720") && pat.Contains("1080"))
+                    throw new TooManySerieCoincidencesException(pat);
             }
             return null;
         }
@@ -437,7 +441,6 @@ namespace MediaFilm2.Modelo
         }
         #endregion
 
-        
         /// <summary>
         /// Gets the ficheros a renombrar.
         /// </summary>
@@ -450,5 +453,69 @@ namespace MediaFilm2.Modelo
             if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
             return dir.GetFileSystemInfos();
         }
+
+
+
+        #region Mantenimiento
+
+        internal static void Mantenimiento(MainWindow mainWindow)
+        {
+
+            foreach (DirectoryInfo dirSerie in new DirectoryInfo(mainWindow.config.dirSeries).GetDirectories())
+            {
+                foreach (DirectoryInfo dirTemporada in dirSerie.GetDirectories())
+                {
+                    string patron1, patron2;
+                    for (int i = 1; i < 25; i++)
+                    {
+
+                        //if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i;
+                        //else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i;
+                        //if (i < 10) patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + (i + 1);
+                        //else patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + (i + 1);
+
+                        //FileSystemInfo[] finfo = dirTemporada.GetFileSystemInfos();
+
+
+
+
+
+                        if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i;
+                        else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i;
+
+                        if (dirTemporada.GetFileSystemInfos(patron1).Length == 0)
+                        {
+                            if (i < 10) patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + (i + 1);
+                            else patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + (i + 1);
+                            FileSystemInfo[] finfo2 = dirTemporada.GetFileSystemInfos(patron2);
+                            FileSystemInfo[] finfo3 = dirTemporada.GetFileSystemInfos();
+
+                            if (finfo2.Length > 0)
+                            {
+                                errorFaltaFichero(patron1);
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+        /// <summary>
+        /// Metodo que se ejecuta cuando falta un fichero
+        /// </summary>
+        /// <param name="patron">The patron.</param>
+        /// <exception cref="NotImplementedException"></exception>
+        private static void errorFaltaFichero(string patron)
+        {
+            MessageBox.Show("falta fichero " + patron);
+        }
+
+
+        #endregion
+
+
     }
 }

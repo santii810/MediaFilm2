@@ -186,5 +186,10 @@ namespace MediaFilm2
         {
             UpdateIU.Update(this, Codigos.PANEL_MANTENIMIENTO);
         }
+
+        private void StartMantenimiento_LeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            GestorVideos.Mantenimiento(this);
+        }
     }
 }

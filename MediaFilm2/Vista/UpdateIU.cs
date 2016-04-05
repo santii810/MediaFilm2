@@ -104,7 +104,7 @@ namespace MediaFilm2.Vista
 
                 #region Paneles 3
                 case Codigos.PANEL_MANTENIMIENTO:
-
+                    mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
 
                     break;
                 #endregion
@@ -133,8 +133,7 @@ namespace MediaFilm2.Vista
             mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
 
         }
-
-
+        
         private static void rellenaPanelSeriesActivas(MainWindow mainWindow)
         {
             mainWindow.panelListaSeriesActivas.Children.Clear();

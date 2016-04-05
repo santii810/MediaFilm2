@@ -13,14 +13,14 @@
                 <StackPanel Name="panelMenu" Width="100" Orientation="Vertical" DockPanel.Dock="Left">
                     <StackPanel Name="stackMenuOrdenar" Orientation="Vertical" Width="100" Margin="0,5">
                         <Image Source="Iconos/organize.png" MouseLeftButtonUp="OrdenarVideos_MouseLeftButtonUp"/>
-                        <Label Content="Ordenar" Style="{StaticResource LabelTitulos}" />
+                        <Label Content="Ordenar" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                     <StackPanel Name="stackMenuAddSerie" Orientation="Vertical" Width="100" Margin="0,5">
                         <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="AddDatos_MouseLeftButtonUp"/>
-                        <Label Content="Añadir" Style="{StaticResource LabelTitulos}" />
+                        <Label Content="Añadir datos" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                     <StackPanel Name="stackMenuMantenimiento" Orientation="Vertical" Width="100" Margin="0,5">
-                        <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="ImageMantenimiento_MouseLeftButtonUp"/>
+                        <Image Source="Iconos/mantenimiento.png" MouseLeftButtonUp="ImageMantenimiento_MouseLeftButtonUp"/>
                         <Label Content="Mantenimiento" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                 </StackPanel>
@@ -247,7 +247,7 @@
 
                 <StackPanel Name="panelMantenimiento" Visibility="Visible" Orientation="Horizontal">
                     <StackPanel Width="250">
-                        <Image Source="Iconos/start.png" Height="100"  Margin="20"/>
+                        <Image Source="Iconos/start.png" Height="100"  Margin="20" MouseLeftButtonUp="StartMantenimiento_LeftButtonUp"/>
                         <Border Style="{StaticResource Border}">
                             <StackPanel Name="panelResultadoMantenimiento">
                             </StackPanel>
