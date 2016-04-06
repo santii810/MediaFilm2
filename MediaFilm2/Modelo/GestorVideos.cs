@@ -463,28 +463,38 @@ namespace MediaFilm2.Modelo
 
             foreach (DirectoryInfo dirSerie in new DirectoryInfo(mainWindow.config.dirSeries).GetDirectories())
             {
+                Serie serie = new Serie();
+                foreach (Serie item in mainWindow.series)
+                    if (dirSerie.Name == item.titulo)
+                        serie = item;
+
                 foreach (DirectoryInfo dirTemporada in dirSerie.GetDirectories())
                 {
-                    string patron1, patron2;
+                    string patron;
                     bool debeEstar = false;
                     for (int i = 25; i > 0; i--)
                     {
+                        if (i < 10) patron = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i + "*";
+                        else patron = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i + "*";
 
 
-                        if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i + "*";
-                        else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i + "*";
 
-                        if (dirTemporada.GetFileSystemInfos(patron1).Length > 0)
+                        if (dirTemporada.GetFileSystemInfos(patron).Length > 0)
+                        {
                             debeEstar = true;
+                            comprobarExtension(dirTemporada.GetFileSystemInfos(patron), serie.extension);
+                        }
                         else if (debeEstar)
-                            errorFaltaFichero(patron1);
-
+                            errorFaltaFichero(patron);
                     }
-
-
 
                 }
             }
+        }
+
+        private static bool comprobarExtension(FileSystemInfo[] fileSystemInfo, string extension)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>

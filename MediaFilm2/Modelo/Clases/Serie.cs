@@ -28,12 +28,6 @@ namespace MediaFilm2.Modelo
             patrones = xmlPat.leerPatrones(titulo);
 
         }
-
-        public void limpiarPatrones()
-        {
-            patrones.Clear();
-        }
-
         public int CompareTo(Serie obj)
         {
             return String.Compare(this.titulo, obj.titulo);
