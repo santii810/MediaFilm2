@@ -39,6 +39,8 @@ namespace MediaFilm2
 
         public Serie serieSeleccionada;
 
+        public List<string> ErroresContinuidad;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -50,6 +52,9 @@ namespace MediaFilm2
             LogMediaXML = new LoggerXML(config.datosLog);
             SeriesXML = new SeriesXML(config);
             PatronesXML = new PatronesXML(config);
+
+
+            ErroresContinuidad = new List<string>();
 
 
 
@@ -190,6 +195,7 @@ namespace MediaFilm2
         private void StartMantenimiento_LeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             GestorVideos.Mantenimiento(this);
+            UpdateIU.Update(this, Codigos.RESULTADO_MANTENIMIENTO);
         }
     }
 }

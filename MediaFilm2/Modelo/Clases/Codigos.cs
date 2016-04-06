@@ -22,19 +22,25 @@ namespace MediaFilm2
         public const int ADD_PATRON_OK = 11;
         public const int PANEL_IO_SERIES = 12;
         public const int PANEL_INCREMENTAR_TEMPORADAS = 13;
-        
-        
+
+
         public const int PANEL_MANTENIMIENTO = 14;
-        public const int l = 15;
+        public const int RESULTADO_MANTENIMIENTO = 15;
         public const int m = 16;
         public const int n = 17;
         public const int ñ = 18;
         public const int o = 19;
         public const int p = 20;
         public const int q = 21;
-        public const int r = 22;
 
 
+
+
+
+        public const int COD_PUNTO_VERDE = 100;
+        public const int COD_PUNTO_ROJO = 101;
+        public const int COD_PUNTO_AZUL = 102;
+        public const int COD_PUNTO_AMARILLO = 103;
 
     }
 }

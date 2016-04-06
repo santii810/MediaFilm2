@@ -464,6 +464,7 @@ namespace MediaFilm2.Modelo
             foreach (DirectoryInfo dirSerie in new DirectoryInfo(mainWindow.config.dirSeries).GetDirectories())
             {
                 Serie serie = new Serie();
+                mainWindow.actualizarListaSeries();
                 foreach (Serie item in mainWindow.series)
                     if (dirSerie.Name == item.titulo)
                         serie = item;
@@ -479,53 +480,51 @@ namespace MediaFilm2.Modelo
 
 
                         FileSystemInfo[] sinfo = dirTemporada.GetFileSystemInfos(patron);
-                        if(sinfo.Length== 0)
+                        if (sinfo.Length == 0)
                         {
                             if (debeEstar)
-                                errorFaltaFichero(patron);
+                                //Añado a la lista de ficheros que faltan
+                                mainWindow.ErroresContinuidad.Add(patron.Substring(patron.Length - 2));
                         }
                         else
                         {
                             debeEstar = true;
 
-                            if( sinfo.Length==1)
-                                comprobarExtension(sinfo[0], serie.extension);
-                            else
-                            {
-                                
-                            }
+                            if (sinfo.Length == 1)
+                                if (sinfo[0].Extension != serie.extension)
+                                    errorExtensionIncorrecta(sinfo[0], serie.extension);
+
+                                else
+                                {
+                                    errorFicheroDuplicado(sinfo, serie.extension);
+                                }
                         }
 
 
 
 
-                       
+
                     }
 
                 }
             }
         }
 
-        private static bool comprobarExtension(FileSystemInfo fichero, string extension)
+        private static void errorFicheroDuplicado(FileSystemInfo[] sinfo, string extension)
+        {
+
+        }
+
+
+        private static bool errorExtensionIncorrecta(FileSystemInfo fichero, string extension)
         {
             if (fichero.Extension != extension)
             {
-                MessageBox.Show("extension incorrecta en " + fichero.Name);
+                //    MessageBox.Show("extension incorrecta en " + fichero.Name);
                 return false;
             }
             return true;
         }
-
-        /// <summary>
-        /// Metodo que se ejecuta cuando falta un fichero
-        /// </summary>
-        /// <param name="patron">The patron.</param>
-        /// <exception cref="NotImplementedException"></exception>
-        private static void errorFaltaFichero(string patron)
-        {
-            MessageBox.Show("falta fichero " + patron);
-        }
-
 
         #endregion
 

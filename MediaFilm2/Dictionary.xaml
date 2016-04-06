@@ -59,7 +59,7 @@
         <Setter Property="FontFamily" Value="Tempus Sans ITC"/>
     </Style>
 
-    
+
     <Style x:Key="Border" TargetType="{x:Type Border}">
         <Setter Property="BorderBrush" Value="Bisque"/>
         <Setter Property="BorderThickness" Value="3"/>
@@ -84,7 +84,7 @@
         <Setter Property="Margin" Value="0,5"/>
     </Style>
 
-    
+
     <Style x:Key="TextBox" TargetType="{x:Type TextBox}">
         <Setter Property="TextAlignment" Value="Right"/>
         <Setter Property="FontSize" Value="16"/>
@@ -95,7 +95,7 @@
         <Setter Property="FontSize" Value="16"/>
     </Style>
 
-    
+
     <Style x:Key="Image" TargetType="{x:Type Image}">
         <Setter Property="Stretch" Value="Uniform"/>
         <Setter Property="Width" Value="20"/>
@@ -103,7 +103,11 @@
     </Style>
 
 
-
+    <Style x:Key="ImagenPuntos" TargetType="{x:Type Image}">
+        <Setter Property="Stretch" Value="Uniform"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="25"/>
+    </Style>
 
 
 

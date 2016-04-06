@@ -36,7 +36,7 @@ namespace MediaFilm2
 
 
             Button tmpButton = new Button();
-            tmpButton.Click += delegate 
+            tmpButton.Click += delegate
             {
                 mainWindow.serieSeleccionada = item;
                 mainWindow.serieSeleccionada.getPatrones(mainWindow.config);
@@ -128,7 +128,7 @@ namespace MediaFilm2
             Image tmpImagenMax = new Image();
             tmpImagenMax.Source = src;
             tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMax.MouseLeftButtonUp += delegate 
+            tmpImagenMax.MouseLeftButtonUp += delegate
             {
                 serie.numeroTemporadas++;
                 mainWindow.SeriesXML.actualizarSerie(serie);
@@ -174,6 +174,31 @@ namespace MediaFilm2
             return tmpPanel;
         }
 
+        internal static ImageSource getPunto(int cod)
+        {
+            BitmapImage src = new BitmapImage();
+            src.BeginInit();
+                        switch (cod)
+            {
+                case Codigos.COD_PUNTO_VERDE:
+                    src.UriSource = new Uri("Iconos/greenPoint.png", UriKind.Relative);
+                    break;
+                case Codigos.COD_PUNTO_ROJO:
+                    src.UriSource = new Uri("Iconos/redPoint.png", UriKind.Relative);
+                    break;
+                case Codigos.COD_PUNTO_AMARILLO:
+                    src.UriSource = new Uri("Iconos/yellowPoint.png", UriKind.Relative);
+                    break;
+                case Codigos.COD_PUNTO_AZUL:
+                    src.UriSource = new Uri("Iconos/bluePoint.png", UriKind.Relative);
+                    break;
+
+            }
+            src.EndInit();
+            
+            return src;
+        }
+
         internal static StackPanel getVistaSerieInactiva(MainWindow mainWindow, Serie serie)
         {
             StackPanel tmpPanel = new StackPanel();
@@ -208,5 +233,7 @@ namespace MediaFilm2
 
             return tmpPanel;
         }
+
+
     }
 }
