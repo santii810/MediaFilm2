@@ -466,25 +466,19 @@ namespace MediaFilm2.Modelo
                 foreach (DirectoryInfo dirTemporada in dirSerie.GetDirectories())
                 {
                     string patron1, patron2;
-                    for (int i = 1; i < 25; i++)
+                    bool debeEstar = false;
+                    for (int i = 25; i > 0; i--)
                     {
 
 
                         if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i + "*";
                         else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i + "*";
 
-                        if (dirTemporada.GetFileSystemInfos(patron1).Length == 0)
-                        {
-                            if (i < 10) patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + (i + 1) + "*";
-                            else patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + (i + 1) + "*";
-                            FileSystemInfo[] finfo2 = dirTemporada.GetFileSystemInfos(patron2);
-                            FileSystemInfo[] finfo3 = dirTemporada.GetFileSystemInfos();
+                        if (dirTemporada.GetFileSystemInfos(patron1).Length > 0)
+                            debeEstar = true;
+                        else if (debeEstar)
+                            errorFaltaFichero(patron1);
 
-                            if (finfo2.Length > 0)
-                            {
-                                errorFaltaFichero(patron1);
-                            }
-                        }
                     }
 
 
