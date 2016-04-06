@@ -478,23 +478,42 @@ namespace MediaFilm2.Modelo
                         else patron = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i + "*";
 
 
-
-                        if (dirTemporada.GetFileSystemInfos(patron).Length > 0)
+                        FileSystemInfo[] sinfo = dirTemporada.GetFileSystemInfos(patron);
+                        if(sinfo.Length== 0)
+                        {
+                            if (debeEstar)
+                                errorFaltaFichero(patron);
+                        }
+                        else
                         {
                             debeEstar = true;
-                            comprobarExtension(dirTemporada.GetFileSystemInfos(patron), serie.extension);
+
+                            if( sinfo.Length==1)
+                                comprobarExtension(sinfo[0], serie.extension);
+                            else
+                            {
+                                
+                            }
                         }
-                        else if (debeEstar)
-                            errorFaltaFichero(patron);
+
+
+
+
+                       
                     }
 
                 }
             }
         }
 
-        private static bool comprobarExtension(FileSystemInfo[] fileSystemInfo, string extension)
+        private static bool comprobarExtension(FileSystemInfo fichero, string extension)
         {
-            throw new NotImplementedException();
+            if (fichero.Extension != extension)
+            {
+                MessageBox.Show("extension incorrecta en " + fichero.Name);
+                return false;
+            }
+            return true;
         }
 
         /// <summary>
