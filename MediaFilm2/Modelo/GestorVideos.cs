@@ -460,6 +460,10 @@ namespace MediaFilm2.Modelo
 
         internal static void Mantenimiento(MainWindow mainWindow)
         {
+            //reset
+            mainWindow.ErroresContinuidad.Clear();
+
+
 
             foreach (DirectoryInfo dirSerie in new DirectoryInfo(mainWindow.config.dirSeries).GetDirectories())
             {
@@ -495,17 +499,9 @@ namespace MediaFilm2.Modelo
                                     errorExtensionIncorrecta(sinfo[0], serie.extension);
 
                                 else
-                                {
                                     errorFicheroDuplicado(sinfo, serie.extension);
-                                }
                         }
-
-
-
-
-
                     }
-
                 }
             }
         }
