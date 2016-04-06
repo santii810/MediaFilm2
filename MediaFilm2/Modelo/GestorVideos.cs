@@ -480,13 +480,13 @@ namespace MediaFilm2.Modelo
 
 
 
-                        if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i;
-                        else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i;
+                        if (i < 10) patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + i + "*";
+                        else patron1 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + i + "*";
 
                         if (dirTemporada.GetFileSystemInfos(patron1).Length == 0)
                         {
-                            if (i < 10) patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + (i + 1);
-                            else patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + (i + 1);
+                            if (i < 10) patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x0" + (i + 1) + "*";
+                            else patron2 = dirSerie.Name + " " + dirTemporada.Name.Substring(9) + "x" + (i + 1) + "*";
                             FileSystemInfo[] finfo2 = dirTemporada.GetFileSystemInfos(patron2);
                             FileSystemInfo[] finfo3 = dirTemporada.GetFileSystemInfos();
 
