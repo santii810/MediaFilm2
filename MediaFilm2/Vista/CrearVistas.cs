@@ -261,7 +261,7 @@ namespace MediaFilm2
             Button tmpButton = new Button();
             tmpButton.Click += delegate
             {
-                if (MessageBox.Show("Do you want to exit?", "My Application", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     item[1].Delete();
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];

@@ -202,7 +202,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelResultadoDuplicidad(MainWindow mainWindow)
         {
             mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
-            mainWindow.ErroresDuplicidad.Sort();
+          //  mainWindow.ErroresDuplicidad.Sort();
             foreach (FileSystemInfo[] item in mainWindow.ErroresDuplicidad)
             {
                 mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getVistaDuplicidad(item));
