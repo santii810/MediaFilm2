@@ -41,6 +41,7 @@ namespace MediaFilm2
 
         public List<string> ErroresContinuidad;
         public List<string> ErroresHomogenia;
+        public List<string> ErroresDuplicidad;
 
         public MainWindow()
         {
@@ -57,10 +58,7 @@ namespace MediaFilm2
 
             ErroresContinuidad = new List<string>();
             ErroresHomogenia = new List<string>();
-
-
-
-
+            ErroresDuplicidad = new List<string>();
         }
 
 
@@ -209,6 +207,12 @@ namespace MediaFilm2
         private void ButtonVerHomogenia_Click(object sender, RoutedEventArgs e)
         {
             UpdateIU.Update(this, Codigos.VER_HOMOGENIA);
+
+        }
+
+        private void ButtonVerDuplicidad_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.VER_DUPLICIDAD);
 
         }
     }

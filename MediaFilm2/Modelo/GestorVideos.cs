@@ -499,18 +499,12 @@ namespace MediaFilm2.Modelo
                                 if (sinfo[0].Extension != serie.extension)
                                     mainWindow.ErroresHomogenia.Add(sinfo[0].Name);
                                 else
-                                    errorFicheroDuplicado(sinfo, serie.extension);
+                                    mainWindow.ErroresDuplicidad.Add(sinfo[0].Name);
                         }
                     }
                 }
             }
         }
-
-        private static void errorFicheroDuplicado(FileSystemInfo[] sinfo, string extension)
-        {
-
-        }
-        
         #endregion
 
 

@@ -22,14 +22,11 @@ namespace MediaFilm2
         public const int ADD_PATRON_OK = 11;
         public const int PANEL_IO_SERIES = 12;
         public const int PANEL_INCREMENTAR_TEMPORADAS = 13;
-
-
         public const int PANEL_MANTENIMIENTO = 14;
         public const int RESULTADO_MANTENIMIENTO = 15;
         public const int VER_CONTINUIDAD = 16;
-
         public const int VER_HOMOGENIA = 17;
-        public const int b = 18;
+        public const int VER_DUPLICIDAD = 18;
         public const int c = 19;
         public const int d = 20;
         public const int e = 21;

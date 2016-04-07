@@ -255,7 +255,7 @@
                                     <StackPanel Width="195">
                                         <Label Content="Continuidad" Style="{StaticResource LabelTitulos}"/>
                                         <StackPanel Name="panelResultadoContinuidad" Orientation="Horizontal">
-                                            <Label Name="labelResultadoContinuidad" Content="X errores detectados" Width="150" Style="{StaticResource LabelResultados}"/>
+                                            <Label Name="labelResultadoContinuidad"  Width="150" Style="{StaticResource LabelResultados}"/>
                                             <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerContinuidad_Click"></Button>
                                         </StackPanel>
                                     </StackPanel>
@@ -269,15 +269,24 @@
                                     <StackPanel Width="195">
                                         <Label Content="Homogenia" Style="{StaticResource LabelTitulos}"/>
                                         <StackPanel Name="panelResultadoHomogenia" Orientation="Horizontal">
-                                            <Label Name="labelResultadoHomogenia" Content="X errores detectados" Width="150" Style="{StaticResource LabelResultados}"/>
+                                            <Label Name="labelResultadoHomogenia"  Width="150" Style="{StaticResource LabelResultados}"/>
                                             <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerHomogenia_Click"></Button>
                                         </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
                             </Border>
-
-
-
+                            <Border Style="{StaticResource Border}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Name="circuloDuplicidad" Source="Iconos/bluePoint.png"  Style="{StaticResource ImagenPuntos}"/>
+                                    <StackPanel Width="195">
+                                        <Label Content="Duplicidad" Style="{StaticResource LabelTitulos}"/>
+                                        <StackPanel Name="panelResultadoDuplicidad" Orientation="Horizontal">
+                                            <Label Name="labelResultadoDuplicidad"  Width="150" Style="{StaticResource LabelResultados}"/>
+                                            <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerDuplicidad_Click"></Button>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
                         </StackPanel>
 
 

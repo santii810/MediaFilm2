@@ -115,7 +115,7 @@ namespace MediaFilm2.Vista
 
                     if (mainWindow.ErroresContinuidad.Count == 0)
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
-                    if (mainWindow.ErroresContinuidad.Count > 3)
+                    if (mainWindow.ErroresContinuidad.Count > 5)
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
                     else
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
@@ -130,11 +130,20 @@ namespace MediaFilm2.Vista
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
                     mainWindow.labelResultadoHomogenia.Content = mainWindow.ErroresHomogenia.Count + " errores detectados";
 
+                    if (mainWindow.ErroresDuplicidad.Count == 0)
+                        mainWindow.circuloDuplicidad.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
+                    if (mainWindow.ErroresDuplicidad.Count > 2)
+                        mainWindow.circuloDuplicidad.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
+                    else
+                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
+                    mainWindow.labelResultadoDuplicidad.Content = mainWindow.ErroresDuplicidad.Count + " errores detectados";
+
+
 
 
 
                     break;
-                    
+
                 case Codigos.VER_CONTINUIDAD:
                     Update(mainWindow, Codigos.RESULTADO_MANTENIMIENTO);
                     mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Visible;
