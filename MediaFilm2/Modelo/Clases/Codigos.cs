@@ -28,7 +28,7 @@ namespace MediaFilm2
         public const int RESULTADO_MANTENIMIENTO = 15;
         public const int VER_CONTINUIDAD = 16;
 
-        public const int a = 17;
+        public const int VER_HOMOGENIA = 17;
         public const int b = 18;
         public const int c = 19;
         public const int d = 20;

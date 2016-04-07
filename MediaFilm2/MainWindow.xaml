@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaFilm2"
         mc:Ignorable="d"
-     Title="MediaFilm 2.0" Height="600" Width="800">
+     Title="MediaFilm 2.0" Height="600" Width="800" ResizeMode="NoResize">
     <Grid>
         <DockPanel Name="panelPrincipal" Visibility="Visible">
             <!--#region menu-->
@@ -248,8 +248,8 @@
                 <StackPanel Name="panelMantenimiento" Visibility="Visible" Orientation="Horizontal">
                     <StackPanel Width="250">
                         <Image Source="Iconos/start.png" Height="100"  Margin="20" MouseLeftButtonUp="StartMantenimiento_LeftButtonUp"/>
-                        <Border Style="{StaticResource Border}">
-                            <StackPanel Name="panelResultadoMantenimiento">
+                        <StackPanel Name="panelResultadoMantenimiento">
+                            <Border Style="{StaticResource Border}">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Name="circuloContinuidad" Source="Iconos/bluePoint.png"  Style="{StaticResource ImagenPuntos}"/>
                                     <StackPanel Width="195">
@@ -259,15 +259,33 @@
                                             <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerContinuidad_Click"></Button>
                                         </StackPanel>
                                     </StackPanel>
-
                                 </StackPanel>
-                            </StackPanel>
-                        </Border>
+
+                            </Border>
+
+                            <Border Style="{StaticResource Border}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Name="circuloHomogenia" Source="Iconos/bluePoint.png"  Style="{StaticResource ImagenPuntos}"/>
+                                    <StackPanel Width="195">
+                                        <Label Content="Homogenia" Style="{StaticResource LabelTitulos}"/>
+                                        <StackPanel Name="panelResultadoHomogenia" Orientation="Horizontal">
+                                            <Label Name="labelResultadoHomogenia" Content="X errores detectados" Width="150" Style="{StaticResource LabelResultados}"/>
+                                            <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerHomogenia_Click"></Button>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+
+
+
+                        </StackPanel>
+
+
                     </StackPanel>
                     <Border Name="borderResultadoMantenimiento" Margin="20" Style="{StaticResource Border}">
                         <ScrollViewer HorizontalScrollBarVisibility="Auto">
-                            <StackPanel Width="380">
-                                <Label Content="Ficheros que faltan:" Style="{StaticResource LabelTitulos}"/>
+                            <StackPanel Width="370">
+                                <Label Name="labelTituloResultadosMantenimiento" Content="Ficheros que faltan:" Style="{StaticResource LabelTitulos}"/>
                                 <StackPanel Name="panelMostrarResultadosMantenimiento"/>
                             </StackPanel>
                         </ScrollViewer>

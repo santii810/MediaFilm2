@@ -462,6 +462,7 @@ namespace MediaFilm2.Modelo
         {
             //reset
             mainWindow.ErroresContinuidad.Clear();
+            mainWindow.ErroresHomogenia.Clear();
 
 
 
@@ -496,8 +497,7 @@ namespace MediaFilm2.Modelo
 
                             if (sinfo.Length == 1)
                                 if (sinfo[0].Extension != serie.extension)
-                                    errorExtensionIncorrecta(sinfo[0], serie.extension);
-
+                                    mainWindow.ErroresHomogenia.Add(sinfo[0].Name);
                                 else
                                     errorFicheroDuplicado(sinfo, serie.extension);
                         }
@@ -510,18 +510,7 @@ namespace MediaFilm2.Modelo
         {
 
         }
-
-
-        private static bool errorExtensionIncorrecta(FileSystemInfo fichero, string extension)
-        {
-            if (fichero.Extension != extension)
-            {
-                //    MessageBox.Show("extension incorrecta en " + fichero.Name);
-                return false;
-            }
-            return true;
-        }
-
+        
         #endregion
 
 

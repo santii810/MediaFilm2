@@ -111,6 +111,7 @@ namespace MediaFilm2.Vista
                 case Codigos.RESULTADO_MANTENIMIENTO:
                     mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
                     mainWindow.panelResultadoContinuidad.Visibility = Visibility.Visible;
+                    mainWindow.panelResultadoHomogenia.Visibility = Visibility.Visible;
 
                     if (mainWindow.ErroresContinuidad.Count == 0)
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
@@ -118,16 +119,27 @@ namespace MediaFilm2.Vista
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
                     else
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
-
                     mainWindow.labelResultadoContinuidad.Content = mainWindow.ErroresContinuidad.Count + " errores detectados";
+
+
+                    if (mainWindow.ErroresHomogenia.Count == 0)
+                        mainWindow.circuloHomogenia.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
+                    if (mainWindow.ErroresHomogenia.Count > 10)
+                        mainWindow.circuloHomogenia.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
+                    else
+                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
+                    mainWindow.labelResultadoHomogenia.Content = mainWindow.ErroresHomogenia.Count + " errores detectados";
+
+
+
+
                     break;
-
-
+                    
                 case Codigos.VER_CONTINUIDAD:
                     Update(mainWindow, Codigos.RESULTADO_MANTENIMIENTO);
                     mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Visible;
+                    mainWindow.labelTituloResultadosMantenimiento.Content = "Ficheros que faltan:";
                     rellenaPanelResultadoContinuidad(mainWindow);
-
                     break;
                 #endregion
                 default:
@@ -157,6 +169,7 @@ namespace MediaFilm2.Vista
             mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
             mainWindow.panelMantenimiento.Visibility = Visibility.Collapsed;
             mainWindow.panelResultadoContinuidad.Visibility = Visibility.Collapsed;
+            mainWindow.panelResultadoHomogenia.Visibility = Visibility.Collapsed;
             mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Collapsed;
 
 

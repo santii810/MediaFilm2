@@ -40,6 +40,7 @@ namespace MediaFilm2
         public Serie serieSeleccionada;
 
         public List<string> ErroresContinuidad;
+        public List<string> ErroresHomogenia;
 
         public MainWindow()
         {
@@ -55,6 +56,7 @@ namespace MediaFilm2
 
 
             ErroresContinuidad = new List<string>();
+            ErroresHomogenia = new List<string>();
 
 
 
@@ -202,6 +204,12 @@ namespace MediaFilm2
         private void ButtonVerContinuidad_Click(object sender, RoutedEventArgs e)
         {
             UpdateIU.Update(this, Codigos.VER_CONTINUIDAD);
+        }
+
+        private void ButtonVerHomogenia_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.VER_HOMOGENIA);
+
         }
     }
 }

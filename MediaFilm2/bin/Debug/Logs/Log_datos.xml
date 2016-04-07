@@ -3511,4 +3511,6 @@
   <Log tipo="Renombrado" fichero="A:\Series\ShadownHunters\Temporada1\ShadownHunters 1x13.avi" fecha="07/04/2016 13:07:35" mensaje="Fichero 'Shadowhunters.1x13.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\ShadownHunters\Temporada1\ShadownHunters 1x13.avi'" />
   <Log tipo="AñadirSerie" fecha="07/04/2016 13:08:03" mensaje="Serie 'iZombie' añadida correctamente" />
   <Log tipo="AñadirPatron" fecha="07/04/2016 13:08:03" mensaje="patron 'iZombie-iZombie' añadido correctamente a serie " />
+  <Log tipo="Renombrado" fichero="A:\Series\iZombie\Temporada1\iZombie 1x01.avi" fecha="07/04/2016 13:08:34" mensaje="Fichero 'iZombie.1x01.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\iZombie\Temporada1\iZombie 1x01.avi'" />
+  <Log tipo="Renombrado" fichero="A:\Series\iZombie\Temporada1\iZombie 1x02.avi" fecha="07/04/2016 13:08:34" mensaje="Fichero 'iZombie.1x02.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\iZombie\Temporada1\iZombie 1x02.avi'" />
 </Logs>
