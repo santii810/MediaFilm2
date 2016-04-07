@@ -89,6 +89,7 @@ namespace MediaFilm2
         private void RenombrarVideos_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             UpdateIU.Update(this, Codigos.LIMPIAR_ANTIGUOS_RESULTADOS_RENOMBRAR);
+            ProgressBar pb = new ProgressBar();
             GestorVideos.renombrarVideos(this);
             UpdateIU.Update(this, Codigos.MOSTRAR_RESULTADOS_RENOMBRAR);
         }

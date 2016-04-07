@@ -28,7 +28,7 @@
             <!--#endregion menu-->
             <Grid Name="panelSecundario" Visibility="Visible">
 
-                <StackPanel Name="panelOrdenarVideos" Orientation="Vertical" Visibility="Collapsed">
+                <StackPanel Name="panelOrdenarVideos" Orientation="Vertical" Visibility="Visible">
                     <StackPanel Name="botonesPanelOrdenarVideos" Orientation="Horizontal" Height="165">
                         <StackPanel Orientation="Vertical">
                             <Label Content="Recoger videos" Width="150" Style="{StaticResource LabelTitulos}"/>
@@ -94,7 +94,7 @@
                             </StackPanel>
                         </StackPanel>
 
-                        <StackPanel Name="consolaPanelRenombrarVideos"  Orientation="Vertical" Visibility="Visible">
+                        <StackPanel Name="consolaPanelRenombrarVideos"  Orientation="Vertical" Visibility="Collapsed">
                             <Border Style="{StaticResource Border}">
                                 <StackPanel  Width="650" Height="185">
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -245,7 +245,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelMantenimiento" Visibility="Visible" Orientation="Horizontal">
+                <StackPanel Name="panelMantenimiento"  Orientation="Horizontal" Visibility="Collapsed">
                     <StackPanel Width="250">
                         <Image Source="Iconos/start.png" Height="100"  Margin="20" MouseLeftButtonUp="StartMantenimiento_LeftButtonUp"/>
                         <StackPanel Name="panelResultadoMantenimiento">

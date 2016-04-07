@@ -96,8 +96,8 @@ namespace MediaFilm2.Vista
                     rellenaPanelSeriesInactivas(mainWindow);
                     break;
                 case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
-                    mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
+                 //   mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
                     rellenaPanelIncrementarTemporadas(mainWindow);
                     break;
                 #endregion
@@ -112,6 +112,8 @@ namespace MediaFilm2.Vista
                     mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
                     mainWindow.panelResultadoContinuidad.Visibility = Visibility.Visible;
                     mainWindow.panelResultadoHomogenia.Visibility = Visibility.Visible;
+                    mainWindow.panelResultadoDuplicidad.Visibility = Visibility.Visible;
+
 
                     if (mainWindow.ErroresContinuidad.Count == 0)
                         mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
@@ -189,6 +191,7 @@ namespace MediaFilm2.Vista
             mainWindow.panelMantenimiento.Visibility = Visibility.Collapsed;
             mainWindow.panelResultadoContinuidad.Visibility = Visibility.Collapsed;
             mainWindow.panelResultadoHomogenia.Visibility = Visibility.Collapsed;
+            mainWindow.panelResultadoDuplicidad.Visibility = Visibility.Collapsed;
             mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Collapsed;
 
 
