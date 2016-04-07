@@ -166,6 +166,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelResultadoContinuidad(MainWindow mainWindow)
         {
             mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
+            mainWindow.ErroresContinuidad.Sort();
             foreach (string item in mainWindow.ErroresContinuidad)
             {
                 mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getLabelResultado(item));
