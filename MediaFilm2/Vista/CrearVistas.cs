@@ -180,16 +180,16 @@ namespace MediaFilm2
             src.BeginInit();
                         switch (cod)
             {
-                case Codigos.COD_PUNTO_VERDE:
+                case Codigos.PUNTO_VERDE:
                     src.UriSource = new Uri("Iconos/greenPoint.png", UriKind.Relative);
                     break;
-                case Codigos.COD_PUNTO_ROJO:
+                case Codigos.PUNTO_ROJO:
                     src.UriSource = new Uri("Iconos/redPoint.png", UriKind.Relative);
                     break;
-                case Codigos.COD_PUNTO_AMARILLO:
+                case Codigos.PUNTO_AMARILLO:
                     src.UriSource = new Uri("Iconos/yellowPoint.png", UriKind.Relative);
                     break;
-                case Codigos.COD_PUNTO_AZUL:
+                case Codigos.PUNTO_AZUL:
                     src.UriSource = new Uri("Iconos/bluePoint.png", UriKind.Relative);
                     break;
 

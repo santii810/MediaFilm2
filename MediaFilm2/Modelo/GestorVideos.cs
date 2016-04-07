@@ -488,7 +488,7 @@ namespace MediaFilm2.Modelo
                         {
                             if (debeEstar)
                                 //Añado a la lista de ficheros que faltan
-                                mainWindow.ErroresContinuidad.Add(patron.Substring(patron.Length - 2));
+                                mainWindow.ErroresContinuidad.Add(patron);
                         }
                         else
                         {

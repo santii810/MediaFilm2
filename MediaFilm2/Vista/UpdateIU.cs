@@ -105,26 +105,37 @@ namespace MediaFilm2.Vista
                 #region Paneles 3
                 case Codigos.PANEL_MANTENIMIENTO:
                     mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
+                    mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AZUL);
 
                     break;
                 case Codigos.RESULTADO_MANTENIMIENTO:
                     mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
+                    mainWindow.panelResultadoContinuidad.Visibility = Visibility.Visible;
+
                     if (mainWindow.ErroresContinuidad.Count == 0)
-                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.COD_PUNTO_VERDE);
+                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_VERDE);
                     if (mainWindow.ErroresContinuidad.Count > 3)
-                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.COD_PUNTO_ROJO);
+                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
                     else
-                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.COD_PUNTO_AMARILLO);
+                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
 
-
-                    mainWindow.labelResultadoContinuidad.Content = mainWindow.ErroresContinuidad.Count + "errores detectados";
+                    mainWindow.labelResultadoContinuidad.Content = mainWindow.ErroresContinuidad.Count + " errores detectados";
                     break;
 
+
+                case Codigos.VER_CONTINUIDAD:
+                    Update(mainWindow, Codigos.RESULTADO_MANTENIMIENTO);
+                    mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Visible;
+                    rellenaPanelResultadoContinuidad(mainWindow);
+
+                    break;
                 #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
         }
+
+
 
         private static void collapseAll(MainWindow mainWindow)
         {
@@ -145,9 +156,20 @@ namespace MediaFilm2.Vista
             mainWindow.panelIOSerie.Visibility = Visibility.Collapsed;
             mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Collapsed;
             mainWindow.panelMantenimiento.Visibility = Visibility.Collapsed;
+            mainWindow.panelResultadoContinuidad.Visibility = Visibility.Collapsed;
+            mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Collapsed;
 
 
 
+        }
+
+        private static void rellenaPanelResultadoContinuidad(MainWindow mainWindow)
+        {
+            mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
+            foreach (string item in mainWindow.ErroresContinuidad)
+            {
+                mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getLabelResultado(item));
+            }
         }
 
         private static void rellenaPanelSeriesActivas(MainWindow mainWindow)

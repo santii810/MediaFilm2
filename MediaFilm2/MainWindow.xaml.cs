@@ -197,5 +197,11 @@ namespace MediaFilm2
             GestorVideos.Mantenimiento(this);
             UpdateIU.Update(this, Codigos.RESULTADO_MANTENIMIENTO);
         }
+
+
+        private void ButtonVerContinuidad_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateIU.Update(this, Codigos.VER_CONTINUIDAD);
+        }
     }
 }

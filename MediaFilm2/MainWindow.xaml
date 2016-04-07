@@ -256,7 +256,7 @@
                                         <Label Content="Continuidad" Style="{StaticResource LabelTitulos}"/>
                                         <StackPanel Name="panelResultadoContinuidad" Orientation="Horizontal">
                                             <Label Name="labelResultadoContinuidad" Content="X errores detectados" Width="150" Style="{StaticResource LabelResultados}"/>
-                                            <Button Content=" Ver " Style="{StaticResource Button}"></Button>
+                                            <Button Content=" Ver " Style="{StaticResource Button}" Click="ButtonVerContinuidad_Click"></Button>
                                         </StackPanel>
                                     </StackPanel>
 
@@ -264,8 +264,17 @@
                             </StackPanel>
                         </Border>
                     </StackPanel>
+                    <Border Name="borderResultadoMantenimiento" Margin="20" Style="{StaticResource Border}">
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                            <StackPanel Width="380">
+                                <Label Content="Ficheros que faltan:" Style="{StaticResource LabelTitulos}"/>
+                                <StackPanel Name="panelMostrarResultadosMantenimiento"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Border>
 
                 </StackPanel>
+
             </Grid>
         </DockPanel>
     </Grid>
