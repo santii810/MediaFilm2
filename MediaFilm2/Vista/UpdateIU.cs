@@ -141,12 +141,18 @@ namespace MediaFilm2.Vista
                     mainWindow.labelTituloResultadosMantenimiento.Content = "Ficheros que faltan:";
                     rellenaPanelResultadoContinuidad(mainWindow);
                     break;
+                case Codigos.VER_HOMOGENIA:
+                    Update(mainWindow, Codigos.RESULTADO_MANTENIMIENTO);
+                    mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Visible;
+                    mainWindow.labelTituloResultadosMantenimiento.Content = "Ficheros con ext incorrecta:";
+                    rellenaPanelResultadoHomogenia(mainWindow);
+                    break;
+
                 #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
         }
-
 
 
         private static void collapseAll(MainWindow mainWindow)
@@ -174,6 +180,20 @@ namespace MediaFilm2.Vista
 
 
 
+        }
+
+
+
+
+
+        private static void rellenaPanelResultadoHomogenia(MainWindow mainWindow)
+        {
+            mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
+            mainWindow.ErroresHomogenia.Sort();
+            foreach (string item in mainWindow.ErroresHomogenia)
+            {
+                mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getLabelResultado(item));
+            }
         }
 
         private static void rellenaPanelResultadoContinuidad(MainWindow mainWindow)

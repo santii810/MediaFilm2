@@ -934,7 +934,7 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.avi</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="Silicon Valley">
     <titulo>Silicon Valley</titulo>
@@ -1264,7 +1264,7 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mkv</extension>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="Los simpson">
     <titulo>Los simpson</titulo>
@@ -1296,7 +1296,7 @@
     <numeroTemporadas>5</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mkv</extension>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="iZombie">
     <titulo>iZombie</titulo>
