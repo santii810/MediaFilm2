@@ -4,6 +4,7 @@ using MediaFilm2.Modelo;
 using MediaFilm2.Vista;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,7 @@ namespace MediaFilm2
 
         public List<string> ErroresContinuidad;
         public List<string> ErroresHomogenia;
-        public List<string> ErroresDuplicidad;
+        public List<FileSystemInfo[]> ErroresDuplicidad;
 
         public MainWindow()
         {
@@ -58,7 +59,7 @@ namespace MediaFilm2
 
             ErroresContinuidad = new List<string>();
             ErroresHomogenia = new List<string>();
-            ErroresDuplicidad = new List<string>();
+            ErroresDuplicidad = new List<FileSystemInfo[]>();
         }
 
 

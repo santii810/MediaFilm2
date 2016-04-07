@@ -463,6 +463,7 @@ namespace MediaFilm2.Modelo
             //reset
             mainWindow.ErroresContinuidad.Clear();
             mainWindow.ErroresHomogenia.Clear();
+            mainWindow.ErroresDuplicidad.Clear();
 
 
 
@@ -496,10 +497,26 @@ namespace MediaFilm2.Modelo
                             debeEstar = true;
 
                             if (sinfo.Length == 1)
+                            {
                                 if (sinfo[0].Extension != serie.extension)
                                     mainWindow.ErroresHomogenia.Add(sinfo[0].Name);
+                            }
+                            else
+                            {
+                                // coloco en la posicion 0 el fichero con una estension igual a la del xml
+                                FileSystemInfo[] error = new FileSystemInfo[2];
+                                if (sinfo[0].Extension == serie.extension)
+                                {
+                                    error[0] = sinfo[0];
+                                    error[1] = sinfo[1];
+                                }
                                 else
-                                    mainWindow.ErroresDuplicidad.Add(sinfo[0].Name);
+                                {
+                                    error[0] = sinfo[1];
+                                    error[1] = sinfo[0];
+                                }
+                                mainWindow.ErroresDuplicidad.Add(error);
+                            }
                         }
                     }
                 }

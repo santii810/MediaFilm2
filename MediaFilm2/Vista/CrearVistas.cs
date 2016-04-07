@@ -178,7 +178,7 @@ namespace MediaFilm2
         {
             BitmapImage src = new BitmapImage();
             src.BeginInit();
-                        switch (cod)
+            switch (cod)
             {
                 case Codigos.PUNTO_VERDE:
                     src.UriSource = new Uri("Iconos/greenPoint.png", UriKind.Relative);
@@ -195,7 +195,7 @@ namespace MediaFilm2
 
             }
             src.EndInit();
-            
+
             return src;
         }
 
@@ -235,5 +235,40 @@ namespace MediaFilm2
         }
 
 
+
+        internal static UIElement getVistaDuplicidad(FileSystemInfo[] item)
+        {
+            StackPanel tmpPanel = new StackPanel();
+            tmpPanel.Orientation = Orientation.Vertical;
+            tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
+
+
+            //titulo
+            Label tmpLabel1 = new Label();
+            tmpLabel1.Content = item[0].Name;
+            tmpLabel1.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabel1.HorizontalAlignment = HorizontalAlignment.Center;
+            tmpPanel.Children.Add(tmpLabel1);
+
+            //titulo
+            Label tmpLabel2 = new Label();
+            tmpLabel2.Content = item[1].Name;
+            tmpLabel2.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabel2.HorizontalAlignment = HorizontalAlignment.Center;
+            tmpPanel.Children.Add(tmpLabel2);
+
+
+            Button tmpButton = new Button();
+            tmpButton.Click += delegate
+            {
+                if (MessageBox.Show("Do you want to exit?", "My Application", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    item[1].Delete();
+            };
+            tmpButton.Style = (Style)Application.Current.Resources["Button"];
+            tmpButton.Content = "Borrar";
+            tmpPanel.Children.Add(tmpButton);
+
+            return tmpPanel;
+        }
     }
 }

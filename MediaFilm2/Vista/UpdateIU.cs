@@ -156,13 +156,17 @@ namespace MediaFilm2.Vista
                     mainWindow.labelTituloResultadosMantenimiento.Content = "Ficheros con ext incorrecta:";
                     rellenaPanelResultadoHomogenia(mainWindow);
                     break;
-
+                case Codigos.VER_DUPLICIDAD:
+                    Update(mainWindow, Codigos.RESULTADO_MANTENIMIENTO);
+                    mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Visible;
+                    mainWindow.labelTituloResultadosMantenimiento.Content = "Ficheros duplicados:";
+                    rellenaPanelResultadoDuplicidad(mainWindow);
+                    break;
                 #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
         }
-
 
         private static void collapseAll(MainWindow mainWindow)
         {
@@ -194,6 +198,16 @@ namespace MediaFilm2.Vista
 
 
 
+
+        private static void rellenaPanelResultadoDuplicidad(MainWindow mainWindow)
+        {
+            mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
+            mainWindow.ErroresDuplicidad.Sort();
+            foreach (FileSystemInfo[] item in mainWindow.ErroresDuplicidad)
+            {
+                mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getVistaDuplicidad(item));
+            }
+        }
 
         private static void rellenaPanelResultadoHomogenia(MainWindow mainWindow)
         {
