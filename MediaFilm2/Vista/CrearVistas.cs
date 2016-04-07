@@ -236,13 +236,14 @@ namespace MediaFilm2
 
 
 
-        internal static UIElement getVistaDuplicidad(FileSystemInfo[] item)
+        internal static UIElement getVistaDuplicidad(MainWindow mainWindow, FileSystemInfo[] item)
         {
+
+            Border border = new Border();
+            border.Style = (Style)Application.Current.Resources["Border"];
+
             StackPanel tmpPanel = new StackPanel();
-            tmpPanel.Orientation = Orientation.Vertical;
-            tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
-
-
+            
             //titulo
             Label tmpLabel1 = new Label();
             tmpLabel1.Content = item[0].Name;
@@ -259,16 +260,20 @@ namespace MediaFilm2
 
 
             Button tmpButton = new Button();
+            tmpButton.Width = 60;
             tmpButton.Click += delegate
             {
                 if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     item[1].Delete();
+                mainWindow.ErroresDuplicidad.Remove(item);
+                UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
             tmpButton.Content = "Borrar";
             tmpPanel.Children.Add(tmpButton);
 
-            return tmpPanel;
+            border.Child = tmpPanel;
+            return border;
         }
     }
 }

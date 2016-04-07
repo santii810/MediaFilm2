@@ -80,6 +80,7 @@
         <Setter Property="Width" Value="340"/>
         <Setter Property="Orientation" Value="Horizontal"/>
     </Style>
+
     <Style x:Key="StackPanelBordes" TargetType="{x:Type StackPanel}">
         <Setter Property="Margin" Value="0,5"/>
     </Style>

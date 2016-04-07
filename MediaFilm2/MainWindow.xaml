@@ -291,7 +291,7 @@
 
 
                     </StackPanel>
-                    <Border Name="borderResultadoMantenimiento" Margin="20" Style="{StaticResource Border}">
+                    <Border Name="borderResultadoMantenimiento" Margin="20" >
                         <ScrollViewer HorizontalScrollBarVisibility="Auto">
                             <StackPanel Width="370">
                                 <Label Name="labelTituloResultadosMantenimiento" Content="Ficheros que faltan:" Style="{StaticResource LabelTitulos}"/>
@@ -299,7 +299,6 @@
                             </StackPanel>
                         </ScrollViewer>
                     </Border>
-
                 </StackPanel>
 
             </Grid>

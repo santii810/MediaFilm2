@@ -135,7 +135,7 @@ namespace MediaFilm2.Vista
                     if (mainWindow.ErroresDuplicidad.Count > 2)
                         mainWindow.circuloDuplicidad.Source = CrearVistas.getPunto(Codigos.PUNTO_ROJO);
                     else
-                        mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
+                        mainWindow.circuloDuplicidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AMARILLO);
                     mainWindow.labelResultadoDuplicidad.Content = mainWindow.ErroresDuplicidad.Count + " errores detectados";
 
 
@@ -205,7 +205,7 @@ namespace MediaFilm2.Vista
           //  mainWindow.ErroresDuplicidad.Sort();
             foreach (FileSystemInfo[] item in mainWindow.ErroresDuplicidad)
             {
-                mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getVistaDuplicidad(item));
+                mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getVistaDuplicidad(mainWindow, item));
             }
         }
 
@@ -226,6 +226,7 @@ namespace MediaFilm2.Vista
             foreach (string item in mainWindow.ErroresContinuidad)
             {
                 mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getLabelResultado(item));
+                
             }
         }
 

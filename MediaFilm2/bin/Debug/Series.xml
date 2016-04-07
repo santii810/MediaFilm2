@@ -1263,7 +1263,7 @@
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
+    <estado>D</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Los simpson">
@@ -1287,7 +1287,7 @@
     <temporadaActual>6</temporadaActual>
     <numeroTemporadas>6</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
+    <estado>D</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="New girl">
