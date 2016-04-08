@@ -217,5 +217,10 @@ namespace MediaFilm2
             UpdateIU.Update(this, Codigos.VER_DUPLICIDAD);
 
         }
+
+        private void ImageDescarga_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

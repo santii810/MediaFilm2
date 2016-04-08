@@ -125,9 +125,6 @@
     <Resource Include="Iconos\recorrerTorrent.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Iconos\addSerie.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Iconos\film.png" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +154,12 @@
     <Resource Include="Iconos\greenPoint.png" />
     <Resource Include="Iconos\redPoint.png" />
     <Resource Include="Iconos\yellowPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\addSerie.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

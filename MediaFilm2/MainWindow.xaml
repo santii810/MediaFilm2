@@ -16,12 +16,16 @@
                         <Label Content="Ordenar" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                     <StackPanel Name="stackMenuAddSerie" Orientation="Vertical" Width="100" Margin="0,5">
-                        <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="AddDatos_MouseLeftButtonUp"/>
+                        <Image Source="Iconos/addSerie.png" MouseLeftButtonUp="AddDatos_MouseLeftButtonUp" Margin="5"/>
                         <Label Content="Añadir datos" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                     <StackPanel Name="stackMenuMantenimiento" Orientation="Vertical" Width="100" Margin="0,5">
                         <Image Source="Iconos/mantenimiento.png" MouseLeftButtonUp="ImageMantenimiento_MouseLeftButtonUp"/>
                         <Label Content="Mantenimiento" Style="{StaticResource LabelMenu}" />
+                    </StackPanel>
+                    <StackPanel Name="stackMenuDescarga" Orientation="Vertical" Width="100" Margin="0,5">
+                        <Image Source="Iconos/download.png" MouseLeftButtonUp="ImageDescarga_MouseLeftButtonUp"/>
+                        <Label Content="Descarga" Style="{StaticResource LabelMenu}" />
                     </StackPanel>
                 </StackPanel>
             </Border>
