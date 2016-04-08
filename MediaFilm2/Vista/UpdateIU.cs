@@ -20,7 +20,7 @@ namespace MediaFilm2.Vista
             {
                 case Codigos.ESTADO_INICIAL:
                     break;
-                #region Paneles 1
+                #region Paneles 1 (Tareas)
                 case Codigos.PANEL_ORDENAR_VIDEOS:
                     mainWindow.panelOrdenarVideos.Visibility = Visibility.Visible;
                     mainWindow.labelTiempoOrden.Content = "";
@@ -52,7 +52,7 @@ namespace MediaFilm2.Vista
                     break;
                 #endregion
 
-                #region Paneles 2
+                #region Paneles 2 (Datos)
                 case Codigos.PANEL_ADD_DATOS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
                     break;
@@ -97,12 +97,12 @@ namespace MediaFilm2.Vista
                     break;
                 case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
-                 //   mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
+                    //   mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
                     rellenaPanelIncrementarTemporadas(mainWindow);
                     break;
                 #endregion
 
-                #region Paneles 3
+                #region Paneles 3 (Mantenimiento)
                 case Codigos.PANEL_MANTENIMIENTO:
                     mainWindow.panelMantenimiento.Visibility = Visibility.Visible;
                     mainWindow.circuloContinuidad.Source = CrearVistas.getPunto(Codigos.PUNTO_AZUL);
@@ -165,6 +165,15 @@ namespace MediaFilm2.Vista
                     rellenaPanelResultadoDuplicidad(mainWindow);
                     break;
                 #endregion
+
+                #region Paneles 4 (Descarga)
+                case Codigos.PANEL_DESCARGA:
+                    mainWindow.panelDescarga.Visibility = Visibility.Visible;
+
+
+
+                    break;
+                #endregion
                 default:
                     throw new UpdateIUException(cod);
             }
@@ -193,6 +202,7 @@ namespace MediaFilm2.Vista
             mainWindow.panelResultadoHomogenia.Visibility = Visibility.Collapsed;
             mainWindow.panelResultadoDuplicidad.Visibility = Visibility.Collapsed;
             mainWindow.borderResultadoMantenimiento.Visibility = Visibility.Collapsed;
+            mainWindow.panelDescarga.Visibility = Visibility.Collapsed;
 
 
 
@@ -205,7 +215,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelResultadoDuplicidad(MainWindow mainWindow)
         {
             mainWindow.panelMostrarResultadosMantenimiento.Children.Clear();
-          //  mainWindow.ErroresDuplicidad.Sort();
+            //  mainWindow.ErroresDuplicidad.Sort();
             foreach (FileSystemInfo[] item in mainWindow.ErroresDuplicidad)
             {
                 mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getVistaDuplicidad(mainWindow, item));
@@ -229,7 +239,7 @@ namespace MediaFilm2.Vista
             foreach (string item in mainWindow.ErroresContinuidad)
             {
                 mainWindow.panelMostrarResultadosMantenimiento.Children.Add(CrearVistas.getLabelResultado(item));
-                
+
             }
         }
 

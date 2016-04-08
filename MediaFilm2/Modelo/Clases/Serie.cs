@@ -10,6 +10,7 @@ namespace MediaFilm2.Modelo
    public class Serie : IComparable
     {
         public string titulo { get; set; }
+        public string titDescarga { get; set; }
         public int temporadaActual { get; set; }
         public int numeroTemporadas { get; set; }
         public int capitulosPorTemporada { get; set; }

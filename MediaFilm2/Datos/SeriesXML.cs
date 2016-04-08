@@ -46,15 +46,7 @@ namespace MediaFilm2.Datos
             {
                 foreach (XmlNode item in documento.GetElementsByTagName("serie"))
                 {
-                    series.Add(new Serie
-                    {
-                        titulo = item["titulo"].InnerText.ToString(),
-                        temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
-                        numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
-                        capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
-                        estado = item["estado"].InnerText,
-                        extension = item["extension"].InnerText
-                    });
+                    series.Add(InicializarSerie(item));
                 }
             }
             return series;
@@ -69,20 +61,13 @@ namespace MediaFilm2.Datos
                 {
                     if (item["titulo"].InnerText.ToString().Equals(nombreSerie))
                     {
-                        serie = new Serie
-                        {
-                            titulo = item["titulo"].InnerText.ToString(),
-                            temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
-                            numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
-                            capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
-                            estado = item["estado"].InnerText,
-                            extension = item["extension"].InnerText
-                        };
+                        serie = InicializarSerie(item);
                     }
                 }
             }
             return serie;
         }
+
 
         public void añadirSerie(Serie serie)
         {
@@ -137,7 +122,10 @@ namespace MediaFilm2.Datos
             XmlElement capitulosPorTemporada = documento.CreateElement("capitulosPorTemporada");
             capitulosPorTemporada.InnerText = serie.capitulosPorTemporada.ToString();
             nodoSerie.AppendChild(capitulosPorTemporada);
-
+            
+            XmlElement descarga = documento.CreateElement("titDescarga");
+            descarga.InnerText = serie.titDescarga;
+            nodoSerie.AppendChild(descarga);
 
             XmlElement estado = documento.CreateElement("estado");
             estado.InnerText = serie.estado;
@@ -175,6 +163,20 @@ namespace MediaFilm2.Datos
                 foreach (XmlNode item in documento.GetElementsByTagName("serie"))
                     if (item["titulo"].InnerText.ToString().Equals(tituloSerie)) return item;
             return null;
+        }
+
+        private static Serie InicializarSerie(XmlNode item)
+        {
+            return new Serie
+            {
+                titulo = item["titulo"].InnerText.ToString(),
+                temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
+                numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
+                capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
+                estado = item["estado"].InnerText,
+                titDescarga = item["titDescarga"].InnerText,
+                extension = item["extension"].InnerText
+            };
         }
     }
 

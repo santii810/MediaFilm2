@@ -220,7 +220,7 @@ namespace MediaFilm2
 
         private void ImageDescarga_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            UpdateIU.Update(this, Codigos.PANEL_DESCARGA);
         }
     }
 }

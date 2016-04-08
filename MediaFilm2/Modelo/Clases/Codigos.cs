@@ -27,7 +27,7 @@ namespace MediaFilm2
         public const int VER_CONTINUIDAD = 16;
         public const int VER_HOMOGENIA = 17;
         public const int VER_DUPLICIDAD = 18;
-        public const int c = 19;
+        public const int PANEL_DESCARGA = 19;
         public const int d = 20;
         public const int e = 21;
         public const int f = 22;
