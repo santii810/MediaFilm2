@@ -423,7 +423,6 @@ namespace MediaFilm2.Modelo
             return null;
         }
 
-
         /// <summary>
         /// Cuenta los ficheros de tipo video que hay en el directorio de trabajo.
         /// </summary>

@@ -3677,4 +3677,10 @@
   <Log tipo="AñadirSerie" fecha="08/04/2016 22:25:15" mensaje="Serie 'Juego de tronos' añadida correctamente" />
   <Log tipo="AñadirSerie" fecha="08/04/2016 22:25:16" mensaje="Serie 'New girl' añadida correctamente" />
   <Log tipo="AñadirSerie" fecha="08/04/2016 22:25:16" mensaje="Serie 'iZombie' añadida correctamente" />
+  <Log tipo="Movido" fecha="08/04/2016 23:51:54" mensaje="Fichero 'Los.100.3x09.HDTV.XviD.[www.DivxTotaL.com].avi' movido a 'A:\Iomega\Los.100.3x09.HDTV.XviD.[www.DivxTotaL.com].avi'" />
+  <Log tipo="Borrado" fichero="A:\torrent\Completo\The Walking Dead - Temporada 6 [HDTV 720p][Cap.616][AC3 5.1 Español Castellano]\Importante leer !!!!!.txt" fecha="08/04/2016 23:51:54" mensaje="Fichero 'Importante leer !!!!!.txt' borrado correctamente" />
+  <Log tipo="Movido" fecha="08/04/2016 23:51:54" mensaje="Fichero 'The Walking Dead 720p 6x16 [www.newpct1.com].mkv' movido a 'A:\Iomega\The Walking Dead 720p 6x16 [www.newpct1.com].mkv'" />
+  <Log tipo="Borrado" fichero="A:\torrent\Completo\The Walking Dead - Temporada 6 [HDTV 720p][Cap.616][AC3 5.1 Español Castellano]\www.DIVXATOPE.com.url" fecha="08/04/2016 23:51:54" mensaje="Fichero 'www.DIVXATOPE.com.url' borrado correctamente" />
+  <Log tipo="Renombrado" fichero="A:\Series\Los cien\Temporada3\Los cien 3x09.avi" fecha="08/04/2016 23:51:57" mensaje="Fichero 'Los.100.3x09.HDTV.XviD.[www.DivxTotaL.com].avi' renombrado a 'A:\Series\Los cien\Temporada3\Los cien 3x09.avi'" />
+  <Log tipo="Renombrado" fichero="A:\Series\The Walking Dead\Temporada6\The Walking Dead 6x16.mkv" fecha="08/04/2016 23:51:59" mensaje="Fichero 'The Walking Dead 720p 6x16 [www.newpct1.com].mkv' renombrado a 'A:\Series\The Walking Dead\Temporada6\The Walking Dead 6x16.mkv'" />
 </Logs>

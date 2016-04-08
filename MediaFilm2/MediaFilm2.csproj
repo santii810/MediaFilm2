@@ -74,6 +74,7 @@
     <Compile Include="Datos\SeriesXML.cs" />
     <Compile Include="Modelo\Clases\Serie.cs" />
     <Compile Include="Excepciones\TooManySerieCoincidencesException.cs" />
+    <Compile Include="Modelo\GestorDescargas.cs" />
     <Compile Include="Modelo\Validar.cs" />
     <Compile Include="Vista\CrearVistas.cs" />
     <Compile Include="Datos\ConfigXML.cs" />
