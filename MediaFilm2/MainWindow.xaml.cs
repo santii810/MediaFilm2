@@ -60,6 +60,16 @@ namespace MediaFilm2
             ErroresContinuidad = new List<string>();
             ErroresHomogenia = new List<string>();
             ErroresDuplicidad = new List<FileSystemInfo[]>();
+
+
+
+
+            //series = SeriesXML.leerSeries();
+            //foreach (Serie item in series)
+            //{
+            //    item.titDescarga = item.titulo.Replace(' ', '_');
+            //    SeriesXML.updateSerie(item);
+            //}
         }
 
 

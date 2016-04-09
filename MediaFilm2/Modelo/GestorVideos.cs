@@ -522,13 +522,24 @@ namespace MediaFilm2.Modelo
             }
         }
 
-        internal static void getUltimoFichero(MainWindow mainWindow, Serie item)
+        internal static int[] getUltimoFichero(MainWindow mainWindow, Serie item)
         {
             string directorioSerie = mainWindow.config.dirSeries + @"/" + item.titulo;
-            //obtiene los directorios dentro de la carpeta de la serie
-            FileInfo finfo = new DirectoryInfo(directorioSerie).GetDirectories().Last().GetFiles().Last();
-            string temporada = finfo.Name.Substring((finfo.Name.Length - 9), 2).Trim();
+            try
+            {
 
+                //obtiene los directorios dentro de la carpeta de la serie
+                FileInfo finfo = new DirectoryInfo(directorioSerie).GetDirectories().Last().GetFiles().Last();
+                //string temporada = finfo.Name.Substring((finfo.Name.Length - 9), 2).Trim();
+                int temporada = Convert.ToInt32(finfo.Name.Substring((finfo.Name.Length - 9), 2).Trim());
+                int capitulo = Convert.ToInt32(finfo.Name.Substring((finfo.Name.Length - 6), 2).Trim());
+                return new int[] { temporada, capitulo };
+            }
+            catch
+            {
+                //series sin carpeta en A:/series
+                return null;
+            }
 
         }
         #endregion

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MediaFilm2.Modelo
 {
@@ -12,17 +13,39 @@ namespace MediaFilm2.Modelo
         public static void BuscarDescargasDisponibles(MainWindow mainWindow)
         {
             mainWindow.updateListaSeries();
-            foreach (Serie item in mainWindow.series)
+            foreach (Serie serie in mainWindow.series)
             {
-                GestorVideos.getUltimoFichero(mainWindow,item);
+                int[] tmp = GestorVideos.getUltimoFichero(mainWindow, serie);
+                if (tmp != null)
+                {
+                    int temp = tmp[0];
+                    int cap = tmp[1];
+
+                    List<string> pruebas = new List<string>();
+                    //prueba con capitulo++
+                    if (cap < 9)
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_0" + (cap + 1) + ".torrent");
+                    else
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_" + (cap + 1) + ".torrent");
+
+                    foreach (string url in pruebas)
+                    {
+                        if (RemoteFileExists(url))
+                        {
+                            MessageBox.Show(url);
+                        }
+                    }
+                    
+                    //          string ejemplo = "http://www.mejortorrent.com/uploads/torrents/series/Los_100_3_09.torrent";
 
 
+                }
 
-                string ejemplo = "http://www.mejortorrent.com/uploads/torrents/series/Los_100_3_09.torrent";
+
             }
         }
 
-        private bool RemoteFileExists(string url)
+        private static bool RemoteFileExists(string url)
         {
             try
             {

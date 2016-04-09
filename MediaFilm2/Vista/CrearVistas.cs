@@ -95,7 +95,7 @@ namespace MediaFilm2
                 serie.temporadaActual++;
                 if (serie.temporadaActual > serie.numeroTemporadas)
                     serie.numeroTemporadas++;
-                mainWindow.SeriesXML.actualizarSerie(serie);
+                mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
             };
             tmpPanel.Children.Add(tmpImagenMin);
@@ -131,7 +131,7 @@ namespace MediaFilm2
             tmpImagenMax.MouseLeftButtonUp += delegate
             {
                 serie.numeroTemporadas++;
-                mainWindow.SeriesXML.actualizarSerie(serie);
+                mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
             };
             tmpPanel.Children.Add(tmpImagenMax);
@@ -165,7 +165,7 @@ namespace MediaFilm2
             tmpImagenMax.MouseLeftButtonUp += delegate
             {
                 serie.estado = "D";
-                mainWindow.SeriesXML.actualizarSerie(serie);
+                mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_IO_SERIES);
 
             };
@@ -225,7 +225,7 @@ namespace MediaFilm2
             tmpImagenMax.MouseLeftButtonUp += delegate
             {
                 serie.estado = "A";
-                mainWindow.SeriesXML.actualizarSerie(serie);
+                mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_IO_SERIES);
 
             };

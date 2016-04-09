@@ -146,7 +146,7 @@ namespace MediaFilm2.Datos
             return false;
         }
 
-        public void actualizarSerie(Serie serie)
+        public void updateSerie(Serie serie)
         {
             XmlNode nodoViejo = buscarNodo(serie.titulo);
             if (nodoViejo != null)
