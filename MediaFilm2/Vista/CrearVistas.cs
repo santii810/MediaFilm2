@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -298,11 +299,11 @@ namespace MediaFilm2
             tmpButton.Width = 60;
             tmpButton.Click += delegate
             {
+
                 border.Visibility = Visibility.Collapsed;
-                //if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-                //    item[1].Delete();
-                //mainWindow.ErroresDuplicidad.Remove(item);
-                //UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
+                WebClient myWebClient = new WebClient();
+                myWebClient.DownloadFile(new System.Uri(url), titulo+".torrent");
+
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
             tmpButton.Content = "Descargar";

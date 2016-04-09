@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Config>
+	<datosLog>xml\Logs\Log_datos.xml</datosLog>
+	<errorLog>xml\Logs\Log_error.xml</errorLog>
+	<mediaLog>xml\Logs\log_media.xml</mediaLog>
+	<fichSeries>xml\series.xml</fichSeries>
+	<fichPatrones>xml\patrones.xml</fichPatrones>
+	<dirTorrent>A:\torrent\Completo</dirTorrent>
+	<dirTrabajo>A:\Iomega</dirTrabajo>
+	<dirSeries>A:\Series</dirSeries>
+</Config>

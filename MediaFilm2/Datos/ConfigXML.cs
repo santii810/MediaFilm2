@@ -11,7 +11,7 @@ namespace MediaFilm2.Datos
 {
     class ConfigXML
     {
-        string nombreFichero = @"config.xml";
+        string nombreFichero = @"xml\config.xml";
         XmlNode raiz;
 
         public XmlDocument Documento { get; set; }
