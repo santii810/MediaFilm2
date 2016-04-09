@@ -298,6 +298,7 @@ namespace MediaFilm2
             tmpButton.Width = 60;
             tmpButton.Click += delegate
             {
+                border.Visibility = Visibility.Collapsed;
                 //if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 //    item[1].Delete();
                 //mainWindow.ErroresDuplicidad.Remove(item);
