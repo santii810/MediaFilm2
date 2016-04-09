@@ -24,19 +24,31 @@ namespace MediaFilm2.Modelo
                     List<string> pruebas = new List<string>();
                     //prueba con capitulo++
                     if (cap < 9)
+                    {
                         pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_0" + (cap + 1) + ".torrent");
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_720p_0" + (cap + 1) + ".torrent");
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_1080p_0" + (cap + 1) + ".torrent");
+
+                    }
                     else
+                    {
                         pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_" + (cap + 1) + ".torrent");
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_720p_" + (cap + 1) + ".torrent");
+                        pruebas.Add("http://www.mejortorrent.com/uploads/torrents/series/" + serie.titDescarga + "_" + temp + "_1080p_" + (cap + 1) + ".torrent");
+
+                    }
 
                     foreach (string url in pruebas)
                     {
                         if (RemoteFileExists(url))
                         {
-                            MessageBox.Show(url);
+                            mainWindow.listaFicherosDescargar.Children.Add(CrearVistas.getFicheroDescargar((serie.titulo + " " + temp + "x" + cap), url));
                         }
                     }
-                    
-                    //          string ejemplo = "http://www.mejortorrent.com/uploads/torrents/series/Los_100_3_09.torrent";
+
+                    //        ejemplos
+                    // http://www.mejortorrent.com/uploads/torrents/series/Los_100_3_09.torrent
+                    //  http://www.mejortorrent.com/uploads/torrents/series/Angie_Tribeca_1_720p_01.torrent
 
 
                 }

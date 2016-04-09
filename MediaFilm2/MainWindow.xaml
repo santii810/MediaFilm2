@@ -305,7 +305,13 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Name="panelDescarga">
-                    
+                    <Border Style="{StaticResource Border}">
+                        <ScrollViewer>
+                            <StackPanel Name="listaFicherosDescargar">
+                                
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Border>
                 </StackPanel>
             </Grid>
         </DockPanel>

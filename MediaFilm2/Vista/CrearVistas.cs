@@ -66,6 +66,8 @@ namespace MediaFilm2
             return tmpLabelTitulo;
         }
 
+
+
         internal static Label getVistaFicheroARenombrar(string name)
         {
             Label tmpLabelFichero = new Label();
@@ -270,6 +272,39 @@ namespace MediaFilm2
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
             tmpButton.Content = "Borrar";
+            tmpPanel.Children.Add(tmpButton);
+
+            border.Child = tmpPanel;
+            return border;
+        }
+
+        internal static UIElement getFicheroDescargar(string titulo, string url)
+        {
+            Border border = new Border();
+            border.Style = (Style)Application.Current.Resources["Border"];
+
+            StackPanel tmpPanel = new StackPanel();
+
+            //titulo
+            Label tmpLabel1 = new Label();
+            tmpLabel1.Content = titulo;
+            tmpLabel1.Style = (Style)Application.Current.Resources["LabelListaSeries"];
+            tmpLabel1.HorizontalAlignment = HorizontalAlignment.Center;
+            tmpPanel.Children.Add(tmpLabel1);
+
+
+
+            Button tmpButton = new Button();
+            tmpButton.Width = 60;
+            tmpButton.Click += delegate
+            {
+                //if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                //    item[1].Delete();
+                //mainWindow.ErroresDuplicidad.Remove(item);
+                //UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
+            };
+            tmpButton.Style = (Style)Application.Current.Resources["Button"];
+            tmpButton.Content = "Descargar";
             tmpPanel.Children.Add(tmpButton);
 
             border.Child = tmpPanel;
