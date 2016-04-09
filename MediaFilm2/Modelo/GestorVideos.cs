@@ -259,7 +259,7 @@ namespace MediaFilm2.Modelo
             int seriesActivas = 0;
             int errores = 0;
             int videosRenombrados = 0;
-            mainWindow.actualizarListaSeries();
+            mainWindow.updateListaSeries();
             foreach (Serie itSerie in mainWindow.series)
             {
                 if (itSerie.estado.Equals("A"))
@@ -469,7 +469,7 @@ namespace MediaFilm2.Modelo
             foreach (DirectoryInfo dirSerie in new DirectoryInfo(mainWindow.config.dirSeries).GetDirectories())
             {
                 Serie serie = new Serie();
-                mainWindow.actualizarListaSeries();
+                mainWindow.updateListaSeries();
                 foreach (Serie item in mainWindow.series)
                     if (dirSerie.Name == item.titulo)
                         serie = item;
@@ -520,6 +520,16 @@ namespace MediaFilm2.Modelo
                     }
                 }
             }
+        }
+
+        internal static void getUltimoFichero(MainWindow mainWindow, Serie item)
+        {
+            string directorioSerie = mainWindow.config.dirSeries + @"/" + item.titulo;
+            //obtiene los directorios dentro de la carpeta de la serie
+            FileInfo finfo = new DirectoryInfo(directorioSerie).GetDirectories().Last().GetFiles().Last();
+            string temporada = finfo.Name.Substring((finfo.Name.Length - 9), 2).Trim();
+
+
         }
         #endregion
 

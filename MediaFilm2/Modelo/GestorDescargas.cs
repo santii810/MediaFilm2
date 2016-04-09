@@ -11,9 +11,14 @@ namespace MediaFilm2.Modelo
     {
         public static void BuscarDescargasDisponibles(MainWindow mainWindow)
         {
+            mainWindow.updateListaSeries();
             foreach (Serie item in mainWindow.series)
             {
+                GestorVideos.getUltimoFichero(mainWindow,item);
 
+
+
+                string ejemplo = "http://www.mejortorrent.com/uploads/torrents/series/Los_100_3_09.torrent";
             }
         }
 

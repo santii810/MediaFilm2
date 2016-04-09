@@ -63,7 +63,7 @@ namespace MediaFilm2
         }
 
 
-        internal void actualizarListaSeries()
+        internal void updateListaSeries()
         {
             series = SeriesXML.leerSeries();
             series.Sort();
@@ -141,7 +141,7 @@ namespace MediaFilm2
                     MessageBox.Show("Serie añadida correctamente");
                     UpdateIU.Update(this, Codigos.ADD_SERIE_OK);
 
-                    actualizarListaSeries();
+                    updateListaSeries();
                 }
             }
             catch (Exception)
@@ -179,13 +179,13 @@ namespace MediaFilm2
 
         private void ImageIOSerie_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
-            actualizarListaSeries();
+            updateListaSeries();
             UpdateIU.Update(this, Codigos.PANEL_IO_SERIES);
         }
 
         private void ImageIncTemp_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
         {
-            actualizarListaSeries();
+            updateListaSeries();
             UpdateIU.Update(this, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
         }
 

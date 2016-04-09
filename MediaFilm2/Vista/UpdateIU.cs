@@ -169,7 +169,7 @@ namespace MediaFilm2.Vista
                 #region Paneles 4 (Descarga)
                 case Codigos.PANEL_DESCARGA:
                     mainWindow.panelDescarga.Visibility = Visibility.Visible;
-
+                    GestorDescargas.BuscarDescargasDisponibles(mainWindow);
 
 
                     break;
@@ -246,7 +246,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelSeriesActivas(MainWindow mainWindow)
         {
             mainWindow.panelListaSeriesActivas.Children.Clear();
-            mainWindow.actualizarListaSeries();
+            mainWindow.updateListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if (item.estado == "A")
@@ -257,7 +257,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelSeriesInactivas(MainWindow mainWindow)
         {
             mainWindow.panelListaSeriesInactivas.Children.Clear();
-            mainWindow.actualizarListaSeries();
+            mainWindow.updateListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if (item.estado == "D")
@@ -279,7 +279,7 @@ namespace MediaFilm2.Vista
         {
             mainWindow.panelSeleccionarSeriePatron.Children.Clear();
             mainWindow.panelSeleccionarSeriePatron.Children.Add(CrearVistas.getVistaTitulo("Series"));
-            mainWindow.actualizarListaSeries();
+            mainWindow.updateListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if (item.estado == "A")
@@ -290,7 +290,7 @@ namespace MediaFilm2.Vista
         private static void rellenaPanelIncrementarTemporadas(MainWindow mainWindow)
         {
             mainWindow.panelListaIncrementarTemporadas.Children.Clear();
-            mainWindow.actualizarListaSeries();
+            mainWindow.updateListaSeries();
             foreach (Serie item in mainWindow.series)
             {
                 if (item.estado == "A")
