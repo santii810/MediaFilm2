@@ -123,7 +123,7 @@
     <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Bates_Motel</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Benched">
@@ -533,11 +533,11 @@
   </serie>
   <serie titulo="Graceland">
     <titulo>Graceland</titulo>
-    <temporadaActual>2</temporadaActual>
+    <temporadaActual>1</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Graceland</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Hannibal">
@@ -1118,7 +1118,7 @@
   </serie>
   <serie titulo="The big bang theory">
     <titulo>The big bang theory</titulo>
-    <temporadaActual>9</temporadaActual>
+    <temporadaActual>1</temporadaActual>
     <numeroTemporadas>9</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>The_big_bang_theory</titDescarga>
@@ -1328,10 +1328,10 @@
   <serie titulo="Vikingos">
     <titulo>Vikingos</titulo>
     <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <numeroTemporadas>4</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Vikingos</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Vivo con modelos">
@@ -1396,15 +1396,6 @@
     <titDescarga>Las_cronicas_de_shannara</titDescarga>
     <estado>A</estado>
     <extension>.mkv</extension>
-  </serie>
-  <serie titulo="The last man of the earth">
-    <titulo>The last man of the earth</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>2</numeroTemporadas>
-    <capitulosPorTemporada>25</capitulosPorTemporada>
-    <titDescarga>The_last_man_of_the_earth</titDescarga>
-    <estado>A</estado>
-    <extension>.avi</extension>
   </serie>
   <serie titulo="Ascension">
     <titulo>Ascension</titulo>
@@ -1473,6 +1464,16 @@
     <titulo>American horror story</titulo>
     <temporadaActual>2</temporadaActual>
     <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <titDescarga>
+    </titDescarga>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Narcos">
+    <titulo>Narcos</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>
     </titDescarga>
