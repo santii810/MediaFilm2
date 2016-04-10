@@ -99,7 +99,7 @@ namespace MediaFilm2.Modelo
                         else
                         {
                             errores++;
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error moviendo: " + item.Name));
                         }
                         break;
                     case ".mkv":
@@ -111,14 +111,14 @@ namespace MediaFilm2.Modelo
                         else
                         {
                             errores++;
-                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + item.Name));
+                            mainWindow.panelResultadoErroresMoviendo.Children.Add(CrearVistas.getLabelResultado("Error moviendo: " + item.Name));
                         }
                         break;
                     case ".mp4":
                         if (moverFichero(item, mainWindow))
                         {
                             videosMovidos++;
-                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelResultado(item.Name));
+                            mainWindow.panelResultadoVideosMovidos.Children.Add(CrearVistas.getLabelResultado("Error moviendo: " + item.Name));
                         }
                         else
                         {
@@ -270,7 +270,8 @@ namespace MediaFilm2.Modelo
                     seriesActivas++;
                     foreach (Patron itPatron in itSerie.patrones)
                     {
-                        for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
+                        for (int temp = 1; temp <= itSerie.numeroTemporadas; temp++)
+                        //  for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
                         {
                             for (int cap = 1; cap <= itSerie.capitulosPorTemporada; cap++)
                             {
@@ -386,14 +387,19 @@ namespace MediaFilm2.Modelo
             catch (IOException e)
             {
                 if (e.Message == "No se puede crear un archivo que ya existe.\r\n")
-                    fi.Delete();
-                mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("(Borrado) Error renombrando: " + nombreOriginal));
-                return false;
+                    try
+                    {
+                        fi.Delete();
+                        mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("(Borrado) Error renombrando: " + nombreOriginal));
+                    }
+                    catch(Exception ex)
+                    {
 
+                    }
+                return false;
             }
             catch (Exception e)
             {
-
                 mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("Error renombrando: " + nombreOriginal));
                 mainWindow.LogErrorXML.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString(), fi));
                 return false;

@@ -97,7 +97,7 @@ namespace MediaFilm2.Vista
                     break;
                 case Codigos.PANEL_INCREMENTAR_TEMPORADAS:
                     mainWindow.panelAddDatos.Visibility = Visibility.Visible;
-                    //   mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
+                       mainWindow.panelIncrementarTemporadas.Visibility = Visibility.Visible;
                     rellenaPanelIncrementarTemporadas(mainWindow);
                     break;
                 #endregion

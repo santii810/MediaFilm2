@@ -133,7 +133,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Collapsed">
+                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Visible">
                     <StackPanel Name="panelBotonesAddDatos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical"  Margin="20,0">
                             <Label Content="Añadir serie"  Style="{StaticResource LabelTitulos}"/>
@@ -186,14 +186,14 @@
 
                         <StackPanel Orientation="Vertical" Width="320">
                             <Border Style="{StaticResource Border}">
-                                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                                    <StackPanel Name="panelFicherosARenombrar" Orientation="Vertical"  MaxHeight="150" Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="150">
+                                    <StackPanel Name="panelFicherosARenombrar" Orientation="Vertical"   Width="320" Style="{StaticResource StackPanelSeleccionarSerie}" />
                                 </ScrollViewer>
                             </Border>
 
                             <StackPanel Name="panelNuevoPatron" >
                                 <Border Style="{StaticResource Border}">
-                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="180">
                                         <StackPanel  Name="panelPatronesActuales" Orientation="Vertical"  MaxHeight="180"/>
                                     </ScrollViewer>
                                 </Border>
@@ -214,36 +214,35 @@
 
                         <StackPanel Name="panelSeriesActivas" Width="320" Height="400">
                             <Label Content="Series activas" Style="{StaticResource LabelTitulos}"/>
-                            <Border Style="{StaticResource Border}">
+                            <Border Style="{StaticResource Border}" >
 
-                                <ScrollViewer>
-                                    <StackPanel Name="panelListaSeriesActivas" Height="360"></StackPanel>
+                                <ScrollViewer Height="360">
+                                    <StackPanel Name="panelListaSeriesActivas"></StackPanel>
                                 </ScrollViewer>
                             </Border>
                         </StackPanel>
-
 
                         <StackPanel Name="panelSeriesInactivas" Width="320" Height="400">
                             <Label Content="Series inactivas" Style="{StaticResource LabelTitulos}"/>
                             <Border Style="{StaticResource Border}">
 
-                                <ScrollViewer>
-                                    <StackPanel Name="panelListaSeriesInactivas" Height="360"></StackPanel>
+                                <ScrollViewer Height="360">
+                                    <StackPanel Name="panelListaSeriesInactivas"></StackPanel>
                                 </ScrollViewer>
                             </Border>
                         </StackPanel>
 
                     </StackPanel>
 
-                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Collapsed">
+                    <StackPanel Name="panelIncrementarTemporadas" Visibility="Visible">
                         <Label Content="Series" Style="{StaticResource LabelTitulos}"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                             <Label Content="Temp. Actual" Width="100"  Style="{StaticResource LabelListaSeries}"/>
                             <Label Content="Serie" HorizontalContentAlignment="Center" Width="180" Style="{StaticResource LabelListaSeries}"/>
                             <Label Content="Num temp" Width="180" Style="{StaticResource LabelListaSeries}"/>
                         </StackPanel>
-                        <ScrollViewer>
-                            <StackPanel Name="panelListaIncrementarTemporadas" Width="300" Height="320" >
+                        <ScrollViewer Height="320">
+                            <StackPanel Name="panelListaIncrementarTemporadas" Width="300" >
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>
@@ -304,7 +303,7 @@
                         </ScrollViewer>
                     </Border>
                 </StackPanel>
-                <StackPanel Name="panelDescarga">
+                <StackPanel Name="panelDescarga" Visibility="Collapsed">
                     <Border Style="{StaticResource Border}">
                         <ScrollViewer>
                             <StackPanel Name="listaFicherosDescargar">

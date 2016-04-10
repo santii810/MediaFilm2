@@ -294,7 +294,7 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Daredevil</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Dates">
@@ -312,7 +312,7 @@
     <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Da_Vinci_demons</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Defiance">
@@ -519,7 +519,7 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Gotham</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Grace and Frankie">
@@ -1367,7 +1367,7 @@
     <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Black_Sails</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Angie Tribeca">
@@ -1376,7 +1376,7 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Angie_Tribeca</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Sin limites">
@@ -1448,7 +1448,7 @@
     <numeroTemporadas>6</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Juego_de_tronos</titDescarga>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="New girl">
@@ -1466,6 +1466,16 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>iZombie</titDescarga>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="American horror story">
+    <titulo>American horror story</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <titDescarga>
+    </titDescarga>
     <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
