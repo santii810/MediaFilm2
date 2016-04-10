@@ -246,7 +246,7 @@ namespace MediaFilm2
             border.Style = (Style)Application.Current.Resources["Border"];
 
             StackPanel tmpPanel = new StackPanel();
-            
+
             //titulo
             Label tmpLabel1 = new Label();
             tmpLabel1.Content = item[0].Name;
@@ -266,12 +266,21 @@ namespace MediaFilm2
             tmpButton.Width = 60;
             tmpButton.Click += delegate
             {
+                try
+                {
+
                 if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
                     File.SetAttributes(item[1].FullName, FileAttributes.Normal);
-                item[1].Delete();
-                
-                mainWindow.ErroresDuplicidad.Remove(item);
+                    item[1].Delete();
+                    mainWindow.ErroresDuplicidad.Remove(item);
+                }
                 UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Error borrando el fichero" + e);
+                }
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];
             tmpButton.Content = "Borrar";
@@ -304,7 +313,7 @@ namespace MediaFilm2
 
                 border.Visibility = Visibility.Collapsed;
                 WebClient myWebClient = new WebClient();
-                myWebClient.DownloadFile(new System.Uri(url), titulo+".torrent");
+                myWebClient.DownloadFile(new System.Uri(url), titulo + ".torrent");
 
             };
             tmpButton.Style = (Style)Application.Current.Resources["Button"];

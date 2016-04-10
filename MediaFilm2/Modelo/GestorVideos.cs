@@ -180,6 +180,7 @@ namespace MediaFilm2.Modelo
             string nombreFichero = fichero.Name;
             try
             {
+                File.SetAttributes(fichero.FullName, FileAttributes.Normal);
                 fichero.Delete();
                 mainWindow.LogMediaXML.añadirEntrada(new Log("Borrado", "Fichero '" + nombreFichero + "' borrado correctamente", fichero));
                 return true;
@@ -389,6 +390,7 @@ namespace MediaFilm2.Modelo
                 if (e.Message == "No se puede crear un archivo que ya existe.\r\n")
                     try
                     {
+                        File.SetAttributes(fi.FullName, FileAttributes.Normal);
                         fi.Delete();
                         mainWindow.panelResultadoErroresRenombrado.Children.Add(CrearVistas.getLabelResultado("(Borrado) Error renombrando: " + nombreOriginal));
                     }
