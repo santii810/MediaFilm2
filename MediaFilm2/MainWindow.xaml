@@ -242,7 +242,7 @@
                             <Label Content="Num temp" Width="180" Style="{StaticResource LabelListaSeries}"/>
                         </StackPanel>
                         <ScrollViewer Height="320">
-                            <StackPanel Name="panelListaIncrementarTemporadas" Width="300" >
+                            <StackPanel Name="panelListaIncrementarTemporadas" Width="380" >
                             </StackPanel>
                         </ScrollViewer>
                     </StackPanel>

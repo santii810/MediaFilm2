@@ -77,7 +77,7 @@
     </Style>
     <Style x:Key="StackPanelSeleccionarSerie" TargetType="{x:Type StackPanel}">
         <Setter Property="Margin" Value="0,5"/>
-        <Setter Property="Width" Value="340"/>
+        <Setter Property="Width" Value="380"/>
         <Setter Property="Orientation" Value="Horizontal"/>
     </Style>
 
@@ -101,6 +101,7 @@
         <Setter Property="Stretch" Value="Uniform"/>
         <Setter Property="Width" Value="20"/>
         <Setter Property="Height" Value="20"/>
+        <Setter Property="Margin" Value="5,0"/>
     </Style>
 
 

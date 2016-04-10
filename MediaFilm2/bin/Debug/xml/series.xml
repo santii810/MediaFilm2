@@ -83,8 +83,8 @@
   </serie>
   <serie titulo="Arrow">
     <titulo>Arrow</titulo>
-    <temporadaActual>4</temporadaActual>
-    <numeroTemporadas>4</numeroTemporadas>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>Arrow</titDescarga>
     <estado>A</estado>
@@ -1172,8 +1172,8 @@
   </serie>
   <serie titulo="The Flash">
     <titulo>The Flash</titulo>
-    <temporadaActual>2</temporadaActual>
-    <numeroTemporadas>2</numeroTemporadas>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>The_Flash</titDescarga>
     <estado>A</estado>
@@ -1471,7 +1471,7 @@
   </serie>
   <serie titulo="American horror story">
     <titulo>American horror story</titulo>
-    <temporadaActual>1</temporadaActual>
+    <temporadaActual>2</temporadaActual>
     <numeroTemporadas>5</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <titDescarga>

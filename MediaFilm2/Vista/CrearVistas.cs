@@ -67,8 +67,6 @@ namespace MediaFilm2
             return tmpLabelTitulo;
         }
 
-
-
         internal static Label getVistaFicheroARenombrar(string name)
         {
             Label tmpLabelFichero = new Label();
@@ -83,26 +81,43 @@ namespace MediaFilm2
             tmpPanel.Style = (Style)Application.Current.Resources["StackPanelSeleccionarSerie"];
 
             //bitmap
-            BitmapImage src = new BitmapImage();
-            src.BeginInit();
-            src.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
-            src.EndInit();
+            BitmapImage srcMin = new BitmapImage();
+            srcMin.BeginInit();
+            srcMin.UriSource = new Uri("Iconos/sub.png", UriKind.Relative);
+            srcMin.EndInit();
 
 
-            //añado imagen min
-            Image tmpImagenMin = new Image();
-            tmpImagenMin.Source = src;
-            tmpImagenMin.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMin.MouseLeftButtonUp += delegate
+            //bitmap
+            BitmapImage srcMax = new BitmapImage();
+            srcMax.BeginInit();
+            srcMax.UriSource = new Uri("Iconos/suma.png", UriKind.Relative);
+            srcMax.EndInit();
+
+            ////añado imagen min
+            Image tmpImagenSubMin = new Image();
+            tmpImagenSubMin.Source = srcMin;
+            tmpImagenSubMin.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenSubMin.MouseLeftButtonUp += delegate
             {
-                serie.temporadaActual++;
-                if (serie.temporadaActual > serie.numeroTemporadas)
-                    serie.numeroTemporadas++;
+                if (serie.temporadaActual > 1)
+                    serie.temporadaActual--;
                 mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
             };
-            tmpPanel.Children.Add(tmpImagenMin);
+            tmpPanel.Children.Add(tmpImagenSubMin);
 
+            //añado imagen min
+            Image tmpImagenAddMin = new Image();
+            tmpImagenAddMin.Source = srcMax;
+            tmpImagenAddMin.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenAddMin.MouseLeftButtonUp += delegate
+            {
+                if (serie.temporadaActual < serie.numeroTemporadas)
+                    serie.temporadaActual++;
+                mainWindow.SeriesXML.updateSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
+            };
+            tmpPanel.Children.Add(tmpImagenAddMin);
 
             //temporada min
             Label tmpLabelTemporadaMin = new Label();
@@ -111,13 +126,11 @@ namespace MediaFilm2
             tmpLabelTemporadaMin.Width = 30;
             tmpPanel.Children.Add(tmpLabelTemporadaMin);
 
-
             //titulo
             Label tmpLabelTitulo = new Label();
             tmpLabelTitulo.Content = serie.titulo;
             tmpLabelTitulo.Style = (Style)Application.Current.Resources["LabelListaSeries"];
             tmpPanel.Children.Add(tmpLabelTitulo);
-
 
             //temporada max
             Label tmpLabelTemporadaMax = new Label();
@@ -126,18 +139,30 @@ namespace MediaFilm2
             tmpLabelTemporadaMax.Width = 30;
             tmpPanel.Children.Add(tmpLabelTemporadaMax);
 
+            //imagen max
+            Image tmpImagenSubMax = new Image();
+            tmpImagenSubMax.Source = srcMin;
+            tmpImagenSubMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenSubMax.MouseLeftButtonUp += delegate
+            {
+                if (serie.numeroTemporadas > serie.temporadaActual)
+                    serie.numeroTemporadas--;
+                mainWindow.SeriesXML.updateSerie(serie);
+                UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
+            };
+            tmpPanel.Children.Add(tmpImagenSubMax);
 
             //imagen max
-            Image tmpImagenMax = new Image();
-            tmpImagenMax.Source = src;
-            tmpImagenMax.Style = (Style)Application.Current.Resources["Image"];
-            tmpImagenMax.MouseLeftButtonUp += delegate
+            Image tmpImagenAddMax = new Image();
+            tmpImagenAddMax.Source = srcMax;
+            tmpImagenAddMax.Style = (Style)Application.Current.Resources["Image"];
+            tmpImagenAddMax.MouseLeftButtonUp += delegate
             {
                 serie.numeroTemporadas++;
                 mainWindow.SeriesXML.updateSerie(serie);
                 UpdateIU.Update(mainWindow, Codigos.PANEL_INCREMENTAR_TEMPORADAS);
             };
-            tmpPanel.Children.Add(tmpImagenMax);
+            tmpPanel.Children.Add(tmpImagenAddMax);
 
             return tmpPanel;
         }
@@ -237,8 +262,6 @@ namespace MediaFilm2
             return tmpPanel;
         }
 
-
-
         internal static UIElement getVistaDuplicidad(MainWindow mainWindow, FileSystemInfo[] item)
         {
 
@@ -269,13 +292,13 @@ namespace MediaFilm2
                 try
                 {
 
-                if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-                {
-                    File.SetAttributes(item[1].FullName, FileAttributes.Normal);
-                    item[1].Delete();
-                    mainWindow.ErroresDuplicidad.Remove(item);
-                }
-                UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
+                    if (MessageBox.Show("¿Seguro que quieres borrar el fichero?", "Borrar", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    {
+                        File.SetAttributes(item[1].FullName, FileAttributes.Normal);
+                        item[1].Delete();
+                        mainWindow.ErroresDuplicidad.Remove(item);
+                    }
+                    UpdateIU.Update(mainWindow, Codigos.VER_DUPLICIDAD);
                 }
                 catch (Exception e)
                 {
