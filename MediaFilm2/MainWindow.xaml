@@ -133,7 +133,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Visible">
+                <StackPanel Name="panelAddDatos" Orientation="Vertical" Visibility="Collapsed">
                     <StackPanel Name="panelBotonesAddDatos" Orientation="Horizontal" Height="150">
                         <StackPanel Orientation="Vertical"  Margin="20,0">
                             <Label Content="Añadir serie"  Style="{StaticResource LabelTitulos}"/>
@@ -248,7 +248,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Name="panelMantenimiento"  Orientation="Horizontal" Visibility="Collapsed">
+                <StackPanel Name="panelMantenimiento"  Orientation="Horizontal" Visibility="Visible">
                     <StackPanel Width="250">
                         <Image Source="Iconos/start.png" Height="100"  Margin="20" MouseLeftButtonUp="StartMantenimiento_LeftButtonUp"/>
                         <StackPanel Name="panelResultadoMantenimiento">
